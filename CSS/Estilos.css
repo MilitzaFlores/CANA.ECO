@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background: #334A61;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: aqua;
+}
+
+nav a:hover {
+    color: #CC8661;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+.logo img {
+    max-width: 75px;
+    margin-right: 75px;
+}
+
+.buscar input {
+    max-width: 240px;
+    height: 33px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+
+.icono-busqueda {
+    position: absolute;
+    top: 0;
+    right: 1;
+    padding: 18px;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    color: beige;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 17px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .buscar {
+        position: absolute;
+        padding: 5px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active,
+    .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .gallery img {
+        width: 200px;
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}
+
+body {
+    background-image: linear-gradient(135deg, #E5DAD3, #F9F8EC, #E4DBD0);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+div#banner {
+    width: 100%;
+    height: 400px;
+}
+
+img#banner_caná {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: auto;
+    min-width: 500px;
+}
+
+div#cintillo_valores {
+    width: 100%;
+    height: 400px;
+}
+
+img#valores_caná {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: auto;
+    min-width: 500px;
+}
+
+.qr {
+    margin: 20px;
+    width: 125px;
+    cursor: pointer;
+}
+
+.qrimagen {
+    margin: 20px;
+    width: 200px;
+    height: fit-content;
+}
+
+.Catálogo {
+    margin: 20px;
+    width: 125px;
+    cursor: pointer;
+}
+
+.Catálogoimagen {
+    margin: 20px;
+    width: 200px;
+    height: fit-content;
+}
+
+/* Grid */
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
