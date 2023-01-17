@@ -1,0 +1,22 @@
+.img-style {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+img {
+    @extend .img-style;
+}
+
+
+@mixin text-style($font-family, $font-size, $color, $text-align, $font-weight, $text-decoration) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+    text-align: $text-align;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+}
+
+.my-element {
+    @include text-style(Arial, 14px, #333, center, bold, underline);
+}

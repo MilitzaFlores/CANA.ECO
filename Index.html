@@ -9,48 +9,50 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>CANÁ.ECO</title>
     <link rel="icon" href="Imagenes/CANÁ.ico">
+    <link rel="stylesheet" href="estilosentrada.css">
     <link rel="stylesheet" href="CSS/Estilos.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
-        <div class="Fondo Dinámico"></div>
+    <div class="Fondo Dinámico"></div>
 
-        <nav>
-            <div class="logo">
-                <a href="Index.html"><img src="Imagenes/CANÁ Logo Redondo.png" alt="Logo CANÁ"></a>
-            </div>
-            <div class="toggle">
-                <a href="#">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </a>
-            </div>
-            <ul class="menu">
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a></li>
-                <li><a href="Contáctanos.html">Contáctanos</a></li>
-                <li><a href="Conócenos.html">Conócenos</a></li>
-                <li><a href="#">Reseñas</a></li>
-                <li><a href="#">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </a></li>
-                <li>
-                    <div class="buscar">
-                        <input type="text" name="buscador" id="buscador" placeholder="buscar..." required>
-                        <div class="icono-busqueda">
-                            <a href="#">
-                                <ion-icon name="search-outline"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <div id="banner">
-            <img src="Imagenes/Imagen Banner.jpg" id="banner_caná">
+    <nav>
+        <div class="logo">
+            <a href="Index.html"><img src="Imagenes/CANÁ Logo Redondo.png" alt="Logo CANÁ"></a>
         </div>
+        <div class="toggle">
+            <a href="#">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Contáctanos.html">Contáctanos</a></li>
+            <li><a href="Conócenos.html">Conócenos</a></li>
+            <li><a href="#">Reseñas</a></li>
+            <li><a href="#">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a></li>
+            <li>
+                <div class="buscar">
+                    <input type="text" name="buscador" id="buscador" placeholder="buscar..." required>
+                    <div class="icono-busqueda">
+                        <a href="#">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
+    <div id="banner">
+        <img src="Imagenes/Imagen Banner.jpg" id="banner_caná">
+    </div>
+
+    <div class="my-element">
         <p>Elaboramos shampoos y acondicionadores en barra hechos 100% de ingredientes naturales 🌿 para mejorar el
             aspecto
             y calidad de tu cabello, desintoxicarlo de todos los químicos de los shampoos comunes y, por supuesto,
@@ -60,47 +62,51 @@
             Nuestros shampoos y acondicionadores contienes tensoactivos, mantecas, aromas y aceites naturales,
             deshidratados
             de hierbas, frutas, verduras y semillas. ♻️💚♻️</p>
+    </div>
 
-        <div id="cintillo_valores">
-            <img src="Imagenes/Valores Marca.png" id="valores_caná">
-        </div>
-<div>
-    <p>¡Conoce nuestro catálogo dando click en la imagen!<a href="https://issuu.com/militza.flores/docs/cat_logo_can_.pptx" target="_blank"><img
-                src="Imagenes/1d40ab14478f4606f3e88e10d24c5c6589e94a1d_s2_n2.jpg" class="qr, qrimagen" alt="Imagen Portada Catálogo"></a></p>
-</div>
-        <div>
-            <p align="border-left"><a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img
-                        src="Imagenes/QR Redes Sociales.png" class="Catálogo, Catálogoimagen" alt="Redes Sociales"></a></p>
-        </div>
-        <footer>
-            <script type="text/javascript">
-                ! function (t, e) {
-                    t.artibotApi = {
-                        l: [],
-                        t: [],
-                        on: function () {
-                            this.l.push(arguments)
-                        },
-                        trigger: function () {
-                            this.t.push(arguments)
+    <div id="cintillo_valores">
+        <img src="Imagenes/Valores Marca.png" id="valores_caná">
+    </div>
+
+    <div>
+        <p>¡Conoce nuestro catálogo dando click en la imagen!</p> <a
+            href="https://issuu.com/militza.flores/docs/cat_logo_can_.pptx" target="_blank"><img
+                src="Imagenes/1d40ab14478f4606f3e88e10d24c5c6589e94a1d_s2_n2.jpg" class="Catálogo, Catálogoimagen"
+                class="img" alt="Imagen Portada Catálogo"></a>
+    </div>
+    <div>
+        <p align="border-left"><a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img
+                    src="Imagenes/QR Redes Sociales.png" class="qr, qrimagen" alt="Redes Sociales"></a></p>
+    </div>
+    <footer>
+        <script type="text/javascript">
+            ! function (t, e) {
+                t.artibotApi = {
+                    l: [],
+                    t: [],
+                    on: function () {
+                        this.l.push(arguments)
+                    },
+                    trigger: function () {
+                        this.t.push(arguments)
+                    }
+                };
+                var a = !1,
+                    i = e.createElement("script");
+                i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e
+                    .getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload =
+                    function () {
+                        if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this
+                                .readyState)) {
+                            new window.ArtiBot({
+                                i: "ab614785-af10-45f5-b8ed-cc43f3952cff"
+                            });
+                            a = !0
                         }
-                    };
-                    var a = !1,
-                        i = e.createElement("script");
-                    i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e
-                        .getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload =
-                        function () {
-                            if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this
-                                    .readyState)) {
-                                new window.ArtiBot({
-                                    i: "ab614785-af10-45f5-b8ed-cc43f3952cff"
-                                });
-                                a = !0
-                            }
-                        }
-                }(window, document);
-            </script>
-        </footer>
+                    }
+            }(window, document);
+        </script>
+    </footer>
 </body>
 
 </html>

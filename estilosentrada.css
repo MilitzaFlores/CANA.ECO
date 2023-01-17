@@ -1,0 +1,13 @@
+.img-style, img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ccc; }
+
+.my-element {
+  font-family: Arial;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=estilosentrada.css.map */

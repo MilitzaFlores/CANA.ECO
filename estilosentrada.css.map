@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAW;EACP,MAAM,EAAE,cAAc;EACtB,UAAU,EAAE,gBAAgB;;AAiBhC,WAAY;EARR,WAAW,EASS,KAAK;EARzB,SAAS,EAQkB,IAAI;EAP/B,KAAK,EAO4B,IAAI;EANrC,UAAU,EAM6B,MAAM;EAL7C,WAAW,EAKoC,IAAI;EAJnD,eAAe,EAIsC,SAAS",
+"sources": ["Sass/Estilosbase.scss"],
+"names": [],
+"file": "estilosentrada.css"
+}
