@@ -9,7 +9,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>CANÁ.ECO</title>
     <link rel="icon" href="Imagenes/CANÁ.ico">
-    <link rel="stylesheet" href="estilosentrada.css">
+    <!-- <link rel="stylesheet" href="estilosentrada.css"> -->
     <link rel="stylesheet" href="CSS/Estilos.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
@@ -33,15 +33,13 @@
             <li><a href="Conócenos.html">Conócenos</a></li>
             <li><a href="#">Reseñas</a></li>
             <li><a href="#">
-                    <ion-icon name="cart-outline"></ion-icon>
+                    <ion-icon name="cart" size="large"></ion-icon>
                 </a></li>
             <li>
                 <div class="buscar">
                     <input type="text" name="buscador" id="buscador" placeholder="buscar..." required>
                     <div class="icono-busqueda">
-                        <a href="#">
-                            <ion-icon name="search-outline"></ion-icon>
-                        </a>
+                        <a href="#"><img src="Imagenes/Ícono Busqueda.svg" alt="Lupa Buscador"></a>
                     </div>
                 </div>
             </li>
@@ -68,17 +66,58 @@
         <img src="Imagenes/Valores Marca.png" id="valores_caná">
     </div>
 
-    <div>
-        <p>¡Conoce nuestro catálogo dando click en la imagen!</p> <a
-            href="https://issuu.com/militza.flores/docs/cat_logo_can_.pptx" target="_blank"><img
-                src="Imagenes/1d40ab14478f4606f3e88e10d24c5c6589e94a1d_s2_n2.jpg" class="Catálogo, Catálogoimagen"
-                class="img" alt="Imagen Portada Catálogo"></a>
+    <div class="container">
+        <div class="card">
+            <img src="Imagenes/Catálogo/Acondicionador Cacao.jpg">
+            <h4>¡Conoce nuestro Catálogo!</h4>
+            <a href="https://issuu.com/militza.flores/docs/cat_logo_can_.pptx" target="_blank">Da Click Aquí</a>
+        </div>
+
+        <div class="card">
+            <img src="Imagenes/1d40ab14478f4606f3e88e10d24c5c6589e94a1d_s2_n2.jpg">
+            <h4>Lo Más Vendido</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+            <a href="#">Leer más</a>
+        </div>
+
+        <div class="card">
+            <img src="Imagenes/Catálogo/Arcilla Blanca.jpg">
+            <h4>Mascotas</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+            <a href="#">Leer más</a>
+        </div>
+
     </div>
-    <div>
-        <p align="border-left"><a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img
-                    src="Imagenes/QR Redes Sociales.png" class="qr, qrimagen" alt="Redes Sociales"></a></p>
-    </div>
-    <footer>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img
+                            src="Imagenes/QR CANÁ.jpeg" class="qr, qrimagen" alt="Redes Sociales"></a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Políticas De Devolución</h2> <h2>Terminos y Condiciones</h2>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/cana.eco/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://www.tiktok.com/@cana.eco" target="_blank">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100064151620372" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>CANÁ.ECO</b> - Todos los Derechos Reservados.</small>
+        </div>
+        <!-- Chatbot -->
         <script type="text/javascript">
             ! function (t, e) {
                 t.artibotApi = {

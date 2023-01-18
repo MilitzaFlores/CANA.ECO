@@ -1,11 +1,11 @@
-.img-style {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px #ccc;
-}
+// .img-style {
+//     border: 1px solid #ccc;
+//     box-shadow: 2px 2px 5px #ccc;
+// }
 
-img {
-    @extend .img-style;
-}
+// img {
+//     @extend .img-style;
+// }
 
 
 @mixin text-style($font-family, $font-size, $color, $text-align, $font-weight, $text-decoration) {
