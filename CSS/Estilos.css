@@ -90,7 +90,7 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1028px) {
 
     nav {
         display: block;
@@ -349,7 +349,6 @@ img#valores_caná {
 
 .pie-pagina .grupo-2{
     background-color: #CC8661;
-    padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
