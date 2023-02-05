@@ -5,97 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Productos</title>
-    <link rel="icon" href="Imagenes/CANÁ.ico">
+    <title>CANÁ.ECO</title>
+    <link rel="icon" href="Imagenes/Logo CANÁ.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.cdnfonts.com/css/raleway-5?styles=27268" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gadugi?styles=66187" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="estilosentrada.css"> -->
     <link rel="stylesheet" href="CSS/Estilos.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <div class="Fondo Dinámico"></div>
-
-    <nav>
-        <div class="logo">
-            <a href="Index.html"><img src="Imagenes/CANÁ Logo Redondo.png" alt="Logo CANÁ"></a>
-        </div>
-        <div class="toggle">
-            <a href="#">
-                <ion-icon name="menu-outline"></ion-icon>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #CC8661;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">
+                <img src="Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
             </a>
-        </div>
-        
-        <ul class="menu">
-            <li><a href="Index.html">Inicio</a></li>
-            <li><a href="Productos.html">Productos</a></li>
-            <li><a href="Contáctanos.html">Contáctanos</a></li>
-            <li><a href="Conócenos.html">Conócenos</a></li>
-            <li><a href="#">Reseñas</a></li>
-            <li><a href="#">
-                    <ion-icon name="cart-outline"></ion-icon>
-                </a></li>
-            <li>
-                <div class="buscar">
-                    <input type="text" name="buscador" id="buscador" placeholder="buscar..." required>
-                    <div class="icono-busqueda">
-                        <a href="#">
-                            <ion-icon name="search-outline"></ion-icon>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="Index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #F9F8EC;" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
                         </a>
+                        <ul class="dropdown-menu" style="background-color: #CC8661;">
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Shampoo Sólido</a></li>
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Acondicionador Sólido</a></li>
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Cuidado Facial</a></li>
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Cuidado Corporal</a></li>
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Productos Ecológicos</a></li>
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Mascotas</a></li>
+                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Paquetes</a></li>
+                        </ul>
+                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;"
+                            href="Contáctanos.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="Conócenos.html">Conócenos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="Reseñas.html">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="#">
+                            <ion-icon name="cart" font-size: 25px;></ion-icon>
+                        </a></li>
+                    <div class="buscar">
+                        <li class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
+                                    name="buscador" id="buscador" placeholder="buscar..." required>
+                            </a>
+                    </div>
+                </ul>
+            </div>
+            </ul>
+    </nav>
+    <div class="Fondo Dinámico"></div>
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center"
+                style="background-color: #CC8661;">
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h4 ms-3 mb-3" style="color: #F9F8EC;">CANÁ</p>
+                    <div class="mb-2">
+                        <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img
+                                src="Imagenes/QR CANÁ.jpeg" alt="QR CANÁ" width="120" height="120"></a>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </nav>
-    <h2>Nuestros productos</h2>
-    <p>En nuestra tienda encontrarás una amplia selección de productos de cosmética natural, elaborados con ingredientes
-        orgánicos y respetuosos con el medio ambiente.</p>
-
-        <div class="container-img">
-            <div class="box-img">
-                <figure>
-                <img src="Imagenes/Catálogo/Acondicionador Cacao.jpg" alt="Acondicionador Cacao">
-            </figure>
-            </div>
-            <div class="box-img">
-                <figure>
-                    <img src="Imagenes/Catálogo/Acondicionador Karité.jpg" alt="Acondicionador Karité">
-            </figure>
-            </div>
-            <div class="box-img">
-                <figure>
-                    <img src="Imagenes/Catálogo/Arcilla Bentonita.jpg" alt="Arcilla Café">
-            </figure>
-            </div>
-            <div class="box-img">
-                <figure>
-                    <img src="Imagenes/Catálogo/Arcilla Blanca.jpg" alt="Arcilla Blanca">
-            </figure>
-            </div>
-            <div class="box-img">
-                <figure>
-                    <img src="Imagenes/Catálogo/Arcilla Verde.jpg" alt="Arcilla Verde">
-            </figure>
-            </div>
-            <div class="box-img">
-                <figure>
-                    <img src="Imagenes/Catálogo/Avena Coco 50gr.jpg" alt="Avena Coco">
-            </figure>
-            </div>
-            <div class="box-img">
-                <figure>
-                    <img src="Imagenes/Catálogo/Crema Panditas.jpg" alt="Crema">
-            </figure>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3" style="color: #F9F8EC;">Servicio Al Cliente</p>
+                    <div class="mb-2">
+                        <a class="nav-link" class="text-decoration-none" style="color: #F9F8EC;" href="#">Políticas
+                            De Devolución y Reembolso.</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="nav-link" class="text-decoration-none" style="color: #F9F8EC;" href="#">Términos y
+                            Condiciones.</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="ms-3 mb-2">
+                        <img src="Imagenes/Consume Local.png" alt="Marca Mexicana" width="145" height="155"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h4 ms-3 mb-3" style="color: #F9F8EC;">Síguenos</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="nav-link" style="color: #F9F8EC;"
+                                href="https://www.instagram.com/cana.eco/" class="bi" width="24" height="24"
+                                target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></li>
+                        <li class="ms-3"><a class="nav-link" style="color: #F9F8EC;"
+                                href="https://www.tiktok.com/@cana.eco" class="bi" width="24" height="24"
+                                target="_blank">
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </a></li>
+                        <li class="ms-3"><a class="nav-link" style="color: #F9F8EC;"
+                                href="https://www.facebook.com/profile.php?id=100064151620372" class="bi" width="24"
+                                height="24" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></li>
+                    </ul>
+                </div>
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pb-1 border-top">
+                    <p class="col-md-4 mb-0" style="color: #F9F8EC;">Diseñado por: <b>Militza Flores</b> </p>
+                    <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+                        <a href="Index.html"><img class="bi me-2" src="Imagenes/CANÁ Logo.png" alt="Logo CANÁ"
+                                width="70" height="70"></a>
+                    </p>
+                    <p class="text-center" style="color: #F9F8EC;">&copy; 2023 <b>CANÁ.ECO</b> - Todos los Derechos
+                        Reservados.</p>
+                </div>
             </div>
         </div>
-    <ul>
-        <li>Crema hidratante de aloe vera</li>
-        <li>Champú de coco y aceite de argán</li>
-        <li>Exfoliante corporal de café y azúcar</li>
-        <li>Mascarilla capilar de miel y avena</li>
-    </ul>
-
-    <footer>
+        <!-- Chatbot -->
         <script type="text/javascript">
             ! function (t, e) {
                 t.artibotApi = {
@@ -123,8 +153,8 @@
                     }
             }(window, document);
         </script>
-        <script src="Java/Bucles.js"></script>
     </footer>
+</main>
 </body>
 
 </html>
