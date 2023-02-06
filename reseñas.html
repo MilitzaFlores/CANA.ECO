@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #CC8661;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
                 <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
@@ -31,60 +31,73 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" style="color: #F9F8EC;" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Productos
                         </a>
-                        <ul class="dropdown-menu" style="background-color: #CC8661;">
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Shampoo Sólido</a></li>
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Acondicionador Sólido</a></li>
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Cuidado Facial</a></li>
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Cuidado Corporal</a></li>
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Productos Ecológicos</a></li>
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Mascotas</a></li>
-                            <li><a class="dropdown-item" style="color: #F9F8EC;" href="#">Paquetes</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
+                            <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
                         </ul>
-                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;"
-                            href="./contáctanos.html">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="./conócenos.html">Conócenos</a>
+                    <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="./reseñas.html">Reseñas</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: #F9F8EC;" href="#">
-                            <ion-icon name="cart" font-size: 25px;></ion-icon>
-                        </a></li>
-                    <div class="buscar">
-                        <li class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
-                                    name="buscador" id="buscador" placeholder="buscar..." required>
-                            </a>
+                    <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                    </li>
+                    <div class="nav-item d-inline-block">
+                        <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
+                        </button>
                     </div>
+                    <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
+                                name="buscador" id="buscador" placeholder="buscar..." required></a>
+                    </li>
                 </ul>
             </div>
             </ul>
     </nav>
+    <!-- Offcanvas Carrito -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Artículos</p>
+        </div>
+        <div class="offcanvas-body">
+            <p>Guardados</p>
+        </div>
+    </div>
     <div class="Fondo Dinámico"></div>
     
     <footer>
         <div class="container-fluid">
-            <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center"
-                style="background-color: #CC8661;">
-
+            <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center">
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <p class="h4 ms-3 mb-3" style="color: #F9F8EC;">CANÁ</p>
+                    <p class="h4 ms-3 mb-3 text-footer">CANÁ</p>
                     <div class="mb-2">
-                        <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img
-                                src="./Imagenes/QR CANÁ.jpeg" alt="QR CANÁ" width="120" height="120"></a>
+                        <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img src="./Imagenes/QR CANÁ.jpeg"
+                                alt="QR CANÁ" width="120" height="120"></a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <p class="h5 mb-3" style="color: #F9F8EC;">Servicio Al Cliente</p>
+                    <p class="h5 mb-3 text-footer">Servicio Al Cliente</p>
                     <div class="mb-2">
-                        <a class="nav-link" class="text-decoration-none" style="color: #F9F8EC;" href="#">Términos y
+                        <a class="nav-link" class="text-decoration-none" href="#">Términos y
                             Condiciones.</a>
                     </div>
                     <div class="mb-2">
-                        <a class="nav-link" class="text-decoration-none" style="color: #F9F8EC;" href="#">Políticas
+                        <a class="nav-link" class="text-decoration-none" href="#">Políticas
                             De Devolución y Reembolso.</a>
                     </div>
                 </div>
@@ -94,19 +107,19 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <p class="h4 ms-3 mb-3" style="color: #F9F8EC;">Síguenos</p>
+                    <p class="h4 ms-3 mb-3 text-footer">Síguenos</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="nav-link" style="color: #F9F8EC;"
+                        <li class="ms-3"><a class="nav-link"
                                 href="https://www.instagram.com/cana.eco/" class="bi" width="24" height="24"
                                 target="_blank">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a></li>
-                        <li class="ms-3"><a class="nav-link" style="color: #F9F8EC;"
+                        <li class="ms-3"><a class="nav-link"
                                 href="https://www.tiktok.com/@cana.eco" class="bi" width="24" height="24"
                                 target="_blank">
                                 <ion-icon name="logo-tiktok"></ion-icon>
                             </a></li>
-                        <li class="ms-3"><a class="nav-link" style="color: #F9F8EC;"
+                        <li class="ms-3"><a class="nav-link"
                                 href="https://www.facebook.com/profile.php?id=100064151620372" class="bi" width="24"
                                 height="24" target="_blank">
                                 <ion-icon name="logo-facebook"></ion-icon>
@@ -115,12 +128,12 @@
                 </div>
                 <div
                     class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pb-1 border-top">
-                    <p class="col-md-4 mb-0" style="color: #F9F8EC;">Diseñado por: <b>Militza Flores</b> </p>
+                    <p class="col-md-4 mb-0 text-footer">Diseñado por: <b>Militza Flores</b> </p>
                     <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
                         <a href="./index.html"><img class="bi me-2" src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ"
                                 width="70" height="70"></a>
                     </p>
-                    <p class="text-center" style="color: #F9F8EC;">&copy; 2023 <b>CANÁ.ECO</b> - Todos los Derechos
+                    <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos los Derechos
                         Reservados.</p>
                 </div>
             </div>
@@ -154,7 +167,6 @@
             }(window, document);
         </script>
     </footer>
-</main>
 </body>
 
 </html>

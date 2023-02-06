@@ -35,9 +35,7 @@ h5 {
     font-size: 1.5rem !important;
     font-family: 'Raleway', sans-serif;
 }
-.my-button {
-    color: #F9F8EC !important;
-  }
+
 .Texto-Tarjetas {
     padding-top: 1.5%;
     font-size: 1rem !important;
@@ -67,17 +65,42 @@ h5 {
     margin-right: 60px;
     text-align: center;
 }
-
+.offcanvas{
+    background-color: #CC8661 !important;
+    color: #F9F8EC !important;
+}
+.navbar-light{
+    background-color: #CC8661 !important;
+}
 .nav-link:hover {
     color: #334A61 !important;
 }
 
+.nav-link {
+    color: #F9F8EC !important;
+}
+
+.dropdown-menu{
+    background-color: #CC8661 !important;
+}
 .dropdown-item:hover {
     color: #334A61 !important;
 }
-
+.btn{
+    background-color: #CC8661 !important; 
+    color: #F9F8EC !important;
+}
+.carrito{
+    color: #F9F8EC !important;
+}
+.text-footer{
+    color: #F9F8EC !important;
+}
+.container-fluid{
+background-color: #CC8661;
+}
 ion-icon {
-    font-size: 28px;
+    font-size: 28px !important;
 }
 
 .buscar input {
@@ -298,4 +321,6 @@ body {
 .my-image {
     margin-top: 1rem;
     margin-bottom: 3rem;
+    padding-left: 3%;
+    padding-right: 3%;
 }
