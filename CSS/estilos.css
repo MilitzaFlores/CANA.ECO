@@ -48,6 +48,7 @@ h5 {
     padding-top: 3.5%;
     padding-bottom: 3%;
 }
+
 .Texto-Principal {
     padding-top: 1%;
     font-size: 1.3rem !important;
@@ -57,6 +58,7 @@ h5 {
     text-align: justify;
     text-justify: inter-word;
 }
+
 .Texto-CuidadoBarras {
     padding-top: 1%;
     font-size: 1.5rem !important;
@@ -65,40 +67,50 @@ h5 {
     margin-right: 60px;
     text-align: center;
 }
-.offcanvas{
+
+.offcanvas {
     background-color: #CC8661 !important;
     color: #F9F8EC !important;
 }
-.navbar-light{
+
+.navbar-light {
     background-color: #CC8661 !important;
 }
+
 .nav-link:hover {
     color: #334A61 !important;
 }
 
 .nav-link {
     color: #F9F8EC !important;
+    font-family: 'Gadugi', sans-serif;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #CC8661 !important;
 }
+
 .dropdown-item:hover {
     color: #334A61 !important;
 }
-.btn{
-    background-color: #CC8661 !important; 
+
+.btn {
+    background-color: #CC8661 !important;
     color: #F9F8EC !important;
 }
-.carrito{
+
+.carrito {
     color: #F9F8EC !important;
 }
-.text-footer{
+
+.text-footer {
     color: #F9F8EC !important;
 }
-.container-fluid{
-background-color: #CC8661;
+
+.container-fluid {
+    background-color: #CC8661;
 }
+
 ion-icon {
     font-size: 28px !important;
 }
@@ -113,12 +125,13 @@ ion-icon {
     outline: none;
     border: 1px solid silver;
     border-radius: 30px;
+    margin-left: 18px;
 }
 
 body {
     min-height: 100vh;
     height: auto;
-    padding-top: 120px;
+    padding-top: 101px;
     scroll-behavior: smooth;
     background-image: linear-gradient(135deg, #F9F8EC, #FFF1DE);
     background-size: 500%;
@@ -227,7 +240,7 @@ body {
 
 .center-img {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 680px;
@@ -235,13 +248,14 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F9F8EC;
 }
 
 @media (max-width: 767px) {
+    
     .banner-img {
         width: 100%;
         height: auto;
@@ -296,18 +310,6 @@ body {
     padding: 3% 2%;
 }
 
-.Catálogo {
-    margin: 20px;
-    width: 125px;
-    cursor: pointer;
-}
-
-.Catálogoimagen {
-    margin: 20px;
-    width: 200px;
-    height: fit-content;
-}
-
 
 .title {
     text-align: center;
@@ -323,4 +325,17 @@ body {
     margin-bottom: 3rem;
     padding-left: 3%;
     padding-right: 3%;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.badge-light {
+    background-color: #334A61 !important;
+}
+
+.badge {
+    font-size: small !important;
+    position: absolute !important;
 }

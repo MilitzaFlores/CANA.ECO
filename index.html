@@ -20,66 +20,71 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
-                        </ul>
-                    <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
-                    </li>
-                    <div class="nav-item d-inline-block">
-                        <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
-                        </button>
-                    </div>
-                    <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
-                                name="buscador" id="buscador" placeholder="buscar..." required></a>
-                    </li>
-                </ul>
-            </div>
-            </ul>
-    </nav>
-    <!-- Offcanvas Carrito -->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p>Artículos</p>
-        </div>
-        <div class="offcanvas-body">
-            <p>Guardados</p>
-        </div>
-    </div>
-    <div class="Fondo Dinámico"></div>
     <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
+                        <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        </li>
+                        <div class="nav-item d-inline-block">
+                            <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
+                                <span class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
+                            </button>
+                        </div>
+                        <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
+                                    type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+        </nav>
+        <!-- Offcanvas Carrito -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Artículos</p>
+            </div>
+            <div class="offcanvas-body">
+                <p>Guardados</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="Fondo Dinámico"></div>
         <div class="banner-container">
             <img src="./Imagenes/Banner Imagen 1.jpg" alt="Banner Izquierda" class="banner-img">
             <img src="./Imagenes/Banner Imagen 2.jpg" alt="Banner Central" class="banner-img">
@@ -89,8 +94,7 @@
         <div class="banner-text">
             <h1>#BEZEROWASTE</h1>
         </div>
-    </header>
-    <main>
+
         <div class="Texto-Principal-div">
             <h2>Cosmética Natural: Una Nueva Forma De Cuidarte Y Proteger Al Planeta</h2>
             <p class="Texto-Principal">Todos nuestros productos son elaborados con ingredientes 100% naturales y
@@ -114,7 +118,6 @@
         </div>
 
         <section id="información">
-
             <div class="row">
                 <div
                     class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3">
@@ -124,9 +127,9 @@
                             <h3 class="card-title">¡Conoce Nuestro Catálogo!</h3>
                             <p class="Texto-Tarjetas">¿Aún no lo has visto? <br> Descubre toda la gama de productos
                                 ecológicos 2023. </p>
-                            <button class="btn btn-lg btn-block" type="button"><a
-                                    class="nav-link" href="https://issuu.com/militza.flores/docs/cat_logo_can_"
-                                    target="_blank" class="text-decoration-none">¡Vamos
+                            <button class="btn btn-lg btn-block" type="button"><a class="nav-link"
+                                    href="https://issuu.com/militza.flores/docs/cat_logo_can_" target="_blank"
+                                    class="text-decoration-none">¡Vamos
                                     allá!</a></button>
                         </div>
                     </div>
@@ -213,12 +216,12 @@
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h5 mb-3 text-footer">Servicio Al Cliente</p>
                     <div class="mb-2">
-                        <a class="nav-link" class="text-decoration-none" href="#">Términos y
+                        <a class="nav-link" class="text-decoration-none" href="#">Términos Y
                             Condiciones.</a>
                     </div>
                     <div class="mb-2">
                         <a class="nav-link" class="text-decoration-none" href="#">Políticas
-                            De Devolución y Reembolso.</a>
+                            De Devolución Y Reembolso.</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
@@ -229,14 +232,12 @@
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h4 ms-3 mb-3 text-footer">Síguenos</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="nav-link"
-                                href="https://www.instagram.com/cana.eco/" class="bi" width="24" height="24"
-                                target="_blank">
+                        <li class="ms-3"><a class="nav-link" href="https://www.instagram.com/cana.eco/" class="bi"
+                                width="24" height="24" target="_blank">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a></li>
-                        <li class="ms-3"><a class="nav-link"
-                                href="https://www.tiktok.com/@cana.eco" class="bi" width="24" height="24"
-                                target="_blank">
+                        <li class="ms-3"><a class="nav-link" href="https://www.tiktok.com/@cana.eco" class="bi"
+                                width="24" height="24" target="_blank">
                                 <ion-icon name="logo-tiktok"></ion-icon>
                             </a></li>
                         <li class="ms-3"><a class="nav-link"
@@ -253,7 +254,7 @@
                         <a href="./index.html"><img class="bi me-2" src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ"
                                 width="70" height="70"></a>
                     </p>
-                    <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos los Derechos
+                    <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos Los Derechos
                         Reservados.</p>
                 </div>
             </div>

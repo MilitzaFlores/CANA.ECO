@@ -20,65 +20,73 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
-                        </ul>
-                    <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
-                    </li>
-                    <div class="nav-item d-inline-block">
-                        <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
-                        </button>
-                    </div>
-                    <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
-                                name="buscador" id="buscador" placeholder="buscar..." required></a>
-                    </li>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
+                        <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        </li>
+                        <div class="nav-item d-inline-block">
+                            <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
+                                <span class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
+                            </button>
+                        </div>
+                        <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
+                                    type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
+                        </li>
+                    </ul>
+                </div>
                 </ul>
+        </nav>
+        <!-- Offcanvas Carrito -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            </ul>
-    </nav>
-    <!-- Offcanvas Carrito -->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-body">
+                <p>Artículos</p>
+            </div>
+            <div class="offcanvas-body">
+                <p>Guardados</p>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <p>Artículos</p>
-        </div>
-        <div class="offcanvas-body">
-            <p>Guardados</p>
-        </div>
-    </div>
-    <div class="Fondo Dinámico"></div>
+    </header>
+
+    <main>
+        <div class="Fondo Dinámico"></div>
+
+    </main>
     
     <footer>
         <div class="container-fluid">

@@ -20,66 +20,107 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
-                        </ul>
-                    <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
-                    </li>
-                    <div class="nav-item d-inline-block">
-                        <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
-                        </button>
-                    </div>
-                    <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
-                                name="buscador" id="buscador" placeholder="buscar..." required></a>
-                    </li>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
+                        <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        </li>
+                        <div class="nav-item d-inline-block">
+                            <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
+                                <span class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
+                            </button>
+                        </div>
+                        <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
+                                    type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
+                        </li>
+                    </ul>
+                </div>
                 </ul>
+        </nav>
+        <!-- Offcanvas Carrito -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            </ul>
-    </nav>
-    <!-- Offcanvas Carrito -->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-body">
+                <p>Artículos</p>
+            </div>
+            <div class="offcanvas-body">
+                <p>Guardados</p>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <p>Artículos</p>
+    </header>
+
+    <main>
+        <div class="Fondo Dinámico"></div>
+        
+        <div>
+            <h1>Nuestra Historia</h1>
+            <p>Caná nace de la necesidad de hacer de los productos de cosmética natural y artesanal productos más
+                accesibles para un mayor número de personas.
+                Al ser 100% más económicos que la mayoría de las marcas, pero con la misma calidad de todas ellas,
+                tomamos los poderes de los ingredientes que nos brinda la madre naturaleza para fusionarlos y crear
+                productos con los que puedas apapacharte teniendo la seguridad de que nutres tu pelo, piel, cuerpo y
+                corazón. Con tensoactivos, ceras, mantecas, aromas, deshidratados de hierbas, frutas, verduras y
+                semillas.
+                Además, reusamos y reciclamos hasta el 85% de todos los residuos de nuestra propia producción como
+                empaques y envolturas. Completamente libres de plástico. Sin siliconas, parabenos, colorantes, sulfatos,
+                aluminio o fragancias sintéticas; 100% naturales y artesanales.
+                Una barra de shampoo de 100 gr., por ejemplo, puede durar hasta 80 o 100 lavadas dependiendo el uso y el
+                cuidado que se le dé.
+
+                Nuestra principal preocupación es darte cada pieza con la paciencia y amor necesaria.
+                Calidad garantizada, libres de crueldad animal y con una increíble atención personalizada.
+            </p>
+            <p>Misión
+                Educar y promover los cuidados personales y ambientales proporcionando alternativas de gran calidad y
+                precio que armonicen y balanceen la vida del planeta con la vida humana.
+
+                Visión
+                Ser uno de los principales proveedores de cosmética natural en los hogares de la República Mexicana.
+            </p>
+            <p>¿Cómo trabajas el empaquetado de envíos de forma ecológica?
+                -Un 85% de mi material es reutilizado: papel, cajas, bolsas, papel burbuja… todo donado de paquetes míos
+                o de familiares y amigos. Además todo es reciclable, biodegradable y compostable (excepto el papel
+                burbuja, sabemos que es plástico, pero siempre hay que reutilizar el plástico la mayor cantidad de veces
+                posibles para compensar su huella en el planeta)
+                Mi regla es: Siempre usa lo que ya tienes.
+            </p>
         </div>
-        <div class="offcanvas-body">
-            <p>Guardados</p>
-        </div>
-    </div>
-    <div class="Fondo Dinámico"></div>
-    
+    </main>
+
     <footer>
         <div class="container-fluid">
             <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center">
@@ -109,14 +150,12 @@
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h4 ms-3 mb-3 text-footer">Síguenos</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="nav-link"
-                                href="https://www.instagram.com/cana.eco/" class="bi" width="24" height="24"
-                                target="_blank">
+                        <li class="ms-3"><a class="nav-link" href="https://www.instagram.com/cana.eco/" class="bi"
+                                width="24" height="24" target="_blank">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a></li>
-                        <li class="ms-3"><a class="nav-link"
-                                href="https://www.tiktok.com/@cana.eco" class="bi" width="24" height="24"
-                                target="_blank">
+                        <li class="ms-3"><a class="nav-link" href="https://www.tiktok.com/@cana.eco" class="bi"
+                                width="24" height="24" target="_blank">
                                 <ion-icon name="logo-tiktok"></ion-icon>
                             </a></li>
                         <li class="ms-3"><a class="nav-link"
