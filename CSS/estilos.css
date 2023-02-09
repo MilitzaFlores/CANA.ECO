@@ -255,7 +255,7 @@ body {
 }
 
 @media (max-width: 767px) {
-    
+
     .banner-img {
         width: 100%;
         height: auto;
@@ -290,13 +290,38 @@ body {
     .grid-container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
+        justify-items: center;
     }
-
 }
 
 
+.container-barras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    padding-top: 0%;
+}
+
+.item-barras {
+    padding-top: 0%;
+    width: 50%;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .item-barras {
+        width: 100%;
+    }
+}
+
+.container-barras img {
+    width: 100%;
+}
+
 .grid-container img {
     width: 100%;
+
 }
 
 #información {
@@ -320,13 +345,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.my-image {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
 .nav-item {
     position: relative;
 }
@@ -338,4 +356,17 @@ body {
 .badge {
     font-size: small !important;
     position: absolute !important;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
