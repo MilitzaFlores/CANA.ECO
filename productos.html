@@ -11,7 +11,7 @@
     <link href="https://fonts.cdnfonts.com/css/gadugi?styles=66187" rel="stylesheet">
     <!-- <link rel="stylesheet" href="estilosentrada.css"> -->
     <link rel="stylesheet" href="./CSS/estilos.css">
-    <link rel="stylesheet" href="./CSS/productos.css">
+    <link rel="stylesheet" href="CSS/productos.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -21,72 +21,198 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
-                            <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
-                        </ul>
-                    <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
-                    </li>
-                    <div class="nav-item d-inline-block">
-                        <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <ion-icon name="cart" style="font-size: 25px;"></ion-icon><span
-                            class="badge badge-light">0</span>
-                        </button>
-                    </div>
-                    <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input type="text"
-                                name="buscador" id="buscador" placeholder="buscar..." required></a>
-                    </li>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
+                                <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
+                        <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        </li>
+                        <div class="nav-item d-inline-block">
+                            <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
+                                <span class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
+                            </button>
+                        </div>
+                        <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
+                                    type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
+                        </li>
+                    </ul>
+                </div>
                 </ul>
+        </nav>
+        <!-- Offcanvas Carrito -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            </ul>
-    </nav>
-    <!-- Offcanvas Carrito -->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-body">
+                <p>Artículos</p>
+            </div>
+            <div class="offcanvas-body">
+                <p>Guardados</p>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <p>Artículos</p>
-        </div>
-        <div class="offcanvas-body">
-            <p>Guardados</p>
-        </div>
-    </div>
-    <div class="Fondo Dinámico"></div>
+    </header>
 
     <main>
-        <h2 class="tituloSeccionComidas">NUESTRAS DELICIAS</h2>
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-md-3">
+                    <div id="menu-lateral" class="h-100 mr-3">
+                        <div>
+                            <h2>Ordenar por:</h2>
+                            <button onclick="sortList()">Nombre</button>
+                            <ul id="id01">
+                        </div>
+                        <article class="filter-group">
+                            <h2>Precio</h2>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" value="0,25" type="radio" name="pricefilter"
+                                    id="under25" wire:model="filters.price">
+                                <label class="form-check-label ps-2" for="under25">
+                                    Menos de $25
+                                </label>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" value="25,50" type="radio" name="pricefilter"
+                                    id="25to50" wire:model="filters.price">
+                                <label class="form-check-label ps-2" for="25to50">
+                                    $25 a $50
+                                </label>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" value="50,100" type="radio" name="pricefilter"
+                                    id="50to100" wire:model="filters.price">
+                                <label class="form-check-label ps-2" for="50to100">
+                                    $50 a $100
+                                </label>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" value="100,200" type="radio" name="pricefilter"
+                                    id="100to200" wire:model="filters.price">
+                                <label class="form-check-label ps-2" for="100to200">
+                                    $100 a $150
+                                </label>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" value="200" type="radio" name="pricefilter"
+                                    id="200above" wire:model="filters.price">
+                                <label class="form-check-label ps-2" for="200above">
+                                    Más de $150
+                                </label>
+                            </div>
+                        </article>
+                        <div>
+                            <h2>Otras personas buscaron:</h2>
+                            <div class="lista2"><a href="">Acondicionador</a></div>
+                            <div class="lista2"><a href="">Arcillas</a></div>
+                            <div class="lista2"><a href="">Cremas</a></div>
+                            <div class="lista2"><a href="">Jabón</a></div>
+                            <div class="lista2"><a href="">Luffa</a></div>
+                            <div class="lista2"><a href="">Mascotas</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 mb-3 ml-3">
+                    <div class="card mb-3 mx-auto mt-5">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="Imagenes/Catálogo/Acondicionador Portada.jpeg" class="img-fluid rounded"
+                                    style="object-fit: fill; height: 100%;" alt="...">
+                            </div>
+                            <div class="col-md-5 mt-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revitalizante</h5>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                        <span>Extracto de avena</span>
+                                        <span class="text-primary"> • </span>
+                                        <span>Inulina</span>
+                                        <span class="text-primary"></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                        <span>Aceite de avellana</span>
+                                        <span class="text-primary"> • </span>
+                                        <span>Hibiscus (jamaica)</span>
+                                    </div>
+                                    <p class="card-text"> Para: TODO TIPO DE PELO, ESPECIALMENTE NORMAL Y MIXTO.
+                                        <br>
+                                        Vas a sentir como tu cabello vuelve a la vida, el nombre le hace total
+                                        justicia.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3">
+                                <div>
+                                    <h4>Presentaciones:</h4>
+                                </div>
+                                <h6 class="text-success-emphasis">Producto Nuevo</h6>
+                                <div class="d-flex flex-column">
+                                    <div class="options mt-3">
+                                        <input type="radio" name="size1" value="small" id="small" checked>
+                                        <label class="label" for="small">
+                                            <div><b>50 gr.</b></div>
+                                            <div><b>$48 MXN</b></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="options">
+                                        <input type="radio" name="size1" value="large" id="large">
+                                        <label class="label" for="large">
+                                            <div><b>100 gr.</b></div>
+                                            <div><b>$98 MXN</b></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="flex-row align-items-center mt-3">
+                                    <h5>Cantidad:</h5>
+                                    <div class="botones">
+                                        <ion-icon name="remove-circle" class="icono-color"></ion-icon>
+                                        <div class="cantidad">0</div>
+                                        <ion-icon name="add-circle" class="icono-color"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row mt-3">
+                                    <button class="btn btn-m" type="button">Agregar Al Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
     </main>
-    <div id="ShampoosSólidosContainer"></div>
-    <script src="Java/productos.js"></script>
+
     <footer>
         <div class="container-fluid">
             <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center">
@@ -100,12 +226,12 @@
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h5 mb-3 text-footer">Servicio Al Cliente</p>
                     <div class="mb-2">
-                        <a class="nav-link" class="text-decoration-none" href="#">Términos y
+                        <a class="nav-link" class="text-decoration-none" href="#">Términos Y
                             Condiciones.</a>
                     </div>
                     <div class="mb-2">
                         <a class="nav-link" class="text-decoration-none" href="#">Políticas
-                            De Devolución y Reembolso.</a>
+                            De Devolución Y Reembolso.</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
@@ -133,12 +259,12 @@
                 </div>
                 <div
                     class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pb-1 border-top">
-                    <p class="col-md-4 mb-0 text-footer">Diseñado por: <b>Militza Flores</b> </p>
+                    <p class="col-md-4 mb-0 text-footer">Diseñado Por: <b>Militza Flores</b> </p>
                     <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
                         <a href="./index.html"><img class="bi me-2" src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ"
                                 width="70" height="70"></a>
                     </p>
-                    <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos los Derechos
+                    <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos Los Derechos
                         Reservados.</p>
                 </div>
             </div>
