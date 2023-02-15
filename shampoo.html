@@ -57,7 +57,8 @@
                             <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                                 <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
-                                <span class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
+                                <span id="cartAmount"
+                                    class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
                             </button>
                         </div>
                         <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
@@ -82,9 +83,8 @@
             </div>
         </div>
     </header>
-
     <main>
-        <div class="container" id="tiendashampoo">
+        <div class="container">
             <div class="row h-100">
                 <div class="col-md-3">
                     <div id="menu-lateral" class="h-100 mr-3">
@@ -142,9 +142,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-9 mb-3 ml-3">
-                    <div class="card mb-3 mx-auto mt-5">
+                <div class="col-md-9 mb-3 ml-3" id="tiendashampoo">
+                    <!-- <div class="card mx-auto mt-5">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="Imagenes/Catálogo/Acondicionador Portada.jpeg" class="img-fluid rounded"
@@ -154,15 +153,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Revitalizante</h5>
                                     <div class="mt-1 mb-0 text-muted small">
-                                        <span>Extracto de avena</span>
-                                        <span class="text-primary"> • </span>
-                                        <span>Inulina</span>
-                                        <span class="text-primary"></span>
-                                    </div>
-                                    <div class="mb-2 text-muted small">
-                                        <span>Aceite de avellana</span>
-                                        <span class="text-primary"> • </span>
-                                        <span>Hibiscus (jamaica)</span>
+                                        <p><span>Extracto de avena • Inulina <br> Aceite de avellana • Hibiscus
+                                                (jamaica)</span></p>
                                     </div>
                                     <p class="card-text"> Para: TODO TIPO DE PELO, ESPECIALMENTE NORMAL Y MIXTO.
                                         <br>
@@ -183,7 +175,6 @@
                                             <div><b>$48 MXN</b></div>
                                         </label>
                                     </div>
-
                                     <div class="options">
                                         <input type="radio" name="size1" value="large" id="large">
                                         <label class="label" for="large">
@@ -205,7 +196,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -295,9 +286,8 @@
             }(window, document);
         </script>
     </footer>
-    <script>
-        src = "tiendashampoo.js"
-    </script>
 </body>
+<script src="./JS/shampoodata.js"></script>
+<script src="./JS/tiendashampoo.js"></script>
 
 </html>
