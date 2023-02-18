@@ -47,7 +47,7 @@ function cargarProductosCarrito() {
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad} MXN</p>
                 </div>
-                <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
+                <button class="carrito-producto-eliminar" id="${producto.id}"><ion-icon name="trash"></ion-icon></button>
             `;
 
             contenedorCarritoProductos.append(div);

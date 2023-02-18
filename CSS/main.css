@@ -220,7 +220,7 @@ a {
 .carrito-producto-eliminar {
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color: var(--clr-Principal);
     cursor: pointer;
 }
 
