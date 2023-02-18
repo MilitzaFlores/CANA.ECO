@@ -5,31 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito De Compras</title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>CANÁ.ECO</title>
+    <link rel="icon" href="./Imagenes/Logo CANÁ.png" type="image/png" sizes="32x32">
+    <link href="https://fonts.cdnfonts.com/css/raleway-5?styles=27268" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gadugi?styles=66187" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="index.html">
-            <h2>Clothing Store</h2>
-        </a>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">
+                                Productos
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item" href="./Productos/shampoo.html">Shampoo Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/acondicionador.html">Acondicionador Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/arcillas.html">Cuidado Facial</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/crema.html">Cuidado Corporal</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/ecologicos.html">Productos Ecológicos</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/mascotas.html">Mascotas</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/paquetes.html">Paquetes</a></li>
+                            </ul> -->
+                        <li class="nav-item"><a class="nav-link" href="./conocenos.html">Conócenos</a>
+                        <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctanos</a></li>
+                        </li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        </li> -->
+                        <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
+                                    type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+        </nav>
+    </header>
 
-        <a href="cart.html">
-            <div class="cart">
-                <i class="bi bi-cart2"></i>
-                <div id="cartAmount" class="cartAmount">0</div>
+    <main>
+
+        <div class="wrapper">
+            <!-- <div class="header-mobile">
+                <button class="open-menu" id="open-menu">
+                    <h1 class="logo">Categorías</h1>
+                    <ion-icon name="list"></ion-icon>
+                </button>
+            </div> -->
+            <div class="aside">
+                <button class="close-menu" id="close-menu">
+                    <ion-icon name="list"></ion-icon>
+                </button>
+                <div>
+                    <h1 class="logo" id="textosalida">CANÁ</h1>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a class="boton-menu boton-volver" href="./productos.html">
+                                <ion-icon name="return-down-back"></ion-icon>Seguir comprando
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton-menu boton-carrito active" href="./carrito.html">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon> Carrito
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <footer>
+                    <p class="texto-final-aside">Belleza Sustentable</p>
+                </footer>
             </div>
-        </a>
+            <div class="main">
+                <h2 class="titulo-principal">Carrito De Compras</h2>
+                <div class="contenedor-carrito">
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <ion-icon name="sad-outline"></ion-icon></p>
+    
+                    <div id="carrito-productos" class="carrito-productos disabled">
 
+                    </div>
+    
+                    <div id="carrito-acciones" class="carrito-acciones disabled">
+                        <div class="carrito-acciones-izquierda">
+                            <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                        </div>
+                        <div class="carrito-acciones-derecha">
+                            <div class="carrito-acciones-total">
+                                <p>Total:</p>
+                                <p id="total"></p>
+                            </div>
+                            <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
+                        </div>
+                    </div>
+    
+                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas Gracias Por Tu Compra. <ion-icon name="happy-outline"></ion-icon></p>
+    
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/carrito.js"></script>
+        <script src="./js/menu.js"></script>
+    </main>
     </div>
 
-    <div id="label" class="text-center"></div>
-
-    <div class="shopping-cart" id="shopping-cart"></div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h4 ms-3 mb-3 text-footer">CANÁ</p>
+                    <div class="mb-2">
+                        <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img src="./Imagenes/QR CANÁ.jpeg"
+                                alt="QR CANÁ" width="120" height="120"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3 text-footer">Servicio Al Cliente</p>
+                    <div class="mb-2">
+                        <a class="nav-link" class="text-decoration-none" href="#">Términos Y
+                            Condiciones.</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="nav-link" class="text-decoration-none" href="#">Políticas
+                            De Devolución Y Reembolso.</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="ms-3 mb-2">
+                        <img src="./Imagenes/Consume Local.png" alt="Marca Mexicana" width="145" height="155"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h4 ms-3 mb-3 text-footer">Síguenos</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="nav-link" href="https://www.instagram.com/cana.eco/" class="bi"
+                                width="24" height="24" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></li>
+                        <li class="ms-3"><a class="nav-link" href="https://www.tiktok.com/@cana.eco" class="bi"
+                                width="24" height="24" target="_blank">
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </a></li>
+                        <li class="ms-3"><a class="nav-link"
+                                href="https://www.facebook.com/profile.php?id=100064151620372" class="bi" width="24"
+                                height="24" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></li>
+                    </ul>
+                </div>
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pb-1 border-top">
+                    <p class="col-md-4 mb-0 text-footer">Diseñado Por: <b>Militza Flores</b> </p>
+                    <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+                        <a href="./index.html"><img class="bi me-2" src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ"
+                                width="70" height="70"></a>
+                    </p>
+                    <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos Los Derechos
+                        Reservados.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Chatbot -->
+        <script type="text/javascript">
+            ! function (t, e) {
+                t.artibotApi = {
+                    l: [],
+                    t: [],
+                    on: function () {
+                        this.l.push(arguments)
+                    },
+                    trigger: function () {
+                        this.t.push(arguments)
+                    }
+                };
+                var a = !1,
+                    i = e.createElement("script");
+                i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e
+                    .getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload =
+                    function () {
+                        if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this
+                                .readyState)) {
+                            new window.ArtiBot({
+                                i: "ab614785-af10-45f5-b8ed-cc43f3952cff"
+                            });
+                            a = !0
+                        }
+                    }
+            }(window, document);
+        </script>
+    </footer>
 </body>
-<script src="src/Data.js"></script>
-<script src="src/cart.js"></script>
 
 </html>

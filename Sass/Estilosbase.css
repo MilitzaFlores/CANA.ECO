@@ -1,10 +1,18 @@
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: font-size;
+  color: color;
+  margin-bottom: margin-bottom;
+}
 .img-style, img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px #ccc;
 }
 
 .my-element {
-  font-family: Arial;
+  font-family: gadugi;
   font-size: 14px;
   color: #333;
   text-align: center;

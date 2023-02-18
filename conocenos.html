@@ -34,32 +34,30 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">
                                 Productos
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link dropdown-item" href="#">Shampoo Sólido</a></li>
-                                <li><a class="nav-link dropdown-item" href="#">Acondicionador Sólido</a></li>
-                                <li><a class="nav-link dropdown-item" href="#">Cuidado Facial</a></li>
-                                <li><a class="nav-link dropdown-item" href="#">Cuidado Corporal</a></li>
-                                <li><a class="nav-link dropdown-item" href="#">Productos Ecológicos</a></li>
-                                <li><a class="nav-link dropdown-item" href="#">Mascotas</a></li>
-                                <li><a class="nav-link dropdown-item" href="#">Paquetes</a></li>
-                            </ul>
-                        <li class="nav-item"><a class="nav-link" href="./conócenos.html">Conócenos</a>
-                        <li class="nav-item"><a class="nav-link" href="./contáctanos.html">Contáctanos</a></li>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="nav-link dropdown-item" href="./Productos/shampoo.html">Shampoo Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/acondicionador.html">Acondicionador Sólido</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/arcillas.html">Cuidado Facial</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/crema.html">Cuidado Corporal</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/ecologicos.html">Productos Ecológicos</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/mascotas.html">Mascotas</a></li>
+                                <li><a class="nav-link dropdown-item" href="./Productos/paquetes.html">Paquetes</a></li>
+                            </ul> -->
+                        <li class="nav-item"><a class="nav-link" href="./conocenos.html">Conócenos</a>
+                        <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctanos</a></li>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        <!-- <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
+                        </li> -->
+                        <li>
+                            <a class="nav-item btn carrito nav-link" href="./carrito.html">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon><span id="numero"
+                                    class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
+                            </a>
                         </li>
-                        <div class="nav-item d-inline-block">
-                            <button class="btn carrito nav-link" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
-                                <span class="badge badge-light rounded-bottom-pill rounded-top-pill align-top">0</span>
-                            </button>
-                        </div>
                         <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
                                     type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
                         </li>
@@ -67,26 +65,12 @@
                 </div>
                 </ul>
         </nav>
-        <!-- Offcanvas Carrito -->
-        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito De Compras</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <p>Artículos</p>
-            </div>
-            <div class="offcanvas-body">
-                <p>Guardados</p>
-            </div>
-        </div>
     </header>
 
     <main>
         <div class="Fondo Dinámico"></div>
-        
-        <div>
+
+        <div class="text-justify p-5" style="max-width: 950px; margin: 0 auto;">
             <h1>Nuestra Historia</h1>
             <p>Caná nace de la necesidad de hacer de los productos de cosmética natural y artesanal productos más
                 accesibles para un mayor número de personas.
@@ -118,6 +102,13 @@
                 posibles para compensar su huella en el planeta)
                 Mi regla es: Siempre usa lo que ya tienes.
             </p>
+            <div>
+                <p>¿Dónde nos ubicamos?</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.9729663271723!2d-98.21383175!3d19.022104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0b13a60fa2b%3A0x134f4cbf5429bcbd!2sCentro%20Comercial%20Plaza%20Cristal%2C%20Puebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1676736182292!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </main>
 

@@ -1,0 +1,232 @@
+[
+    {
+        "id": "panditas",
+        "titulo": "Panditas",
+        "imagen": "Imagenes/catalogo/Crema-Panditas.jpg",
+        "categoria": {
+            "nombre": "Lo Más Vendido",
+            "id": "favoritos"
+        },
+        "precio": 76
+    },
+    {
+        "id": "lavandaromero",
+        "titulo": "Lavanda y Romero",
+        "imagen": "Imagenes/catalogo/Shampoo-Control-Caida-1.jpg",
+        "categoria": {
+            "nombre": "Lo Más Vendido",
+            "id": "favoritos"
+        },
+        "precio": 48
+    },
+    {
+        "id": "revitalizante",
+        "titulo": "Revitalizante",
+        "imagen": "Imagenes/catalogo/Shampoo-Revitalizante-2.jpg",
+        "categoria": {
+            "nombre": "Lo Más Vendido",
+            "id": "favoritos"
+        },
+        "precio": 48
+    },
+    {
+        "id": "controlcaida",
+        "titulo": "Control Caída",
+        "imagen": "Imagenes/catalogo/Shampoo-Control-Caida.jpg",
+        "categoria": {
+            "nombre": "Lo Más Vendido",
+            "id": "favoritos"
+        },
+        "precio": 48
+    },
+    {
+        "id": "karite",
+        "titulo": "Acondicionador Karité",
+        "imagen": "Imagenes/catalogo/Acondicionador-Portada.jpeg",
+        "categoria": {
+            "nombre": "Lo Más Vendido",
+            "id": "favoritos"
+        },
+        "precio": 98
+    },
+    {
+        "id": "revitalizante",
+        "titulo": "Revitalizante",
+        "imagen": "./Imagenes/Catalogo/Shampoo-Revitalizante.jpg",
+        "categoria": {
+            "nombre": "Shampoo Sólido",
+            "id": "shampoo"
+        },
+        "precio": 48
+    },
+    {
+        "id": "controlcaida",
+        "titulo": "Control Caída",
+        "imagen": "./Imagenes/Catalogo/Shampoo-Control-Caida-2.jpg",
+        "categoria": {
+            "nombre": "Shampoo Sólido",
+            "id": "shampoo"
+        },
+        "precio": 48
+    },
+    {
+        "id": "lavandaromero",
+        "titulo": "Lavanda y Romero",
+        "imagen": "./Imagenes/Catalogo/Shampoo-Lavanda-Romero.jpg",
+        "categoria": {
+            "nombre": "Shampoo Sólido",
+            "id": "shampoo"
+        },
+        "precio": 48
+    },
+    {
+        "id": "avenacoco",
+        "titulo": "Avena y Coco",
+        "imagen": "./Imagenes/Catalogo/Shampoo-Avena-y-Coco.jpg",
+        "categoria": {
+            "nombre": "Shampoo Sólido",
+            "id": "shampoo"
+        },
+        "precio": 48
+    },
+    {
+        "id": "controlcaida",
+        "titulo": "Control Caída",
+        "imagen": "./Imagenes/Catalogo/Shampoo-Control-Caida-2.jpg",
+        "categoria": {
+            "nombre": "Shampoo Sólido",
+            "id": "shampoo"
+        },
+        "precio": 48
+    },
+    {
+        "id": "mangoaloe",
+        "titulo": "Mango y Aloe",
+        "imagen": "./Imagenes/Catalogo/Shampoo-Mango-Aloe.jpg",
+        "categoria": {
+            "nombre": "Shampoo Sólido",
+            "id": "shampoo"
+        },
+        "precio": 48
+    },
+    {
+        "id": "karite",
+        "titulo": "Acondicionador Karité",
+        "imagen": "Imagenes/catalogo/Acondicionador-Karité.jpg",
+        "categoria": {
+            "nombre": "Acondicionador Sólido",
+            "id": "acondicionador"
+        },
+        "precio": 98
+    },
+    {
+        "id": "cacao",
+        "titulo": "Acondicionador Cacao",
+        "imagen": "Imagenes/catalogo/Acondicionador-Cacao.jpg",
+        "categoria": {
+            "nombre": "Acondicionador Sólido",
+            "id": "acondicionador"
+        },
+        "precio": 98
+    },
+    {
+        "id": "blanca",
+        "titulo": "Arcilla Blanca",
+        "imagen": "Imagenes/catalogo/Arcilla-Blanca.jpg",
+        "categoria": {
+            "nombre": "Cuidado Facial",
+            "id": "arcillas"
+        },
+        "precio": 30
+    },
+    {
+        "id": "bentonita",
+        "titulo": "Arcilla Bentonita",
+        "imagen": "Imagenes/catalogo/Arcilla-Bentonita.jpg",
+        "categoria": {
+            "nombre": "Cuidado Facial",
+            "id": "arcillas"
+        },
+        "precio": 30
+    },
+    {
+        "id": "verde",
+        "titulo": "Arcilla Verde",
+        "imagen": "Imagenes/catalogo/Arcilla-Verde.jpg",
+        "categoria": {
+            "nombre": "Cuidado Facial",
+            "id": "arcillas"
+        },
+        "precio": 30
+    },
+    {
+        "id": "cremahumectante",
+        "titulo": "Crema Humectante",
+        "imagen": "Imagenes/catalogo/Crema-Humectante.jpg",
+        "categoria": {
+            "nombre": "Cuidado Corporal",
+            "id": "cremas"
+        },
+        "precio": 95
+    },
+    {
+        "id": "panditas",
+        "titulo": "Panditas",
+        "imagen": "Imagenes/catalogo/Crema-Panditas.jpg",
+        "categoria": {
+            "nombre": "Cuidado Corporal",
+            "id": "cremas"
+        },
+        "precio": 45
+    },
+    {
+        "id": "cepillobambu",
+        "titulo": "Cepillo de Bambú",
+        "imagen": "Imagenes/catalogo/Cepillo-Arcoiris.jpg",
+        "categoria": {
+            "nombre": "Productos Ecológicos",
+            "id": "variados"
+        },
+        "precio": 30
+    },
+    {
+        "id": "jabonmanos",
+        "titulo": "Jabón de Manos",
+        "imagen": "Imagenes/catalogo/Jabón-de-Manos.jpg",
+        "categoria": {
+            "nombre": "Productos Ecológicos",
+            "id": "variados"
+        },
+        "precio": 18
+    },
+    {
+        "id": "luffa",
+        "titulo": "Luffa",
+        "imagen": "Imagenes/catalogo/Luffa.jpg",
+        "categoria": {
+            "nombre": "Productos Ecológicos",
+            "id": "variados"
+        },
+        "precio": 7
+    },
+    {
+        "id": "shampoopeludos",
+        "titulo": "Shampoo Peludos",
+        "imagen": "Imagenes/catalogo/Peludos.jpg",
+        "categoria": {
+            "nombre": "Mascotas",
+            "id": "mascotas"
+        },
+        "precio": 120
+    },
+    {
+        "id": "peludos",
+        "titulo": "Paquete Peludos",
+        "imagen": "Imagenes/catalogo/Peludos-2.jpg",
+        "categoria": {
+            "nombre": "Paquetes",
+            "id": "paquetes"
+        },
+        "precio": 215
+    }
+]

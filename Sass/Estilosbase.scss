@@ -1,12 +1,11 @@
-// .img-style {
-//     border: 1px solid #ccc;
-//     box-shadow: 2px 2px 5px #ccc;
-// }
-
-// img {
-//     @extend .img-style;
-// }
-
+h1 {
+    $font-size: 24px;
+    $color: #333;
+    $margin-bottom: 20px;
+    font-size: $font-size;
+    color: $color;
+    margin-bottom: $margin-bottom;
+}
 
 @mixin text-style($font-family, $font-size, $color, $text-align, $font-weight, $text-decoration) {
     font-family: $font-family;
@@ -18,5 +17,5 @@
 }
 
 .my-element {
-    @include text-style(Arial, 14px, #333, center, bold, underline);
+    @include text-style(gadugi, 14px, #333, center, bold, underline);
 }
