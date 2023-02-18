@@ -52,7 +52,7 @@
     {
         "id": "revitalizante",
         "titulo": "Revitalizante",
-        "imagen": "./Imagenes/Catalogo/Shampoo-Revitalizante.jpg",
+        "imagen": "./Imagenes/catalogo/Shampoo-Revitalizante.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
@@ -62,7 +62,7 @@
     {
         "id": "controlcaida",
         "titulo": "Control Caída",
-        "imagen": "./Imagenes/Catalogo/Shampoo-Control-Caida-2.jpg",
+        "imagen": "./Imagenes/catalogo/Shampoo-Control-Caida-2.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
@@ -72,7 +72,7 @@
     {
         "id": "lavandaromero",
         "titulo": "Lavanda y Romero",
-        "imagen": "./Imagenes/Catalogo/Shampoo-Lavanda-Romero.jpg",
+        "imagen": "./Imagenes/catalogo/Shampoo-Lavanda-Romero.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
@@ -82,7 +82,7 @@
     {
         "id": "avenacoco",
         "titulo": "Avena y Coco",
-        "imagen": "./Imagenes/Catalogo/Shampoo-Avena-y-Coco.jpg",
+        "imagen": "./Imagenes/catalogo/Shampoo-Avena-y-Coco.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
@@ -92,7 +92,7 @@
     {
         "id": "controlcaida",
         "titulo": "Control Caída",
-        "imagen": "./Imagenes/Catalogo/Shampoo-Control-Caida-2.jpg",
+        "imagen": "./Imagenes/catalogo/Shampoo-Control-Caida-2.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
@@ -102,7 +102,7 @@
     {
         "id": "mangoaloe",
         "titulo": "Mango y Aloe",
-        "imagen": "./Imagenes/Catalogo/Shampoo-Mango-Aloe.jpg",
+        "imagen": "./Imagenes/catalogo/Shampoo-Mango-Aloe.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
