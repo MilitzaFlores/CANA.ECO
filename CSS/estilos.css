@@ -161,16 +161,12 @@ body {
 } */
 
 /* @media screen and (max-width: 1028px) {
-
-
     .gallery img {
         width: 200px;
     }
-
     .wide {
         grid-column: span 2;
     }
-
     .tall {
         grid-row: span 2;
     }
