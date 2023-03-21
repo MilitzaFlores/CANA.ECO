@@ -9,6 +9,7 @@
     <link rel="icon" href="./Imagenes/Logo CANÁ.png" type="image/png" sizes="32x32">
     <link href="https://fonts.cdnfonts.com/css/raleway-5?styles=27268" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/gadugi?styles=66187" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -82,7 +83,9 @@
                     <ul>
                         <li>
                             <a class="boton-menu boton-volver" href="./productos.html">
-                                <ion-icon name="return-down-back"></ion-icon>Seguir comprando
+                                <span class="material-symbols-outlined">
+                                    keyboard_return
+                                    </span>Seguir comprando
                             </a>
                         </li>
                         <li>
@@ -99,12 +102,14 @@
             <div class="main">
                 <h2 class="titulo-principal">Carrito De Compras</h2>
                 <div class="contenedor-carrito">
-                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <ion-icon name="sad-outline"></ion-icon></p>
-    
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <ion-icon name="sad-outline">
+                        </ion-icon>
+                    </p>
+
                     <div id="carrito-productos" class="carrito-productos disabled">
 
                     </div>
-    
+
                     <div id="carrito-acciones" class="carrito-acciones disabled">
                         <div class="carrito-acciones-izquierda">
                             <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
@@ -114,12 +119,15 @@
                                 <p>Total:</p>
                                 <p id="total"></p>
                             </div>
-                            <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
+                            <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar
+                                Ahora</button>
                         </div>
                     </div>
-    
-                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas Gracias Por Tu Compra. <ion-icon name="happy-outline"></ion-icon></p>
-    
+
+                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas Gracias Por Tu Compra. <ion-icon
+                            name="happy-outline"></ion-icon>
+                    </p>
+
                 </div>
             </div>
         </div>

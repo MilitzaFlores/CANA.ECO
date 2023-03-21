@@ -13,6 +13,7 @@ let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
 
 
 function cargarProductosCarrito() {
@@ -36,8 +37,8 @@ function cargarProductosCarrito() {
                     <h3>${producto.titulo}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
-                    <small>Cantidad</small>
-                    <p>${producto.cantidad}</p>
+                    <small>Cantidad </small>
+                    <p >${producto.cantidad}</p>
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
@@ -63,6 +64,14 @@ function cargarProductosCarrito() {
         contenedorCarritoComprado.classList.add("disabled");
     }
 
+}
+
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
 }
 
 cargarProductosCarrito();

@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+.ingredientes {
+    color: var(--clr-Secundario);
+    font-size: 0.7rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&display=swap');
 
 :root {
     --clr-Principal: #CC8661;
@@ -7,18 +12,37 @@
     --clr-Fondo: #F9F8EC;
     --clr-FondoSecundario: #FFF1DE;
     --clr-LogoFondo: #E5DAD3;
-    --clr-Aside-Texto: White; 
-    --clr-Texto: Black; 
+    --clr-Aside-Texto: White;
+    --clr-Texto: Black;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -108,7 +132,7 @@ a {
 
 .boton-carrito {
     margin-top: 2rem;
-} 
+}
 
 .boton-carrito.active {
     background-color: var(--clr-Principal);
@@ -142,18 +166,27 @@ a {
 .producto-imagen {
     max-width: 100%;
     border-radius: 1rem;
+    padding-bottom: .50rem;
+}
+
+.card {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border-radius: 1rem;
 }
 
 .producto-detalles {
-    background-color: var(--clr-LogoFondo);
+    text-align: center;
     color: var(--clr-Texto);
-    padding: .5rem;
-    border-radius: 1rem;
-    margin-top: -2rem;
+    padding-left: .75rem;
+    border-radius: .25rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: .25rem;
+    padding-top: .60rem;
+    gap: 1.3rem;
 }
 
 .producto-titulo {
@@ -166,7 +199,7 @@ a {
     color: var(--clr-Fondo);
     padding: .4rem;
     text-transform: uppercase;
-    border-radius: 2rem;
+    border-radius: 1rem;
     cursor: pointer;
     border: 2px solid var(--clr-Principal);
     transition: color .2s;
@@ -347,7 +380,8 @@ a {
         color: var(--clr-Secundario);
     }
 
-    .open-menu, .close-menu {
+    .open-menu,
+    .close-menu {
         background-color: transparent;
         color: var(--clr-Secundario);
         border: 0;
@@ -377,7 +411,7 @@ a {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
-    
+
 
 }
 

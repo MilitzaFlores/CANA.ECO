@@ -11,14 +11,13 @@ html {
 h1 {
     margin: 0;
     font-size: 3.5rem ;
-    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
 h2 {
     margin: 0;
     font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
+
     text-align: center;
     color: #334A61;
 }
@@ -26,20 +25,20 @@ h2 {
 h3 {
     margin: 0;
     font-size: 1.5rem;
-    font-family: 'Raleway', sans-serif;
+
     text-align: center;
     color: #334A61;
 }
 
 h5 {
     font-size: 1.5rem;
-    font-family: 'Raleway', sans-serif;
+
 }
 
 .Texto-Tarjetas {
     padding-top: 1.5%;
     font-size: 1rem;
-    font-family: 'Gadugi', sans-serif;
+
     text-align: center;
     text-justify: inter-word;
 }
@@ -52,7 +51,7 @@ h5 {
 .Texto-Principal {
     padding-top: 1%;
     font-size: 1.3rem;
-    font-family: 'Gadugi', sans-serif;
+
     margin-left: 60px;
     margin-right: 60px;
     text-align: justify;
@@ -62,7 +61,7 @@ h5 {
 .Texto-CuidadoBarras {
     padding-top: 1%;
     font-size: 1.5rem;
-    font-family: 'Gadugi', sans-serif;
+
     margin-left: 60px;
     margin-right: 60px;
     text-align: center;

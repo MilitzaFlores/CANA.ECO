@@ -11,11 +11,11 @@ fetch("./JS/productos.json")
         cargarProductos(productos);
     })
 
-
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
+let productosbuscar = document.querySelectorAll("mySearch");
 const numero = document.querySelector("#numero");
 
 
@@ -33,18 +33,57 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-            <div class="producto-detalles">
-                <h3 class="producto-precio">$${producto.precio} MXN</h3>
-                <p class="producto-titulo">${producto.titulo}</p>
+        <div class=" card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4 columnas">
+                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample-${producto.id}" aria-expanded="false"
+                        aria-controls="collapseWidthExample-${producto.id}">
+                        Detalles
+                    </button>
+                </p>
+                <div>
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
+                        <div class="card card-body" style="width: 500px;">
+                            ${producto.detalles}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 producto-detalles">
+                <p class="producto-titulo variante">${producto.titulo}</p>
+                <span class="ingredientes">${producto.ingredientes}</span>
+                <p class="producto-titulo">$${producto.precio} MXN</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
+        </div>
+    </div>
         `;
 
         contenedorProductos.append(div);
     })
 
     actualizarBotonesAgregar();
+}
+
+function myFunction() {
+    // Declare variables
+    var input, filter, productos, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    productos = document.querySelectorAll(".producto");
+
+    // Loop through all products, and hide those that don't match the search query
+    for (i = 0; i < productos.length; i++) {
+        const tituloProducto = productos[i].querySelector(".producto-titulo").textContent.toUpperCase();
+        if (tituloProducto.indexOf(filter) > -1) {
+            productos[i].style.display = "";
+        } else {
+            productos[i].style.display = "none";
+        }
+    }
 }
 
 
@@ -92,7 +131,7 @@ function agregarAlCarrito(e) {
         text: "Producto agregado",
         duration: 3000,
         close: true,
-        gravity: "top", 
+        gravity: "top",
         position: "right",
         stopOnFocus: true,
         style: {
@@ -102,8 +141,8 @@ function agregarAlCarrito(e) {
             fontSize: ".75rem"
         },
         offset: {
-            x: '6rem', 
-            y: '6rem' 
+            x: '6rem',
+            y: '6rem'
         },
         onClick: function () {}
     }).showToast();
