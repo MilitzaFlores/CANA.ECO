@@ -1,7 +1,3 @@
-setTimeout(function () {
-    document.getElementById("textosalida").innerHTML = "Cosmética Natural Al Alcance De Un Clic";
-}, 3000);
-
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
@@ -14,7 +10,6 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
-
 
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
@@ -31,26 +26,27 @@ function cargarProductosCarrito() {
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
             div.innerHTML = `
-                <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-                <div class="carrito-producto-titulo">
-                    <small>Título</small>
-                    <h3>${producto.titulo}</h3>
-                </div>
-                <div class="carrito-producto-cantidad">
-                    <small>Cantidad </small>
-                    <p >${producto.cantidad}</p>
-                </div>
-                <div class="carrito-producto-precio">
-                    <small>Precio</small>
-                    <p>$${producto.precio} MXN</p>
-                </div>
-                <div class="carrito-producto-subtotal">
-                    <small>Subtotal</small>
-                    <p>$${producto.precio * producto.cantidad} MXN</p>
-                </div>
-                <button class="carrito-producto-eliminar" id="${producto.id}"><ion-icon name="trash"></ion-icon></button>
-            `;
-
+            <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <div class="carrito-producto-titulo">
+                <small>Título</small>
+                <h6>${producto.titulo}</h6>
+            </div>
+            <div class="carrito-producto-cantidad">
+                <small>Cantidad </small>
+                <p>${producto.cantidad}</p>
+            </div>
+            <div class="carrito-producto-precio">
+                <small>Precio</small>
+                <p>$${producto.precio} MXN</p>
+            </div>
+            <div class="carrito-producto-subtotal">
+                <small>Subtotal</small>
+                <p>$${producto.precio * producto.cantidad} MXN</p>
+            </div>
+            <button class="carrito-producto-eliminar" id="${producto.id}">
+                <ion-icon class="trash" name="trash"></ion-icon>
+            </button>
+                `;
             contenedorCarritoProductos.append(div);
         })
 
@@ -63,7 +59,6 @@ function cargarProductosCarrito() {
         contenedorCarritoAcciones.classList.add("disabled");
         contenedorCarritoComprado.classList.add("disabled");
     }
-
 }
 
 function actualizarBotonesAgregar() {

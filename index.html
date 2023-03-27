@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CANÁ.ECO</title>
-    <link rel="icon" href="./Imagenes/Logo CANÁ.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./imagenes/cana-logo-2.png" type="image/png" sizes="32x32">
     <link href="https://fonts.cdnfonts.com/css/raleway-5?styles=27268" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/gadugi?styles=66187" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -15,8 +15,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="./CSS/estilos.css">
-    <!-- <link rel="stylesheet" href="./Sass/estilos.scss"> -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -24,7 +23,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ" width="75" height="75">
+                    <img src="./imagenes/cana-logo.png" alt="Logo CANÁ" width="75" height="75">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -35,52 +34,39 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./productos.html">
-                                Productos
-                            </a>
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="nav-link dropdown-item" href="./Productos/shampoo.html">Shampoo Sólido</a></li>
-                                <li><a class="nav-link dropdown-item" href="./Productos/acondicionador.html">Acondicionador Sólido</a></li>
-                                <li><a class="nav-link dropdown-item" href="./Productos/arcillas.html">Cuidado Facial</a></li>
-                                <li><a class="nav-link dropdown-item" href="./Productos/crema.html">Cuidado Corporal</a></li>
-                                <li><a class="nav-link dropdown-item" href="./Productos/ecologicos.html">Productos Ecológicos</a></li>
-                                <li><a class="nav-link dropdown-item" href="./Productos/mascotas.html">Mascotas</a></li>
-                                <li><a class="nav-link dropdown-item" href="./Productos/paquetes.html">Paquetes</a></li>
-                            </ul> -->
-                        <li class="nav-item"><a class="nav-link" href="./conocenos.html">Conócenos</a>
+                            <a class="nav-link" href="./productos.html">Tienda</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./conocenos.html">Conócenos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctanos</a></li>
-                        </li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a>
-                        </li> -->
-                        <li>
-                            <a class="nav-item btn carrito nav-link" href="./carrito.html">
-                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon><span id="numero"
-                                    class="badge badge-light rounded-bottom-pill rounded-top-pill align-top"></span>
+                        <!-- <li class="nav-item"><a class="nav-link" href="./reseñas.html">Reseñas</a></li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carrito.html">
+                                <ion-icon name="cart" style="font-size: 25px;"></ion-icon>
                             </a>
                         </li>
-                        <li class="buscar" class="nav-item"><a class="nav-link" class="buscar" href="#"><input
-                                    type="text" name="buscador" id="buscador" placeholder="buscar..." required></a>
+                        <li>
+                            <span id="numero"
+                            class="badge badge-light rounded-bottom-pill rounded-top-pill align-top numerito">0</span>
                         </li>
                     </ul>
                 </div>
-                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
         <div class="Fondo Dinámico"></div>
+
         <div class="banner-container">
-            <img src="./Imagenes/Banner Imagen 1.jpg" alt="Banner Izquierda" class="banner-img">
-            <img src="./Imagenes/Banner Imagen 2.jpg" alt="Banner Central" class="banner-img">
-            <img src="./Imagenes/Banner Imagen 3.jpg" alt="Banner Derecha" class="banner-img">
+            <img src="./imagenes/banner-imagen-1.jpg" alt="Banner Izquierda" class="banner-img">
+            <img src="./imagenes/banner-imagen-2.jpg" alt="Banner Central" class="banner-img">
+            <img src="./imagenes/banner-imagen-3.jpg" alt="Banner Derecha" class="banner-img">
         </div>
-        <img src="./Imagenes/Banner CANÁ.png" alt="CANÁ" class="center-img">
-        <div class="banner-text">
-            <h1>#BEZEROWASTE</h1>
-        </div>
+        <img src="./imagenes/banner-cana.png" alt="CANÁ" class="center-img">
+        <img src="./imagenes/banner-texto.png" alt="Slogan CANÁ" class="banner-texto">
 
         <div class="Texto-Principal-div">
-            <h2>Cosmética Natural: Una Nueva Forma De Cuidarte Y Proteger Al Planeta</h2>
+            <h1>Cosmética Natural: Una Nueva Forma De Cuidarte Y Proteger Al Planeta</h1>
             <p class="Texto-Principal">Todos nuestros productos son elaborados con ingredientes 100% naturales y
                 sustentables. Los artículos
                 insignia de nuestra marca son los shampoos y acondicionadores en barra, hechos para mejorar el aspecto y
@@ -94,11 +80,11 @@
         </div>
         <h2>Compromisos CANÁ</h2>
         <div class="grid-container">
-            <img src="./Imagenes/Valores Marca 1.png" alt="100% natural">
-            <img src="./Imagenes/Valores Marca 2.png" alt="Libre de crueldad">
-            <img src="./Imagenes/Valores Marca 3.png" alt="Hecho a mano">
-            <img src="./Imagenes/Valores Marca 4.png" alt="Sin parabenos">
-            <img src="./Imagenes/Valores Marca 5.png" alt="Biodegradable">
+            <img src="./imagenes/valores-marca-1.png" alt="100% natural">
+            <img src="./imagenes/valores-marca-2.png" alt="Libre de crueldad">
+            <img src="./imagenes/valores-marca-3.png" alt="Hecho a mano">
+            <img src="./imagenes/valores-marca-4.png" alt="Sin parabenos">
+            <img src="./imagenes/valores-marca-5.png" alt="Biodegradable">
         </div>
 
         <section id="información">
@@ -106,12 +92,12 @@
                 <div
                     class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3">
                     <div class="card" style="width: 24rem;">
-                        <img src="./Imagenes/Portada Catalogo.jpg" class="card-img-top" alt="Catálogo 2023">
+                        <img src="./imagenes/portada-catalogo.jpg" class="card-img-top" alt="Catálogo 2023">
                         <div class="card-body">
-                            <h3 class="card-title">¡Conoce Nuestro Catálogo!</h3>
+                            <h3>¡Conoce Nuestro Catálogo!</h3>
                             <p class="Texto-Tarjetas">¿Aún no lo has visto? <br> Descubre toda la gama de productos
-                                ecológicos 2023. </p>
-                            <button class="btn btn-lg btn-block" type="button"><a class="nav-link"
+                                ecológicos 2023.</p>
+                            <button class="btn btn-lg" type="button"><a class="nav-link"
                                     href="https://issuu.com/militza.flores/docs/cat_logo_can_" target="_blank"
                                     class="text-decoration-none">¡Vamos
                                     allá!</a></button>
@@ -121,32 +107,29 @@
                 <div
                     class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3">
                     <div class="card" style="width: 24rem;">
-                        <img src="./Imagenes/Crema Panditas Portada.jpeg" class="card-img-top"
+                        <img src="./imagenes/crema-panditas-portada.jpeg" class="card-img-top"
                             alt="Productos Populares">
                         <div class="card-body">
-                            <h3 class="card-title">Nuestros Consentidos</h3>
-                            <p class="Texto-Tarjetas">¡Sabemos que los vas a amar! <br> Dale un vistazo a los productos
-                                más populares de CANÁ.
-                            </p>
-                            <button class="btn btn-lg btn-block" type="button"><a class="nav-link"
-                                    href="./productos.html" target="_blank"
-                                    class="text-decoration-none">¡Vamos
-                                    allá!</a></button>
+                            <h3>Galería</h3>
+                            <p class="Texto-Tarjetas">¡Sabemos que te va a encantar! <br> Dale un vistazo a todas nuestras fotos.<br><br></p>
+                            <button class="btn btn-lg" type="button"><a class="nav-link" href="./galeria.html"
+                                    class="text-decoration-none">¡Vamos allá!</a>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div
                     class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3">
                     <div class="card" style="width: 24rem;">
-                        <img src="./Imagenes/catalogo/Peludos.jpg" class="card-img-top" alt="Mascotas">
+                        <img src="./imagenes/catalogo/peludos.jpg" class="card-img-top" alt="Mascotas">
                         <div class="card-body">
-                            <h3 class="card-title">Mascotas</h3>
+                            <h3>Mascotas</h3>
                             <p class="Texto-Tarjetas">Consiente a tu peludo con nuestra línea de shampoos sólidos,
                                 especialmente hechos para ellos.</p>
-                            <button class="btn btn-lg btn-block" type="button"><a class="nav-link"
-                                    href="./productos.html" target="_blank"
-                                    class="text-decoration-none">¡Vamos
-                                    allá!</a></button>
+                            <button class="btn btn-lg " type="button"><a class="nav-link" href="./productos.html"
+                                    target="_blank" class="text-decoration-none">¡Vamos
+                                    allá!</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -154,25 +137,27 @@
                     <div class="row">
                         <div class="col-lg-4 col-lg-6 d-flex flex-wrap justify-content-center align-items-center mb-3">
                             <div class="card text-bg-dark">
-                                <img src="./Imagenes/Nuevos Lanzamientos.jpeg" class="card-img opacity-50"
+                                <img src="./imagenes/nuevos-lanzamientos.jpeg" class="card-img opacity-50"
                                     alt="Productos Nuevos">
                                 <div class="card-img-overlay">
-                                    <p class="h5 mb-3" class="card-title">Nuevos Lanzamientos</p>
+                                    <p class="card-title mb-3 h5">Nuevos Lanzamientos</p>
                                     <p class="Texto-Tarjetas">¿Ya los probaste? <br> Para todo tipo de cabello. Nuestros
                                         shampoos
                                         sólidos CONTROL CAÍDA y REVITALIZANTE te harán sentir una fortaleza y vitalidad
-                                        en tu cabello como nunca la has experimentado.</p>
+                                        en tu cabello como nunca la has experimentado.
+                                    </p>
                                     <p class="Texto-Tarjetas"> <small> Mantente pendiente de nuestras actualizaciones.
                                             <br> Este
                                             solo es el comienzo de otras 2 grandes sorpresas que estamos preparando para
-                                            ti.</small></p>
+                                            ti.</small>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-lg-6 d-flex flex-wrap justify-content-center align-items-center mb-3">
                             <div>
                                 <video controls class="card-video">
-                                    <source src="./Imagenes/Beneficios Del Shampoo Sólido.mp4" type="video/mp4">
+                                    <source src="./imagenes/beneficios-del-shampoo-solido.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -184,10 +169,11 @@
         <div class="container-barras">
             <h2>¿Cómo cuidar de tu cosmética solida? </h2>
             <p class="Texto-CuidadoBarras">Aquí te dejamos unos tips para alargar la vida de tus productos CANÁ</p>
-            <div class="item-barras pt-0"><img src="./Imagenes/Consejos Barra CANÁ 1.png" alt="100% natural"></div>
-            <div class="item-barras pt-0"><img src="./Imagenes/Consejos Barra CANÁ 2.png" alt="Libre de crueldad"></div>
+            <div class="item-barras pt-0"><img src="./imagenes/consejos-barra-cana-1.png" alt="100% natural"></div>
+            <div class="item-barras pt-0"><img src="./imagenes/consejos-barra-cana-2.png" alt="Libre de crueldad"></div>
         </div>
     </main>
+    <script src="./js/productos.js"></script>
 
     <footer>
         <div class="container-fluid">
@@ -195,27 +181,27 @@
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h4 ms-3 mb-3 text-footer">CANÁ</p>
                     <div class="mb-2">
-                        <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img src="./Imagenes/QR CANÁ.jpeg"
+                        <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img src="./imagenes/qr-cana.jpeg"
                                 alt="QR CANÁ" width="120" height="120"></a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h5 mb-3 text-footer">Servicio Al Cliente</p>
                     <div class="mb-2">
-                        <a class="nav-link" class="text-decoration-none" href="#">Términos Y
-                            Condiciones.</a>
+                        <a class="nav-link texto-terminos" class="text-decoration-none" href="./terminos.html">Términos Y
+                            Condiciones</a>
                     </div>
                     <div class="mb-2">
-                        <a class="nav-link" class="text-decoration-none" href="#">Políticas
-                            De Devolución Y Reembolso.</a>
+                        <a class="nav-link texto-terminos" class="text-decoration-none" href="./reembolso.html">Políticas
+                            De Devolución Y Reembolso</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <div class="ms-3 mb-2">
-                        <img src="./Imagenes/Consume Local.png" alt="Marca Mexicana" width="145" height="155"></a>
+                        <img src="./imagenes/consume-local.png" alt="Marca Mexicana" width="145" height="155"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-3 redes-sociales">
                     <p class="h4 ms-3 mb-3 text-footer">Síguenos</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="nav-link" href="https://www.instagram.com/cana.eco/" class="bi"
@@ -237,11 +223,11 @@
                     class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pb-1 border-top">
                     <p class="col-md-4 mb-0 text-footer">Diseñado Por: <b>Militza Flores</b> </p>
                     <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
-                        <a href="./index.html"><img class="bi me-2" src="./Imagenes/CANÁ Logo.png" alt="Logo CANÁ"
+                        <a href="./index.html"><img class="bi me-2" src="./imagenes/cana-logo-2.png" alt="Logo CANÁ"
                                 width="70" height="70"></a>
                     </p>
                     <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos Los Derechos
-                        Reservados.</p>
+                        Reservados</p>
                 </div>
             </div>
         </div>
