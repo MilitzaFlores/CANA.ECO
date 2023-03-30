@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
 :root {
     --clr-Principal: #CC8661;
@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
 }
 
 html {
@@ -91,6 +92,8 @@ body {
 
 .nav-link {
     color: var(--clr-Fondo);
+    font-weight: 600;
+    font-size: 1.15rem;
 }
 
 .nav-link:hover {
@@ -117,13 +120,17 @@ body {
 }
 
 .numerito{
-    margin-bottom: 80%;
-    right: 20%;
+    margin-bottom: 85%;
+    right: 25%;
 }
 
 .btn {
     background-color: var(--clr-Principal) !important;
     color: var(--clr-Fondo);
+}
+
+.btn:hover {
+    color: var(--clr-Secundario);
 }
 
 ion-icon {
@@ -248,12 +255,40 @@ ion-icon:hover {
     justify-content: center;
 }
 
+.texto-titulo-contacto {
+    color: var(--clr-Secundario);
+    font-size: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.texto-contacto {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 19.5rem;
+    padding-right: 20rem;
+    text-align:justify;  
+    text-justify:inter-word;
+}
+
+.btn-formulario {
+    width: 30%;
+    margin-left: 30.8rem;
+}
+
 .text-footer {
     color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.qr {
+    border-radius: .3rem;
 }
 
 .texto-terminos{
-    font-size: .92rem;
+    font-size: .89rem;
 }
 
 .redes-sociales{

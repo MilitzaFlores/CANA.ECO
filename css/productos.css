@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
 :root {
     --clr-Principal: #CC8661;
@@ -65,6 +65,8 @@ h6 {
 
 .nav-link {
     color: var(--clr-Fondo);
+    font-weight: 600;
+    font-size: 1.15rem;
 }
 
 .nav-link:hover {
@@ -91,8 +93,8 @@ h6 {
 }
 
 .numerito{
-    margin-bottom: 80%;
-    right: 20%;
+    margin-bottom: 85%;
+    right: 25%;
 }
 
 ion-icon {
@@ -174,9 +176,9 @@ ion-icon:hover {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-weight: 600;
     padding: 1rem;
-    font-size: .85rem;
+    font-size: .95rem;
+    font-weight: 600;
     width: 100%;
 }
 
@@ -440,10 +442,15 @@ ion-icon:hover {
 
 .text-footer {
     color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.qr {
+    border-radius: .3rem;
 }
 
 .texto-terminos{
-    font-size: .92rem;
+    font-size: .89rem;
 }
 
 .redes-sociales{
