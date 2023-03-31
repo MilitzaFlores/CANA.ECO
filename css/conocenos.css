@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+:root {
+    --clr-Principal: #CC8661;
+    --clr-Secundario: #334A61;
+    --clr-SecundarioVariante: #36475B;
+    --clr-Fondo: #F9F8EC;
+    --clr-FondoSecundario: #FFF1DE;
+    --clr-LogoFondo: #E5DAD3;
+    --clr-Aside-Texto: White;
+    --clr-Texto: Black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+html {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+input,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--clr-Secundario)
+}
+
+h3 {
+    color: var(--clr-Secundario);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+body {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 101px;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(135deg, #F9F8EC, #FFF1DE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.navbar-light {
+    background-color: var(--clr-Principal);
+}
+
+.nav-link {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.nav-link:hover {
+    color: var(--clr-Secundario);
+}
+
+.nav-item {
+    position: relative;
+}
+
+.container-fluid {
+    background-color: var(--clr-Principal);
+    padding-left: 2%;
+    padding-right: 3%;
+}
+
+.badge {
+    font-size: small;
+    position: relative;
+}
+
+.badge-light {
+    background-color: var(--clr-Secundario);
+}
+
+.numerito {
+    margin-bottom: 85%;
+    right: 25%;
+}
+
+ion-icon {
+    color: var(--clr-Fondo);
+    font-size: 30px;
+}
+
+ion-icon:hover {
+    color: var(--clr-Secundario);
+}
+
+.tarjeta-transparente {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    overflow: hidden;
+    position: relative;
+    width: 70rem;
+    height: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    align-items: center;
+}
+
+.tarjeta-transparente:before {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.card-body {
+    color: #6f7886;
+    position: relative;
+    z-index: 2;
+}
+
+.card-text {
+
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+p {
+    font-size: 1.3rem;
+    padding-top: .7rem;
+}
+
+strong {
+    font-size: 1.3rem;
+}
+
+.card-img-top {
+    width: 70rem;
+    height: 35rem;
+}
+
+.imagen-mision {
+    width: 27rem;
+    height: 28rem;
+}
+
+.imagen-personas {
+    width: auto;
+    height: 43rem;
+}
+
+.text-footer {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.qr {
+    border-radius: .3rem;
+}
+
+.texto-terminos {
+    font-size: .89rem;
+}
+
+.redes-sociales {
+    margin-bottom: 1.5%;
+}
