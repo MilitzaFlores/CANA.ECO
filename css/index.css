@@ -45,17 +45,24 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2 {
-    font-size: 2rem;
+h1 {
     text-align: center;
-    color: var(--clr-Secundario)
+    color: var(--clr-Secundario);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--clr-Secundario);
+    font-weight: 600;
 }
 
 h3 {
     color: var(--clr-Secundario);
     font-size: 1.4rem;
     text-align: center;
+    font-weight: 600;
 }
 
 h5 {
@@ -172,15 +179,18 @@ ion-icon:hover {
 }
 
 .Texto-Principal-div {
-    padding-top: 3.5%;
+    padding-top: 6%;
     padding-bottom: 3%;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
 
 .Texto-Principal {
     padding-top: 1%;
-    font-size: 1.3rem;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-bottom: 4%;
+    font-size: 1.4rem;
+    margin-left: 11rem;
+    margin-right: 11rem;
     text-align: justify;
     text-justify: inter-word;
 }
