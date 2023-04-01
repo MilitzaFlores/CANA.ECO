@@ -133,16 +133,16 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
-.row-galeria {
+#row-galeria {
     display: flex;
     flex-wrap: wrap;
     display: grid;
     text-align: center;
     grid-template-rows: repeat(1, 4fr);
-    padding-top: 2%;
-    padding-bottom: 3%;
-    padding-left: 3.3%;
-    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    padding-left: 5rem;
+    padding-right: 4rem;
 }
 
 .column {
@@ -150,7 +150,7 @@ ion-icon:hover {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(4, 4fr);
-    grid-gap: 18px;
+    grid-gap: 1rem;
     padding-top: 3%;
 }
 
@@ -158,8 +158,8 @@ ion-icon:hover {
     margin-top: 8px;
     vertical-align: middle;
     border-radius: 1rem;
-    width: 20rem;
-    height: 20rem;
+    width: 17rem;
+    height: 17rem;
 }
 
 .zoomable {
