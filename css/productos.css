@@ -317,6 +317,8 @@ ion-icon:hover {
     cursor: pointer;
     border: 2px solid var(--clr-Principal);
     transition: color .2s;
+    width: 15rem;
+    margin-left: .8rem;
 }
 
 .producto-agregar:hover {
