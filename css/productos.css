@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --clr-Principal: #CC8661;
@@ -15,12 +15,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
 
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .material-symbols-outlined {
@@ -92,7 +93,7 @@ h6 {
     background-color: var(--clr-Secundario);
 }
 
-.numerito{
+.numerito {
     margin-bottom: 85%;
     right: 25%;
 }
@@ -120,7 +121,7 @@ ion-icon:hover {
     padding-bottom: 2%;
 }
 
-.aside {
+#aside {
     padding: 2rem;
     padding-right: 0;
     color: var(--clr-Secundario);
@@ -227,13 +228,7 @@ ion-icon:hover {
     padding-top: 18rem;
 }
 
-.texto-footer {
-    color: var(--clr-main-light);
-    font-size: .85rem;
-    padding-top: 15rem;
-}
-
-.main {
+#main {
     background-color: var(--clr-Fondo);
     margin: 1rem;
     margin-left: 0;
@@ -255,7 +250,7 @@ ion-icon:hover {
 }
 
 .row {
-    align-items: start;
+    align-items: center;
 }
 
 .producto-imagen {
@@ -451,11 +446,11 @@ ion-icon:hover {
     border-radius: .3rem;
 }
 
-.texto-terminos{
+.texto-terminos {
     font-size: .89rem;
 }
 
-.redes-sociales{
+.redes-sociales {
     margin-bottom: 1.5%;
 }
 
