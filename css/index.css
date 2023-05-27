@@ -102,6 +102,7 @@ body {
     color: var(--clr-Fondo);
     font-weight: 600;
     font-size: 1.15rem;
+    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -174,7 +175,7 @@ ion-icon:hover {
 .banner-texto {
     position: absolute;
     top: 80%;
-    left: 50%;
+    left: 52.5%;
     transform: translate(-50%, -50%);
     width: 60rem;
 }
@@ -233,7 +234,6 @@ ion-icon:hover {
     padding-bottom: 8%;
     font-size: 1rem;
     text-align: center;
-    text-justify: inter-word;
 }
 
 .card-img,
@@ -242,7 +242,27 @@ ion-icon:hover {
     height: 40rem;
 }
 
-.fondo {
+.card-button {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    font-size: 1.15rem;
+    transition: color 0.3s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-button:hover {
+    color: var(--clr-Secundario);
+}
+
+.btn-lg {
+    transition: transform 0.3s;
+}
+
+.btn-lg:hover {
+    transform: scale(1.2);
+}
+
+.tarjetas-fondo {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
