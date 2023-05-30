@@ -254,7 +254,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 45%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -264,33 +264,32 @@ ion-icon:hover {
     }
 
     #row-galeria img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
 
     .column {
-        grid-template-columns: 2fr 2fr;
         justify-content: center;
         column-gap: 15px;
-        margin-right: 55%;
     }
 
     .container-fluid-footer {
-        align-content: center;
+        align-items: flex-start;
         text-align: center;
-        padding-inline-end: 38%;
+        padding-inline-end: 5%;
     }
 
     .qr {
-        padding-inline-start: 8%;
+        padding-inline-start: 3%;
     }
 
     .marca-mexicana {
-        padding: 0.5%;
+        padding-inline-end: 2%;
     }
 
     .redes-sociales-iconos {
-        margin-inline-start: 55%;
+        margin-left: 135%;
+        padding-inline-start: 25px;
     }
 }
 
@@ -305,7 +304,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 7%;
+        margin-inline-end: 2%;
     }
 
     #numero {

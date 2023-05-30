@@ -235,7 +235,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 25%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -245,35 +245,30 @@ ion-icon:hover {
     }
 
     .banner-mascotas {
-        width: 67%;
-        margin-left: 5%;
+        width: 90%;
+        margin-left: 5.5%;
     }
 
     .titulo-mascotas {
-        width: 67%;
-        margin-left: 5%;
+        width: 90%;
+        margin-left: 5.5%;
     }
 
     .texto-mascotas {
-        width: 67%;
-        margin-left: 5%;
-    }
-
-    .row-galeria {
-        margin-right: 25%;
-        justify-content: center;
+        width: 90%;
+        margin-left: 5.5%;
     }
 
     .row-galeria img {
-        width: 160px;
-        height: 160px;
+        width: 100%;
+        height: 100%;
         justify-content: center;
     }
 
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
-        padding-inline-end: 25%;
+        padding-inline-end: 5%;
     }
 
     .qr {
@@ -281,11 +276,12 @@ ion-icon:hover {
     }
 
     .marca-mexicana {
-        padding-inline-end: 7%;
+        padding-inline-end: 4%;
     }
 
     .redes-sociales-iconos {
-        padding-inline-start: 20px;
+        margin-left: 125%;
+        padding-inline-start: 25px;
     }
 }
 
@@ -296,7 +292,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 5%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -322,7 +318,7 @@ ion-icon:hover {
     }
 
     .row-galeria {
-        margin-right: 3%;
+        margin-right: 1.5%;
         justify-content: center;
     }
 

@@ -207,7 +207,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 5%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -226,25 +226,26 @@ ion-icon:hover {
     }
 
     .clientes-imagen {
-        width: 100%;
-        margin-inline-start: 173%;
+        width: 90%;
+        margin-inline-start: 175%;
     }
 
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
-        padding-inline-start: 4%;
+        padding-inline-end: 5%;
     }
 
     .qr {
-        padding-inline-start: 3.5%;
+        padding-inline-start: 2%;
     }
 
     .marca-mexicana {
-        padding-inline-end: 7%;
+        padding-inline-end: 4%;
     }
 
     .redes-sociales-iconos {
+        margin-left: 125%;
         padding-inline-start: 25px;
     }
 }
@@ -256,7 +257,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 5%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 

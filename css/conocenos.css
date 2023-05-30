@@ -249,7 +249,7 @@ strong {
     }
 
     .navbar-toggler {
-        margin-inline-end: 27%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -259,13 +259,14 @@ strong {
     }
 
     .card-img {
+        width: 100%;
         height: 350px;
     }
 
     .tarjeta-transparente-responsive {
-        width: 65%;
+        width: 95%;
         height: 3%;
-        margin-left: 5.5%;
+        margin-left: 3%;
         justify-content: center;
     }
 
@@ -273,23 +274,22 @@ strong {
         width: 100%;
     }
 
-    .imagen-mision {
-        width: 100%;
-        height: 100%;
+    .tarjeta-transparente-responsive2 {
+        width: 168%;
+        height: 3%;
+        margin-left: 5%;
+        justify-content: center;
     }
 
-    .tarjeta-transparente-responsive2 {
-        width: 92%;
-        height: 3%;
-        margin-left: 8%;
-        justify-content: center;
+    .imagen-personas {
+        width: auto;
+        height: 50rem;
     }
 
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
-        padding-inline-end: 26%;
-        font-size: 10px;
+        padding-inline-end: 5%;
     }
 
     .qr {
@@ -297,11 +297,12 @@ strong {
     }
 
     .marca-mexicana {
-        padding-inline-end: 7%;
+        padding-inline-end: 4%;
     }
 
     .redes-sociales-iconos {
-        padding-inline-start: 20px;
+        margin-left: 125%;
+        padding-inline-start: 25px;
     }
 }
 
@@ -312,7 +313,7 @@ strong {
     }
 
     .navbar-toggler {
-        margin-inline-end: 5%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -328,7 +329,7 @@ strong {
     .tarjeta-transparente-responsive {
         width: 94%;
         height: 3%;
-        margin-left: 3%;
+        margin-left: 3.3%;
         justify-content: center;
     }
 

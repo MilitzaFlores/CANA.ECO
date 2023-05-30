@@ -202,7 +202,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 27.5%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
@@ -212,48 +212,23 @@ ion-icon:hover {
     }
 
     .texto-titulo-contacto {
-        padding-right: 25%;
+        padding-left: 5%;
     }
 
     .texto-contacto {
-        width: 111%;
+        width: 130%;
         padding-left: 7%;
         justify-content: center;
     }
 
     .form-control {
-        width: 70%;
-        left: 58%;
-    }
-
-    .label-responsive {
-        padding-right: 35%;
-    }
-
-    .label-opciones-responsive {
-        margin-right: 35%;
-    }
-
-    .formulario-responsive {
-        width: 28%;
-        margin-inline-start: 16.5%;
-        margin-right: 5%;
-    }
-
-    .boton-responsive {
-        margin-right: 35%;
-    }
-
-    .texto-contacto-terminos {
-        width: 60%;
-        margin-inline-start: 4%;
-        justify-content: center;
+        width: 100%;
     }
 
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
-        padding-inline-end: 19%;
+        padding-inline-end: 5%;
     }
 
     .qr {
@@ -261,10 +236,11 @@ ion-icon:hover {
     }
 
     .marca-mexicana {
-        padding-inline-end: 7%;
+        padding-inline-end: 4%;
     }
 
     .redes-sociales-iconos {
+        margin-left: 125%;
         padding-inline-start: 25px;
     }
 }
@@ -276,7 +252,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 30%;
+        margin-inline-end: 2%;
         size: 35px;
     }
 
