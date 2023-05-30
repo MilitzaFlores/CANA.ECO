@@ -15,7 +15,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <a class="navbar-brand" href="./index.html">
                     <img src="./imagenes/cana-logo.png" alt="Logo CANÁ" width="75" height="75">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler navbarTogglerDemo02" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -68,8 +68,9 @@
             <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Número de teléfono"
                 aria-describedby="defaultRegisterFormPhoneHelpBlock">
             <div>
-                <label>Motivo:</label>
-                <select class="browser-default custom-select mb-4" style="text-align: center;">
+                <label class="label-responsive">Motivo:</label>
+                <select class="browser-default custom-select mb-4 label-opciones-responsive"
+                    style="text-align: center;">
                     <option value="" selected>Pedidos</option>
                     <option value="1">Comentarios</option>
                     <option value="2">Dudas Generales</option>
@@ -78,21 +79,23 @@
             <div class="form-group pb-4">
                 <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="12"
                     placeholder="Escribe algo..."></textarea>
-                <button class="btn btn-formulario btn-block mt-2 mb-4" type="reset">Limpiar Formulario</button>
+                <button class="btn btn-formulario btn-block mt-2 mb-4 formulario-responsive" type="reset">Limpiar
+                    Formulario</button>
             </div>
-            <button class="btn btn-lg btn-block mt-4 mb-5 text-decoration-none" style="width: 25%;"
+            <button class="btn btn-lg btn-block mt-4 mb-5 text-decoration-none boton-responsive" style="width: 25%;"
                 type="submit">Enviar</button>
-            <p class="mb-3" style="padding-left: 1rem;">Al presionar <b>Enviar</b> estás de acuerdo con nuestro aviso de
+            <p class="mb-3 texto-contacto-terminos" style="padding-left: 1rem;">Al presionar <b>Enviar</b> estás de
+                acuerdo con nuestro aviso de
                 <b>Términos y Condiciones</b>.</p>
         </form>
     </main>
     <script src="./scripts/productos.js"></script>
 
     <footer>
-        <div class="container-fluid">
-            <div class="row d-flex flex-wrap p-5 py-3 pb-2 justify-content-center align-items-center">
+        <div class="container-fluid container-fluid-footer">
+            <div class="row d-flex flex-wrap p-5 pt-4 pb-2 justify-content-center align-items-center">
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <p class="h4 ms-3 mb-3 text-footer">CANÁ</p>
+                    <p class="h3 ms-3 mb-3 text-footer">CANÁ</p>
                     <div class="mb-2 qr">
                         <a href="https://qrcc.me/ro1sixx3xq8z?s=url" target="_blank"><img src="./imagenes/qr-cana.jpeg"
                                 alt="QR CANÁ" width="120" height="120" class="qr"></a>
@@ -111,7 +114,7 @@
                             De Devolución Y Reembolso</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-3 marca-mexicana">
                     <div class="ms-5 mb-2">
                         <img src="./imagenes/consume-local.png" alt="Marca Mexicana" width="145" height="155"></a>
                     </div>
@@ -119,15 +122,17 @@
                 <div class="col-xs-12 col-md-6 col-lg-3 redes-sociales">
                     <p class="h4 ms-3 mb-3 text-footer">Síguenos</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="nav-link" href="https://www.instagram.com/cana.eco/" class="bi"
-                                width="24" height="24" target="_blank">
+                        <li class="ms-3"><a class="nav-link redes-sociales-iconos"
+                                href="https://www.instagram.com/cana.eco/" class="bi" width="24" height="24"
+                                target="_blank">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a></li>
-                        <li class="ms-3"><a class="nav-link" href="https://www.tiktok.com/@cana.eco" class="bi"
-                                width="24" height="24" target="_blank">
+                        <li class="ms-3"><a class="nav-link redes-sociales-iconos"
+                                href="https://www.tiktok.com/@cana.eco" class="bi" width="24" height="24"
+                                target="_blank">
                                 <ion-icon name="logo-tiktok"></ion-icon>
                             </a></li>
-                        <li class="ms-3"><a class="nav-link"
+                        <li class="ms-3"><a class="nav-link redes-sociales-iconos"
                                 href="https://www.facebook.com/profile.php?id=100064151620372" class="bi" width="24"
                                 height="24" target="_blank">
                                 <ion-icon name="logo-facebook"></ion-icon>
@@ -138,8 +143,8 @@
                     class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pb-1 border-top">
                     <p class="col-md-4 mb-0 text-footer">Diseñado Por: <b>Militza Flores</b> </p>
                     <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
-                        <a href="./index.html"><img class="bi me-2" src="./imagenes/cana-logo-2.png" alt="Logo CANÁ"
-                                width="70" height="70"></a>
+                        <a href="./index.html"><img class="bi me-2 cana-footer" src="./imagenes/cana-logo-2.png"
+                                alt="Logo CANÁ" width="70" height="70"></a>
                     </p>
                     <p class="text-center text-footer">&copy; 2023 <b>CANÁ.ECO</b> - Todos Los Derechos
                         Reservados</p>

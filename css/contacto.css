@@ -153,32 +153,27 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
-.texto-inicio {
-    padding: 7% 10%;
+.texto-titulo-contacto {
+    color: var(--clr-Secundario);
+    font-size: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.texto-contacto {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 19.5rem;
+    padding-right: 20rem;
     text-align: justify;
-    font-size: 1.8rem;
-    padding-bottom: 0%;
+    text-justify: inter-word;
 }
 
-#clientes {
-    color: var(--clr-Texto);
-    padding-bottom: 10%;
-}
-
-.carousel-item {
-    padding: 7% 15%;
-}
-
-.clientes-imagen {
-    width: 11rem;
-    height: 11rem;
-    margin: 25px;
-}
-
-.clientes-texto {
-    padding-top: 4.5%;
-    font-weight: 600;
-    text-align: justify;
+.btn-formulario {
+    width: 30%;
+    margin-left: 30.8rem;
 }
 
 .text-footer {
@@ -207,7 +202,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 5%;
+        margin-inline-end: 27.5%;
         size: 35px;
     }
 
@@ -216,28 +211,53 @@ ion-icon:hover {
         margin-inline-start: 25.5%;
     }
 
-    .carousel-item {
-        width: 130%;
-        text-align: start;
+    .texto-titulo-contacto {
+        padding-right: 25%;
     }
 
-    .row {
-        gap: 40%;
+    .texto-contacto {
+        width: 111%;
+        padding-left: 7%;
+        justify-content: center;
     }
 
-    .clientes-imagen {
-        width: 100%;
-        margin-inline-start: 173%;
+    .form-control {
+        width: 70%;
+        left: 58%;
+    }
+
+    .label-responsive {
+        padding-right: 35%;
+    }
+
+    .label-opciones-responsive {
+        margin-right: 35%;
+    }
+
+    .formulario-responsive {
+        width: 28%;
+        margin-inline-start: 16.5%;
+        margin-right: 5%;
+    }
+
+    .boton-responsive {
+        margin-right: 35%;
+    }
+
+    .texto-contacto-terminos {
+        width: 60%;
+        margin-inline-start: 4%;
+        justify-content: center;
     }
 
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
-        padding-inline-start: 4%;
+        padding-inline-end: 19%;
     }
 
     .qr {
-        padding-inline-start: 3.5%;
+        padding-inline-start: 3%;
     }
 
     .marca-mexicana {
@@ -256,7 +276,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 5%;
+        margin-inline-end: 30%;
         size: 35px;
     }
 
@@ -265,24 +285,18 @@ ion-icon:hover {
         margin-inline-start: 25.5%;
     }
 
-    .clientes-imagen {
-        width: 100%;
-        padding-right: 25%;
-        padding-left: 10%;
+    .texto-contacto {
+        width: 170%;
+        padding-left: 14%;
     }
 
-    .imagen-angel {
-        width: 100%;
-        padding-right: 1%;
-        padding-left: 4%;
-        margin-inline-start: 19%;
+    .formulario-responsive {
+        width: 63%;
+        margin-left: 37%;
     }
 
-    .imagen-estrella {
-        width: 100%;
-        padding-right: 1%;
-        padding-left: 4%;
-        margin-inline-start: 19%;
+    .boton-responsive {
+        padding-left: 2.5%;
     }
 
     .container-fluid-footer {

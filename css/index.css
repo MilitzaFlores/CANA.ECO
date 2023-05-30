@@ -136,6 +136,7 @@ body {
 .btn {
     background-color: var(--clr-Principal) !important;
     color: var(--clr-Fondo);
+    transition: color 0.3s;
 }
 
 .btn:hover {
@@ -145,6 +146,7 @@ body {
 ion-icon {
     color: var(--clr-Fondo);
     font-size: 30px;
+    transition: color 0.3s;
 }
 
 ion-icon:hover {
@@ -175,7 +177,7 @@ ion-icon:hover {
 .banner-texto {
     position: absolute;
     top: 80%;
-    left: 52.5%;
+    left: 52%;
     transform: translate(-50%, -50%);
     width: 60rem;
 }
@@ -295,32 +297,9 @@ ion-icon:hover {
     justify-content: center;
 }
 
-.texto-titulo-contacto {
-    color: var(--clr-Secundario);
-    font-size: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-}
-
-.texto-contacto {
-    font-size: 1.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 19.5rem;
-    padding-right: 20rem;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.btn-formulario {
-    width: 30%;
-    margin-left: 30.8rem;
-}
-
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .qr {
@@ -328,125 +307,285 @@ ion-icon:hover {
 }
 
 .texto-terminos {
-    font-size: .89rem;
+    font-size: 1rem;
 }
 
 .redes-sociales {
     margin-bottom: 1.5%;
 }
 
-/* media queries */
-@media screen and (max-width: 850px) {
+/* media-queries */
 
-    .banner-img,
-    .center-img,
-    .banner-texto,
-    .img-fluid {
-        width: 100%;
-        height: auto;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(3, 5fr);
-        grid-template-rows: auto;
-        justify-items: center;
-    }
-
-    .card-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: contain;
-        width: auto;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    .banner-img,
-    .center-img,
-    .banner-texto,
-    .img-fluid {
-        width: 100%;
-        height: auto;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 5fr);
-        grid-template-rows: auto;
-        justify-items: center;
-    }
-
-    .card-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: contain;
-        width: auto;
-        height: auto;
-        padding: 3% 2%;
-    }
-
-    .card-img {
-        text-align: center;
-        width: auto;
-        height: auto;
-    }
-
-    .card-video {
-        text-align: center;
-        width: 450px;
-        height: 600px;
-    }
-
-    .item-barras {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 400px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 968px) {
     h1 {
         text-align: center;
     }
 
-    .navbar-custom {
+    .navbar-toggler {
+        margin-inline-end: 23%;
+        size: 35px;
+    }
+
+    #numero {
+        margin-bottom: 4%;
+        margin-inline-start: 25.5%;
+    }
+
+    .banner-img,
+    .img-fluid {
+        width: 100%;
         height: auto;
+    }
+
+    .center-img {
+        width: 100%;
+        padding-right: 17%;
+        height: auto;
+        top: 40%;
+    }
+
+    .banner-texto {
+        width: 105%;
+        height: auto;
+        top: 65%;
+        padding-right: 20.5%;
+    }
+
+    .Texto-Principal-div {
+        text-align: center;
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 21%;
+        margin-top: 15px;
+    }
+
+    .Texto-Principal {
+        text-align: justify;
+        margin: 0;
+        margin-left: 5%;
+        margin-right: 21%;
+        margin-top: 15px;
+    }
+
+    .grid-texto-responsive {
+        margin-right: 15%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 20%;
+    }
+
+    .grid-container img.grid-container-responsive {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        width: 50%;
+        margin-left: 23%;
+        align-content: center;
+    }
+
+    #información {
+        padding-right: 20%;
+        padding-left: 4%;
+    }
+
+    .card-responsive-catalogo,
+    .card-responsive-galeria,
+    .card-responsive-mascotas {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .card-img {
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .card-video {
+        flex-basis: 100%;
+        width: 140%;
+        padding-right: 40%;
+        margin-top: 23%;
+    }
+
+    .titulo-cuidadobarras {
+        text-align: center;
+        margin-right: 20%;
+        margin-left: 5%;
+    }
+
+    .Texto-CuidadoBarras {
+        text-align: center;
+        margin-right: 25%;
+        margin-top: 15px;
+    }
+
+    .item-barras {
+        width: 100%;
+        margin-right: 16%;
+    }
+
+    #reembolso {
+        margin-inline-end: 21%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 19%;
+    }
+
+    .qr {
+        padding-inline-start: 3%;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: 7%;
+    }
+
+    .redes-sociales-iconos {
+        padding-inline-start: 25px;
+    }
+}
+
+/* Celular */
+@media (min-width: 400px) and (max-width: 767.98px) {
+    h1 {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-inline-end: 30%;
+        size: 35px;
+    }
+
+    #numero {
+        margin-bottom: 4%;
+        margin-inline-start: 25.5%;
+    }
+
+    .banner-img,
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .center-img {
+        width: 100%;
+        height: auto;
+        top: 30%;
+    }
+
+    .banner-texto {
+        width: 104%;
+        height: auto;
+        top: 50%;
+        padding-right: 4%;
+    }
+
+    .Texto-Principal-div {
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-top: 15px;
+    }
+
+    .Texto-Principal {
+        text-align: justify;
+        margin: 0 auto;
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-top: 15px;
     }
 
     .grid-container {
         grid-template-columns: repeat(1, 5fr);
         grid-template-rows: auto;
-        justify-items: center;
+        justify-content: center;
+        padding-left: 8%;
+        padding-right: 5%;
     }
 
-    .card-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: contain;
-        width: auto;
-        height: auto;
-        padding: 3% 2%;
+    #información {
+        flex-basis: 100%;
+        width: 125%;
+        padding-right: 35%;
+        padding-left: 10%;
     }
 
     .card-img {
-        text-align: center;
-        width: auto;
-        height: auto;
+        flex-basis: 100%;
+        width: 135%;
+        padding-right: 35%;
     }
 
     .card-video {
-        text-align: center;
-        width: 450px;
-        height: 600px;
+        flex-basis: 100%;
+        width: 155%;
+        padding-right: 55%;
+        padding-top: 10%;
     }
 
-    .banner-img,
-    .center-img,
-    .banner-texto,
-    .img-fluid {
+    .Texto-CuidadoBarras {
+        text-align: justify;
+        margin: 0 auto;
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-top: 15px;
+    }
+
+    .item-barras {
         width: 100%;
-        height: auto;
+    }
+
+    #reembolso {
+        margin-right: 70%;
+    }
+
+    .politicas-responsive {
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        margin-right: 30%;
+    }
+
+    .politicas-reembolso-responsive {
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        margin-left: 20%;
+    }
+
+    .accordion {
+        width: 390px;
+    }
+
+    .container-fluid-footer {
+        text-align: center;
+    }
+
+    .qr {
+        margin-left: 2%;
+        margin-bottom: 15px;
+    }
+
+    .marca-mexicana {
+        margin-right: 10%;
+    }
+
+    .redes-sociales-iconos {
+        margin-left: 225%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 18%;
     }
 }

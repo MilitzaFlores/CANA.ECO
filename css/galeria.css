@@ -46,17 +46,24 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2 {
-    font-size: 2rem;
+h1 {
     text-align: center;
-    color: var(--clr-Secundario)
+    color: var(--clr-Secundario);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--clr-Secundario);
+    font-weight: 600;
 }
 
 h3 {
     color: var(--clr-Secundario);
     font-size: 1.4rem;
     text-align: center;
+    font-weight: 600;
 }
 
 h5 {
@@ -95,6 +102,7 @@ body {
     color: var(--clr-Fondo);
     font-weight: 600;
     font-size: 1.15rem;
+    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -120,14 +128,25 @@ body {
     background-color: var(--clr-Secundario);
 }
 
-.numerito{
+.numerito {
     margin-bottom: 85%;
     right: 25%;
+}
+
+.btn {
+    background-color: var(--clr-Principal) !important;
+    color: var(--clr-Fondo);
+    transition: color 0.3s;
+}
+
+.btn:hover {
+    color: var(--clr-Secundario);
 }
 
 ion-icon {
     color: var(--clr-Fondo);
     font-size: 30px;
+    transition: color 0.3s;
 }
 
 ion-icon:hover {
@@ -143,7 +162,7 @@ ion-icon:hover {
     padding-top: 3%;
     padding-bottom: 7%;
     padding-left: 5rem;
-    padding-right: 4rem;
+    padding-right: 3rem;
     scroll-snap-type: x mandatory;
     scroll-snap-align: center;
 }
@@ -207,42 +226,127 @@ ion-icon:hover {
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .qr {
     border-radius: .3rem;
 }
 
-.texto-terminos{
-    font-size: .89rem;
+.texto-terminos {
+    font-size: 1rem;
 }
 
-.redes-sociales{
+.redes-sociales {
     margin-bottom: 1.5%;
 }
 
-/* media queries */
-@keyframes flotar-item {
+/* media-queries */
 
-    0%,
-    100% {
-        transform: translateY(0);
+/* Tablet */
+@media (min-width: 768px) and (max-width: 968px) {
+    * {
+        font-size: 14px;
     }
 
-    50% {
-        transform: translateY(-20px);
+    h1 {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-inline-end: 45%;
+        size: 35px;
+    }
+
+    #numero {
+        margin-bottom: 4%;
+        margin-inline-start: 25.5%;
+    }
+
+    #row-galeria img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .column {
+        grid-template-columns: 2fr 2fr;
+        justify-content: center;
+        column-gap: 15px;
+        margin-right: 55%;
+    }
+
+    .container-fluid-footer {
+        align-content: center;
+        text-align: center;
+        padding-inline-end: 38%;
+    }
+
+    .qr {
+        padding-inline-start: 8%;
+    }
+
+    .marca-mexicana {
+        padding: 0.5%;
+    }
+
+    .redes-sociales-iconos {
+        margin-inline-start: 55%;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .column {
-        grid-template-columns: repeat(2, 2fr);
+/* Celular */
+@media (min-width: 400px) and (max-width: 767.98px) {
+    * {
+        font-size: 14px;
     }
-}
 
-@media screen and (max-width: 400px) {
+    h1 {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-inline-end: 7%;
+    }
+
+    #numero {
+        margin-bottom: 4%;
+        margin-inline-start: 25.5%;
+    }
+
+    #row-galeria {
+        justify-content: center;
+        margin-inline-end: 5%;
+    }
+
+    #row-galeria img {
+        width: 300px;
+        height: 300px;
+    }
+
     .column {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: auto;
+    }
+
+    .container-fluid-footer {
+        text-align: center;
+    }
+
+    .qr {
+        margin-left: 2%;
+        margin-bottom: 15px;
+    }
+
+    .marca-mexicana {
+        margin-right: 10%;
+    }
+
+    .redes-sociales-iconos {
+        margin-left: 260%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 18%;
     }
 }

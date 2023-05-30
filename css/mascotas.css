@@ -47,29 +47,27 @@ a {
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: 600;
     text-align: center;
-    color: var(--clr-Secundario)
+    color: var(--clr-Secundario);
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 1.45rem;
-    font-weight: 600;
+    font-size: 2.3rem;
     text-align: center;
-    color: var(--clr-Secundario)
+    color: var(--clr-Secundario);
+    font-weight: 600;
 }
 
 h3 {
     color: var(--clr-Secundario);
     font-size: 1.4rem;
     text-align: center;
+    font-weight: 600;
 }
 
-p,
-li {
-    font-size: 1.4rem;
-    font-weight: 500;
+h5 {
+    font-size: 1.5rem;
 }
 
 body {
@@ -104,6 +102,7 @@ body {
     color: var(--clr-Fondo);
     font-weight: 600;
     font-size: 1.15rem;
+    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -134,9 +133,20 @@ body {
     right: 25%;
 }
 
+.btn {
+    background-color: var(--clr-Principal) !important;
+    color: var(--clr-Fondo);
+    transition: color 0.3s;
+}
+
+.btn:hover {
+    color: var(--clr-Secundario);
+}
+
 ion-icon {
     color: var(--clr-Fondo);
     font-size: 30px;
+    transition: color 0.3s;
 }
 
 ion-icon:hover {
@@ -201,7 +211,7 @@ ion-icon:hover {
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .qr {
@@ -209,34 +219,138 @@ ion-icon:hover {
 }
 
 .texto-terminos {
-    font-size: .89rem;
+    font-size: 1rem;
 }
 
 .redes-sociales {
     margin-bottom: 1.5%;
 }
 
-/* media queries */
-@keyframes flotar-item {
+/* media-queries */
 
-    0%,
-    100% {
-        transform: translateY(0);
+/* Tablet */
+@media (min-width: 768px) and (max-width: 968px) {
+    h1 {
+        text-align: center;
     }
 
-    50% {
-        transform: translateY(-20px);
+    .navbar-toggler {
+        margin-inline-end: 25%;
+        size: 35px;
+    }
+
+    #numero {
+        margin-bottom: 4%;
+        margin-inline-start: 25.5%;
+    }
+
+    .banner-mascotas {
+        width: 67%;
+        margin-left: 5%;
+    }
+
+    .titulo-mascotas {
+        width: 67%;
+        margin-left: 5%;
+    }
+
+    .texto-mascotas {
+        width: 67%;
+        margin-left: 5%;
+    }
+
+    .row-galeria {
+        margin-right: 25%;
+        justify-content: center;
+    }
+
+    .row-galeria img {
+        width: 160px;
+        height: 160px;
+        justify-content: center;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 25%;
+    }
+
+    .qr {
+        padding-inline-start: 3%;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: 7%;
+    }
+
+    .redes-sociales-iconos {
+        padding-inline-start: 20px;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .column {
-        grid-template-columns: repeat(2, 2fr);
+/* Celular */
+@media (min-width: 400px) and (max-width: 767.98px) {
+    h1 {
+        text-align: center;
     }
-}
 
-@media screen and (max-width: 400px) {
+    .navbar-toggler {
+        margin-inline-end: 5%;
+        size: 35px;
+    }
+
+    #numero {
+        margin-bottom: 4%;
+        margin-inline-start: 25.5%;
+    }
+
+    .banner-mascotas {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 4%;
+    }
+
+    .titulo-mascotas {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .texto-mascotas {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .row-galeria {
+        margin-right: 3%;
+        justify-content: center;
+    }
+
     .column {
-        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        grid-template-columns: 2fr;
+    }
+
+    .container-fluid-footer {
+        text-align: center;
+    }
+
+    .qr {
+        margin-left: 2%;
+        margin-bottom: 15px;
+    }
+
+    .marca-mexicana {
+        margin-right: 10%;
+    }
+
+    .redes-sociales-iconos {
+        margin-left: 225%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 18%;
     }
 }
