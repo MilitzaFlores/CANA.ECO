@@ -450,7 +450,7 @@ ion-icon:hover {
 }
 
 /* Celular */
-@media (min-width: 400px) and (max-width: 767.98px) {
+@media (min-width: 390px) and (max-width: 767.98px) {
     h1 {
         text-align: center;
     }
