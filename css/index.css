@@ -208,9 +208,8 @@ ion-icon:hover {
         text-align: center;
         grid-template-columns: repeat(5, 5fr);
         grid-gap: 16px;
-        padding-top: 2%;
         overflow-x: auto;
-        padding-top: 3%;
+        padding-top: 4%;
         padding-bottom: 3%;
     }
 
@@ -218,24 +217,19 @@ ion-icon:hover {
         width: 100%;
     }
 
-    #información {
-        padding: 100px;
-        padding-top: 3.6%;
-        padding-bottom: 1%;
+    .grid-container-tarjetas {
+        display: grid;
         text-align: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 3fr);
+        padding-top: 5%;
+        padding-bottom: 3%;
+        gap: 2%;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 
-    .info-column {
-        padding: 3% 2%;
-    }
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    .Texto-Tarjetas {
+    .card-text {
         padding-top: 5%;
         padding-bottom: 8%;
         padding-right: 3%;
@@ -244,29 +238,15 @@ ion-icon:hover {
         text-align: center;
     }
 
-    .card-img,
-    .card-video {
-        width: 30rem;
-        height: 40rem;
-    }
-
-    .card-button {
-        color: var(--clr-Fondo);
+    .btn-lg {
         font-weight: 600;
         font-size: 1.15rem;
         transition: color 0.3s;
-        transition: ease-in-out 0.2s;
-    }
-
-    .card-button:hover {
-        color: var(--clr-Secundario);
-    }
-
-    .btn-lg {
         transition: transform 0.3s;
     }
 
     .btn-lg:hover {
+        color: var(--clr-Secundario);
         transform: scale(1.2);
     }
 
@@ -274,6 +254,30 @@ ion-icon:hover {
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagen-video {
+        gap: 2%;
+        padding-left: 12%;
+        padding-right: 6%;
+        margin-top: 4%;
+    }
+
+    .tarjeta-imagen {
+        width: 79%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .Texto-Tarjetas {
+        font-size: 1.3rem;
+    }
+
+    .card-video {
+        width: 83%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .container-barras {
@@ -328,7 +332,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 2%;
+        margin-inline-end: 6%;
         size: 35px;
     }
 
@@ -374,11 +378,17 @@ ion-icon:hover {
     }
 
     .grid-container {
+        display: grid;
+        text-align: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         width: 100%;
+        grid-gap: 16px;
+        overflow-x: auto;
+        padding-top: 4%;
+        padding-bottom: 3%;
         justify-content: center;
-        padding-left: 6%;
+        padding-left: 3%;
         padding-right: 3%;
     }
 
@@ -390,29 +400,73 @@ ion-icon:hover {
         align-content: center;
     }
 
-    #información {
-        padding-right: 20%;
-        padding-left: 4%;
+    .gridimg-responsive,
+    .gridimg1-responsive {
+        margin-left: 4%;
     }
 
-    .card-responsive-catalogo,
-    .card-responsive-galeria,
-    .card-responsive-mascotas {
-        width: 100%;
-        margin-left: 10%;
+    .grid-container-tarjetas {
+        grid-template-columns: repeat(1, 3fr);
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        gap: 1%;
+        padding-right: 3%;
+        padding-left: 3%;
     }
 
-    .tarjeta-responsive-transparente {
-        width: 100%;
-        margin-left: 10%;
+    .card-text {
+        padding-top: 5%;
+        padding-bottom: 8%;
+        padding-right: 3%;
+        padding-left: 3%;
+        font-size: 1rem;
+        text-align: center;
     }
 
-    .card-img {
+    .btn-lg {
+        font-weight: 600;
+        font-size: 1.15rem;
+        transition: color 0.3s;
+        transition: transform 0.3s;
+    }
+
+    .btn-lg:hover {
+        color: var(--clr-Secundario);
+        transform: scale(1.2);
+    }
+
+    .tarjetas-fondo {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagen-video {
+        gap: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 18%;
+    }
+
+    .tarjeta-imagen {
         width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .card-title,
+    .Texto-Tarjetas {
+        font-size: 2rem;
     }
 
     .card-video {
-        margin-top: 15%;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 11%;
+        padding-bottom: 12%;
     }
 
     .titulo-cuidadobarras {
@@ -423,16 +477,29 @@ ion-icon:hover {
     .Texto-CuidadoBarras {
         width: 100%;
         text-align: center;
+        font-size: 1.8rem;
+        padding-top: 8%;
+    }
+
+    .container-barras img {
+        width: 100%;
     }
 
     .item-barras {
+        padding-top: 0%;
         width: 100%;
+        justify-content: center;
     }
 
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
         padding-inline-end: 5%;
+    }
+
+    .text-footer {
+        color: var(--clr-Fondo);
+        font-weight: 500;
     }
 
     .qr {
@@ -450,13 +517,13 @@ ion-icon:hover {
 }
 
 /* Celular */
-@media (min-width: 390px) and (max-width: 767.98px) {
+@media (min-width: 350px) and (max-width: 767.98px) {
     h1 {
         text-align: center;
     }
 
     .navbar-toggler {
-        margin-inline-end: 2%;
+        margin-inline-end: 4%;
         size: 35px;
     }
 
@@ -500,43 +567,96 @@ ion-icon:hover {
         margin-top: 15px;
     }
 
+    .grid-texto-responsive {
+        padding-bottom: 8%;
+    }
+
     .grid-container {
         grid-template-columns: repeat(1, 5fr);
         grid-template-rows: auto;
         justify-content: center;
-        padding-left: 8%;
-        padding-right: 5%;
+        width: auto;
+        padding-left: 1.5%;
+        padding-right: 2%;
+        padding-bottom: 11%;
     }
 
-    #información {
-        flex-basis: 100%;
-        width: 125%;
-        padding-right: 32%;
-        padding-left: 10%;
+    .gridimg-responsive {
+        width: 95%;
+        margin-left: 4%;
     }
 
-    .card-img {
-        flex-basis: 100%;
-        width: 135%;
-        padding-right: 35%;
+    .gridimg1-responsive {
+        margin-left: 1.5%;
+    }
+
+    .grid-container-tarjetas {
+        grid-template-columns: repeat(1, 3fr);
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        gap: 1%;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .card-text {
+        padding-top: 5%;
+        padding-bottom: 8%;
+        padding-right: 3%;
+        padding-left: 3%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-lg {
+        font-weight: 600;
+        font-size: 1.15rem;
+        transition: color 0.3s;
+        transition: transform 0.3s;
+    }
+
+    .btn-lg:hover {
+        color: var(--clr-Secundario);
+        transform: scale(1.2);
+    }
+
+    .tarjetas-fondo {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagen-video {
+        gap: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 18%;
+    }
+
+    .tarjeta-imagen {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
     }
 
     .card-video {
-        flex-basis: 100%;
-        width: 155%;
-        padding-right: 55%;
-        padding-top: 10%;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 11%;
+        padding-bottom: 12%;
     }
 
     .Texto-CuidadoBarras {
-        text-align: justify;
+        text-align: center;
         margin: 0 auto;
         padding-left: 8%;
         padding-right: 8%;
-        margin-top: 15px;
     }
 
-    .item-barras {
+    .container-barras img {
         width: 100%;
     }
 
@@ -564,6 +684,11 @@ ion-icon:hover {
 
     .container-fluid-footer {
         text-align: center;
+    }
+
+    .text-footer {
+        color: var(--clr-Fondo);
+        font-weight: 500;
     }
 
     .qr {
