@@ -161,19 +161,25 @@ ion-icon:hover {
     padding-right: 1rem;
 }
 
-.texto-contacto {
-    font-size: 1.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 19.5rem;
-    padding-right: 20rem;
-    text-align: justify;
-    text-justify: inter-word;
+.text-center-responsive {
+    padding-bottom: 5%;
+    font-size: 2rem;
+}
+
+.text-center {
+    padding: 5;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 .btn-formulario {
     width: 30%;
-    margin-left: 30.8rem;
+    margin-left: 70%;
+}
+
+.texto-contacto-terminos {
+    padding-top: 5%;
+    padding-bottom: 15%;
 }
 
 .text-footer {
@@ -215,14 +221,15 @@ ion-icon:hover {
         padding-left: 5%;
     }
 
-    .texto-contacto {
-        width: 130%;
-        padding-left: 7%;
-        justify-content: center;
+    .text-center-responsive {
+        padding-bottom: 13%;
+        text-justify: inter-word;
     }
 
-    .form-control {
-        width: 100%;
+    .text-center {
+        padding: 5;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .container-fluid-footer {
@@ -246,13 +253,13 @@ ion-icon:hover {
 }
 
 /* Celular */
-@media (min-width: 400px) and (max-width: 767.98px) {
+@media (min-width: 350px) and (max-width: 767.98px) {
     h1 {
         text-align: center;
     }
 
     .navbar-toggler {
-        margin-inline-end: 2%;
+        margin-inline-end: 3%;
         size: 35px;
     }
 
@@ -261,18 +268,19 @@ ion-icon:hover {
         margin-inline-start: 25.5%;
     }
 
-    .texto-contacto {
-        width: 170%;
-        padding-left: 14%;
+    .text-center-responsive {
+        padding-bottom: 13%;
+        text-justify: inter-word;
     }
 
-    .formulario-responsive {
-        width: 63%;
-        margin-left: 37%;
+    .text-center {
+        padding: 5;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .boton-responsive {
-        padding-left: 2.5%;
+        padding-left: 4%;
     }
 
     .container-fluid-footer {
