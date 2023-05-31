@@ -50,6 +50,7 @@ h1 {
     text-align: center;
     color: var(--clr-Secundario);
     font-weight: 600;
+    font-size: 3rem;
 }
 
 h2 {

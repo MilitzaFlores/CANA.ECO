@@ -50,6 +50,7 @@ h1 {
     text-align: center;
     color: var(--clr-Secundario);
     font-weight: 600;
+    font-size: 3rem;
 }
 
 h2 {
@@ -162,8 +163,8 @@ ion-icon:hover {
 
 .titulo-mascotas {
     text-align: center;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .texto-mascotas {

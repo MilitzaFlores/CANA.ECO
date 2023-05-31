@@ -50,6 +50,7 @@ h1 {
     text-align: center;
     color: var(--clr-Secundario);
     font-weight: 600;
+    font-size: 3rem;
 }
 
 h2 {
@@ -156,7 +157,6 @@ ion-icon:hover {
 .titulo {
     padding-top: 7%;
     padding-bottom: 2%;
-    font-size: 3.5rem;
 }
 
 .texto-inicio {

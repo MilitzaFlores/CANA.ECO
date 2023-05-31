@@ -58,26 +58,29 @@
         <div class="Fondo Dinámico"></div>
 
         <h1 class="mb-4 texto-titulo-contacto">Contáctanos</h1>
-        <p class="text-center text-center-responsive">¡Hola! Si deseas hacer una cotización de pedido por mayoreo, saber más acerca de
+        <p class="text-center text-center-responsive">¡Hola! Si deseas hacer una cotización de pedido por mayoreo, saber
+            más acerca de
             nuestros productos o
             dejarnos un comentario, por favor llena este formulario y nos comunicaremos contigo a la brevedad
             posible.</p>
-        <form class="text-center" action="#!">
-            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre completo">
-            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-            <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Número de teléfono"
-                aria-describedby="defaultRegisterFormPhoneHelpBlock">
+        <form class="text-center" action="https://formspree.io/f/mdovrnoy" method="POST">
+            <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4"
+                placeholder="Nombre completo">
+            <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4"
+                placeholder="E-mail">
+            <input type="text" name="phone" id="defaultContactFormEmail" class="form-control mb-4"
+                placeholder="Número de teléfono" aria-describedby="defaultRegisterFormPhoneHelpBlock">
             <div>
                 <label class="label-responsive">Motivo:</label>
-                <select class="browser-default custom-select mb-4 label-opciones-responsive"
+                <select name="motive" class="browser-default custom-select mb-4 label-opciones-responsive"
                     style="text-align: center;">
-                    <option value="" selected>Pedidos</option>
-                    <option value="1">Comentarios</option>
-                    <option value="2">Dudas Generales</option>
+                    <option value="Pedidos" selected>Pedidos</option>
+                    <option value="Comentarios">Comentarios</option>
+                    <option value="Dudas-Generales">Dudas Generales</option>
                 </select>
             </div>
             <div class="form-group pb-4">
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="12"
+                <textarea name="message" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="12"
                     placeholder="Escribe algo..."></textarea>
                 <button class="btn btn-formulario btn-block mt-2 mb-4 formulario-responsive" type="reset">Limpiar
                     Formulario</button>
@@ -178,6 +181,14 @@
                         }
                     }
             }(window, document);
+        </script>
+        <!-- E-mail API -->
+        <script>
+            window.onbeforeunload = () => {
+                for (const form of document.getElementsByTagName('form')) {
+                    form.reset();
+                }
+            }
         </script>
     </footer>
 </body>
