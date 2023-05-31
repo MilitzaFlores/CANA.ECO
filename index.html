@@ -82,64 +82,48 @@
 
         <h2 class="pt-4 grid-texto-responsive">Compromisos CANÁ</h2>
         <div class="grid-container">
-            <img src="./imagenes/valores-marca-1.png" alt="100% natural">
-            <img src="./imagenes/valores-marca-2.png" alt="Libre de crueldad">
+            <img src="./imagenes/valores-marca-1.png" class="gridimg-responsive" alt="100% natural">
+            <img src="./imagenes/valores-marca-2.png" class="gridimg1-responsive" alt="Libre de crueldad">
             <img src="./imagenes/valores-marca-3.png" alt="Hecho a mano">
             <img src="./imagenes/valores-marca-4.png" alt="Sin parabenos">
             <img src="./imagenes/valores-marca-5.png" class="grid-container-responsive" alt="Biodegradable">
         </div>
 
-        <section id="información">
-            <div class="row">
-                <div
-                    class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3 card-responsive-catalogo">
-                    <div class="card card-responsive tarjetas-fondo" style="width: 24rem;">
-                        <img src="./imagenes/portada-catalogo.jpg" class="card-img-top" alt="Catálogo 2023">
-                        <div class="card-body">
-                            <h3>Catálogo CANÁ 2023</h3>
-                            <p class="Texto-Tarjetas texto-responsive">¿Aún no lo has visto? <br> Explora toda la gama
-                                de productos
-                                ecológicos que tenemos para ti.</p>
-                            <button class="btn btn-lg" type="button"><a class="card-button"
-                                    href="https://issuu.com/militza.flores/docs/cat_logo_can_" target="_blank"
-                                    class="text-decoration-none">¡Descubre más!</a>
-                            </button>
-                        </div>
-                    </div>
+        <section id="tarjetas-informativas" class="grid-container-tarjetas">
+            <div class="card tarjetas-fondo">
+                <img src="./imagenes/portada-catalogo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>Catálogo CANÁ 2023</h3>
+                    <p class="card-text">¿Aún no lo has visto? <br> Explora toda la gama
+                        de productos
+                        ecológicos que tenemos para ti.</p>
+                    <a href="https://issuu.com/militza.flores/docs/cat_logo_can_" target="_blank" class="btn btn-lg">¡Descubre más!</a>
                 </div>
-                <div
-                    class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3 card-responsive-galeria">
-                    <div class="card card-responsive tarjetas-fondo" style="width: 24rem;">
-                        <img src="./imagenes/crema-panditas-portada.jpeg" class="card-img-top"
-                            alt="Productos Populares">
-                        <div class="card-body">
-                            <h3 class="texto-responsive">¡Nuestra Historia En Fotos!</h3>
-                            <p class="Texto-Tarjetas">Sorpréndete con todos los
-                                recuerdos que hemos creado a lo largo de estos dos años acompañándote en tu cuidado
-                                personal.<br>
-                            </p>
-                            <button class="btn btn-lg" type="button"><a class="card-button" href="./galeria.html"
-                                    class="text-decoration-none">¡Descubre más!</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="info-column col-lg-4 col-md-6 d-flex flex-wrap justify-content-center align-items-center mb-3 card-responsive-mascotas">
-                    <div class="card card-responsive tarjetas-fondo" style="width: 24rem;">
-                        <img src="./imagenes/catalogo/peludos.jpg" class="card-img-top" alt="Mascotas">
-                        <div class="card-body">
-                            <h3>Mascotas</h3>
-                            <p class="Texto-Tarjetas">Encuentra más sobre nuestra nueva línea de productos para
-                                tu mejor amigo. Especialmente hecha para ellos.</p>
-                            <button class="btn btn-lg" type="button"><a class="card-button" href="./mascotas.html"
-                                    class="text-decoration-none">¡Descubre más!</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
-                <!-- <div id="carouselExampleDark" class="carousel slide" data-bs-theme="dark" style="padding-top: 6%;">
+            <div class="card tarjetas-fondo">
+                <img src="./imagenes/crema-panditas-portada.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>¡Nuestra Historia En Fotos!</h3>
+                    <p class="card-text">Sorpréndete con todos los
+                        recuerdos que hemos creado a lo largo de estos dos años acompañándote en tu cuidado
+                        personal.</p>
+                    <a href="./galeria.html" target="_blank" class="btn btn-lg">¡Descubre más!</a>
+                </div>
+            </div>
+
+            <div class="card tarjetas-fondo">
+                <img src="./imagenes/catalogo/perrito-producto-nuevo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>Mascotas</h3>
+                    <p class="card-text">Encuentra más sobre nuestra nueva línea de productos para
+                        tu mejor amigo. Especialmente hecha para ellos.</p>
+                    <a href="./mascotas.html" target="_blank" class="btn btn-lg">¡Descubre más!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div id="carouselExampleDark" class="carousel slide" data-bs-theme="dark" style="padding-top: 6%;">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -176,38 +160,37 @@
                     </button>
                 </div> -->
 
-                <div class="info-column tarjeta-responsive-transparente" style="padding-top: 10%;">
-                    <div class="row">
-                        <div class="col-lg-4 col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
-                            <div class="card text-bg-dark">
-                                <img src="./imagenes/nuevos-lanzamientos.jpeg" class="card-img opacity-50"
-                                    alt="Productos Nuevos">
-                                <div class="card-img-overlay">
-                                    <p class="card-title h3 mb-3 mt-5">¿Sabías Qué?</p>
-                                    <p class="Texto-Tarjetas">
-                                        La mala gestión de desechos genera anualmente, 11 millones de toneladas de
-                                        residuos plásticos que entran a los océanos, lo cual equivale a arrojar al mar
-                                        un camión lleno de plástico por minuto.
-
-                                    </p>
-                                    <p class="Texto-Tarjetas"> La cosmética solida te permite librarte al 100% de los molestos envases contaminantes.
-                                        Nuestros productos están cuidadosamente empacados con material reciclable y
-                                        compostable, totalmente amigable con el medio ambiente.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
-                            <div>
-                                <video controls class="card-video">
-                                    <source src="./imagenes/beneficios-del-shampoo-solido.mp4" type="video/mp4">
-                                </video>
-                            </div>
+        <div class="imagen-video">
+            <div class="row">
+                <div class="col-lg-4 col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="card tarjeta-imagen text-bg-dark">
+                        <img src="./imagenes/nuevos-lanzamientos.jpeg" class="card-img opacity-50"
+                            alt="Productos Nuevos">
+                        <div class="card-img-overlay">
+                            <p class="card-title h3 mb-3 mt-5">¿Sabías que...?</p>
+                            <p class="Texto-Tarjetas pt-3">
+                                <br> La mala gestión de desechos genera anualmente, 11 millones de toneladas de
+                                residuos plásticos que entran a los océanos, lo cual equivale a arrojar al mar
+                                un camión lleno de plástico por minuto.
+                            </p>
+                            <p class="Texto-Tarjetas pt-3"> <br> La cosmética sólida te permite librarte al 100% de los
+                                molestos envases contaminantes.
+                                Nuestros productos están cuidadosamente empacados con material reciclable y
+                                compostable, totalmente amigable con el medio ambiente.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
+                    <div>
+                        <video controls class="card-video">
+                            <source src="./imagenes/beneficios-del-shampoo-solido.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+        </div>
 
         <div class="container-barras">
             <h2 class="titulo-cuidadobarras">¿Cómo cuidar de tu cosmética solida? </h2>
