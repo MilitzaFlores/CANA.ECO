@@ -160,6 +160,12 @@ ion-icon:hover {
     padding-bottom: 5rem;
 }
 
+.titulo-mascotas {
+    text-align: center;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
 .texto-mascotas {
     font-size: 1.5rem;
     padding-top: 2.5rem;
@@ -286,7 +292,7 @@ ion-icon:hover {
 }
 
 /* Celular */
-@media (min-width: 400px) and (max-width: 767.98px) {
+@media (min-width: 350px) and (max-width: 767.98px) {
     h1 {
         text-align: center;
     }
