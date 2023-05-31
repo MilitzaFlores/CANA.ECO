@@ -274,8 +274,13 @@ strong {
         width: 100%;
     }
 
+    .imagen-mision {
+        width: 100%;
+        height: 35rem;
+    }
+
     .tarjeta-transparente-responsive2 {
-        width: 168%;
+        width: 134%;
         height: 3%;
         margin-left: 5%;
         justify-content: center;
@@ -283,7 +288,7 @@ strong {
 
     .imagen-personas {
         width: auto;
-        height: 50rem;
+        height: 55rem;
     }
 
     .container-fluid-footer {
@@ -307,13 +312,13 @@ strong {
 }
 
 /* Celular */
-@media (min-width: 400px) and (max-width: 767.98px) {
+@media (min-width: 350px) and (max-width: 767.98px) {
     h1 {
         text-align: center;
     }
 
     .navbar-toggler {
-        margin-inline-end: 2%;
+        margin-inline-end: 3%;
         size: 35px;
     }
 
@@ -327,16 +332,16 @@ strong {
     }
 
     .tarjeta-transparente-responsive {
-        width: 94%;
+        width: 90%;
         height: 3%;
-        margin-left: 3.3%;
+        margin-left: 5%;
         justify-content: center;
     }
 
     .tarjeta-transparente-responsive2 {
-        width: 94%;
+        width: 90%;
         height: 3%;
-        margin-left: 3%;
+        margin-left: 5%;
         justify-content: center;
     }
 
