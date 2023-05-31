@@ -153,6 +153,12 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
+.titulo {
+    padding-top: 7%;
+    padding-bottom: 2%;
+    font-size: 3.5rem;
+}
+
 .texto-inicio {
     padding: 7% 10%;
     text-align: justify;
@@ -225,6 +231,15 @@ ion-icon:hover {
         gap: 40%;
     }
 
+    .titulo {
+        padding-top: 16%;
+        padding-bottom: 8%;
+    }
+
+    .texto-inicio {
+        padding-bottom: 15%;
+    }
+
     .clientes-imagen {
         width: 90%;
         margin-inline-start: 175%;
@@ -251,7 +266,7 @@ ion-icon:hover {
 }
 
 /* Celular */
-@media (min-width: 400px) and (max-width: 767.98px) {
+@media (min-width: 350px) and (max-width: 767.98px) {
     h1 {
         text-align: center;
     }
@@ -264,6 +279,15 @@ ion-icon:hover {
     #numero {
         margin-bottom: 4%;
         margin-inline-start: 25.5%;
+    }
+
+    .titulo {
+        padding-top: 16%;
+        padding-bottom: 8%;
+    }
+
+    .texto-inicio {
+        padding-bottom: 15%;
     }
 
     .clientes-imagen {
