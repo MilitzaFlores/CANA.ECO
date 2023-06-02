@@ -178,7 +178,7 @@ ion-icon:hover {
 .banner-texto {
     position: absolute;
     top: 80%;
-    left: 52%;
+    left: 51.4%;
     transform: translate(-50%, -50%);
     width: 60rem;
 }
@@ -197,9 +197,9 @@ ion-icon:hover {
     .Texto-Principal {
         padding-top: 1%;
         padding-bottom: 4%;
-        font-size: 1.4rem;
-        margin-left: 9rem;
-        margin-right: 9rem;
+        font-size: 1.8rem;
+        margin-left: 11%;
+        margin-right: 11%;
         text-align: justify;
         text-justify: inter-word;
     }
@@ -364,10 +364,11 @@ ion-icon:hover {
 
     .Texto-Principal-div {
         text-align: center;
-        margin: 0;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 15px;
+        margin: 0 auto;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 5%;
+        padding-bottom: 4%;
     }
 
     .Texto-Principal {
@@ -375,7 +376,7 @@ ion-icon:hover {
         margin: 0;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 15px;
+        font-size: 1.6rem;
     }
 
     .grid-container {
@@ -557,7 +558,9 @@ ion-icon:hover {
         margin: 0 auto;
         padding-left: 8%;
         padding-right: 8%;
-        margin-top: 15px;
+        padding-top: 10%;
+        padding-bottom: 4%;
+        font-size: 2rem;
     }
 
     .Texto-Principal {
