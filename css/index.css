@@ -16,7 +16,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
 }
 
 html {
@@ -168,24 +167,24 @@ ion-icon:hover {
 
 .banner-img {
     width: 33.33%;
-    height: 43rem;
+    height: 729px;
     object-fit: cover;
 }
 
 .center-img {
     position: absolute;
+    width: 25%;
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 21.5rem;
 }
 
 .banner-texto {
     position: absolute;
+    width: 69%;
     top: 83%;
     left: 51.7%;
     transform: translate(-50%, -50%);
-    width: 59rem;
 }
 
 .arrow-up {
@@ -386,34 +385,45 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 6%;
-        size: 35px;
+        margin-inline-end: 4%;
     }
 
     #numero {
-        margin-bottom: 4%;
-        margin-inline-start: 25.5%;
+        top: 87%;
+        position: absolute;
+        margin-right: 66%;
     }
 
     .banner-img,
     .img-fluid {
-        width: 50rem;
-        height: 53rem;
-        object-fit: fill;
+        max-width: 100%;
+        width: 100%;
+        height: 40.5rem;
+        object-fit: cover;
     }
 
     .center-img {
-        width: 55%;
+        max-width: 100%;
+        width: 40%;
         height: auto;
-        top: 42%;
+        top: 44%;
     }
 
     .banner-texto {
-        width: 105%;
+        max-width: 100%;
+        width: 100%;
         height: auto;
-        top: 81%;
+        top: 82%;
         padding-right: 5%;
         padding-left: 2%;
+    }
+
+    .arrow-up {
+        top: 85%;
+    }
+    
+    .arrow-down {
+        top: 91%;
     }
 
     .Texto-Principal-div {
@@ -588,38 +598,51 @@ ion-icon:hover {
 
 /* Celular */
 @media (min-width: 350px) and (max-width: 767.98px) {
+
+    body {
+        padding-top: 0;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
     h1 {
         text-align: center;
     }
 
     .navbar-toggler {
-        margin-inline-end: 4%;
-        size: 35px;
+        margin-inline-end: 3%;
     }
 
     #numero {
-        margin-bottom: 4%;
-        margin-inline-start: 25.5%;
+        top: 87%;
+        position: absolute;
+        margin-right: 59%;
     }
 
     .banner-img,
     .img-fluid {
+        max-width: 100%;
         width: 100%;
-        height: 20rem;
+        height: 550px;
+        object-fit: cover;
     }
 
     .center-img {
-        width: 50%;
+        max-width: 100%;
+        width: 60%;
         height: auto;
-        top: 32%;
+        top: 36%;
+        object-fit: cover;
     }
 
     .banner-texto {
-        width: 104%;
+        max-width: 100%;
+        width: 100%;
         height: auto;
-        top: 55%;
-        padding-right: 5%;
-        padding-left: 2%;
+        top: 64%;
+        object-fit: cover;
+        padding-left: 1%;
+        padding-right: 4%;
     }
 
     .arrow-up,
@@ -630,8 +653,8 @@ ion-icon:hover {
     .Texto-Principal-div {
         text-align: center;
         margin: 0 auto;
-        padding-left: 8%;
-        padding-right: 8%;
+        margin-left: 8%;
+        margin-right: 8%;
         padding-top: 10%;
         padding-bottom: 4%;
         font-size: 2rem;
@@ -640,8 +663,8 @@ ion-icon:hover {
     .Texto-Principal {
         text-align: justify;
         margin: 0 auto;
-        padding-left: 8%;
-        padding-right: 8%;
+        margin-left: 8%;
+        margin-right: 8%;
         margin-top: 15px;
     }
 
@@ -661,15 +684,18 @@ ion-icon:hover {
         padding-left: 1.5%;
         padding-right: 2%;
         padding-bottom: 11%;
+        max-width: 100%;
     }
 
     .gridimg-responsive {
         width: 95%;
         margin-left: 4%;
+        max-width: 100%;
     }
 
     .gridimg1-responsive {
         margin-left: 1.5%;
+        max-width: 100%;
     }
 
     .grid-container-tarjetas {
@@ -731,7 +757,7 @@ ion-icon:hover {
         padding-bottom: 12%;
     }
 
-    .titulo-cuidadobarras{
+    .titulo-cuidadobarras {
         font-size: 2.1rem;
         text-align: center;
         color: var(--clr-Secundario);

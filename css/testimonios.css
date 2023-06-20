@@ -217,14 +217,10 @@ ion-icon:hover {
         text-align: center;
     }
 
-    .navbar-toggler {
-        margin-inline-end: 2%;
-        size: 35px;
-    }
-
     #numero {
-        margin-bottom: 4%;
-        margin-inline-start: 25.5%;
+        top: 87%;
+        position: absolute;
+        margin-right: 66%;
     }
 
     .carousel-item {
@@ -276,14 +272,10 @@ ion-icon:hover {
         text-align: center;
     }
 
-    .navbar-toggler {
-        margin-inline-end: 2%;
-        size: 35px;
-    }
-
     #numero {
-        margin-bottom: 4%;
-        margin-inline-start: 25.5%;
+        top: 87%;
+        position: absolute;
+        margin-right: 59%;
     }
 
     .titulo {
