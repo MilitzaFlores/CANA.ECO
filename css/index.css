@@ -74,7 +74,7 @@ h5 {
 body {
     min-height: 100vh;
     height: auto;
-    padding-top: 101px;
+    padding-top: 88px;
     scroll-behavior: smooth;
     background-image: linear-gradient(135deg, #F9F8EC, #FFF1DE);
     background-size: 500%;
@@ -93,6 +93,11 @@ body {
     100% {
         background-position: 0% 50%
     }
+}
+
+.navbar {
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
 }
 
 .navbar-light {
@@ -169,18 +174,52 @@ ion-icon:hover {
 
 .center-img {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50rem;
+    width: 21.5rem;
 }
 
 .banner-texto {
     position: absolute;
-    top: 80%;
-    left: 51.4%;
+    top: 83%;
+    left: 51.7%;
     transform: translate(-50%, -50%);
-    width: 60rem;
+    width: 59rem;
+}
+
+.arrow-up {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 86%;
+    left: 48%;
+    border-bottom-color: var(--clr-Aside-Texto);
+    border-right-color: var(--clr-Principal);
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 92%;
+    left: 48%;
+    border-bottom-color: var(--clr-Principal);
+    border-right-color: var(--clr-Aside-Texto);
+}
+
+#encabezado {
+    scroll-margin-top: 56px;
 }
 
 /* media-queries */
@@ -202,6 +241,13 @@ ion-icon:hover {
         margin-right: 11%;
         text-align: justify;
         text-justify: inter-word;
+    }
+
+    .grid-texto {
+        font-size: 3.4rem;
+        text-align: center;
+        color: var(--clr-Secundario);
+        font-weight: 600;
     }
 
     .grid-container {
@@ -294,9 +340,16 @@ ion-icon:hover {
         width: 100%;
     }
 
+    .titulo-cuidadobarras {
+        font-size: 3.4rem;
+        text-align: center;
+        color: var(--clr-Secundario);
+        font-weight: 600;
+    }
+
     .Texto-CuidadoBarras {
-        padding-top: 1%;
-        font-size: 1.5rem;
+        padding-top: 2%;
+        font-size: 1.7rem;
         margin-left: 60px;
         margin-right: 60px;
         text-align: center;
@@ -344,22 +397,23 @@ ion-icon:hover {
 
     .banner-img,
     .img-fluid {
-        width: 100%;
-        height: auto;
+        width: 50rem;
+        height: 53rem;
+        object-fit: fill;
     }
 
     .center-img {
-        width: 100%;
+        width: 55%;
         height: auto;
-        top: 40%;
+        top: 42%;
     }
 
     .banner-texto {
         width: 105%;
         height: auto;
-        top: 65%;
+        top: 81%;
         padding-right: 5%;
-        margin-left: 0.5%;
+        padding-left: 2%;
     }
 
     .Texto-Principal-div {
@@ -377,6 +431,13 @@ ion-icon:hover {
         margin-left: 5%;
         margin-right: 5%;
         font-size: 1.6rem;
+    }
+
+    .grid-texto {
+        font-size: 3.4rem;
+        text-align: center;
+        color: var(--clr-Secundario);
+        font-weight: 600;
     }
 
     .grid-container {
@@ -472,6 +533,13 @@ ion-icon:hover {
     }
 
     .titulo-cuidadobarras {
+        font-size: 3.4rem;
+        text-align: center;
+        color: var(--clr-Secundario);
+        font-weight: 600;
+    }
+
+    .titulo-cuidadobarras {
         width: 100%;
         text-align: center;
     }
@@ -537,20 +605,26 @@ ion-icon:hover {
     .banner-img,
     .img-fluid {
         width: 100%;
-        height: auto;
+        height: 20rem;
     }
 
     .center-img {
-        width: 100%;
+        width: 50%;
         height: auto;
-        top: 30%;
+        top: 32%;
     }
 
     .banner-texto {
         width: 104%;
         height: auto;
-        top: 50%;
-        padding-right: 4%;
+        top: 55%;
+        padding-right: 5%;
+        padding-left: 2%;
+    }
+
+    .arrow-up,
+    .arrow-down {
+        visibility: hidden;
     }
 
     .Texto-Principal-div {
@@ -573,6 +647,10 @@ ion-icon:hover {
 
     .grid-texto-responsive {
         padding-bottom: 8%;
+        font-size: 2.1rem;
+        text-align: center;
+        color: var(--clr-Secundario);
+        font-weight: 600;
     }
 
     .grid-container {
@@ -653,11 +731,19 @@ ion-icon:hover {
         padding-bottom: 12%;
     }
 
+    .titulo-cuidadobarras{
+        font-size: 2.1rem;
+        text-align: center;
+        color: var(--clr-Secundario);
+        font-weight: 600;
+    }
+
     .Texto-CuidadoBarras {
         text-align: center;
         margin: 0 auto;
         padding-left: 8%;
         padding-right: 8%;
+        padding-top: 3%;
     }
 
     .container-barras img {
