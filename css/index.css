@@ -624,7 +624,7 @@ ion-icon:hover {
     .img-fluid {
         max-width: 100%;
         width: 100%;
-        height: 520px;
+        height: 526px;
         object-fit: cover;
     }
 
@@ -632,7 +632,7 @@ ion-icon:hover {
         max-width: 100%;
         width: 60%;
         height: auto;
-        top: 35%;
+        top: 37%;
         object-fit: cover;
     }
 
@@ -640,7 +640,7 @@ ion-icon:hover {
         max-width: 100%;
         width: 100%;
         height: auto;
-        top: 62%;
+        top: 65%;
         object-fit: cover;
         padding-left: 1%;
         padding-right: 7%;
