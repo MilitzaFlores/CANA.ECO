@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 17px;
 }
 
 html {
@@ -385,7 +386,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 4%;
+        margin-inline-end: 1.5%;
     }
 
     #numero {
@@ -610,7 +611,7 @@ ion-icon:hover {
     }
 
     .navbar-toggler {
-        margin-inline-end: 3%;
+        margin-inline-end: 1.5%;
     }
 
     #numero {
@@ -623,7 +624,7 @@ ion-icon:hover {
     .img-fluid {
         max-width: 100%;
         width: 100%;
-        height: 550px;
+        height: 520px;
         object-fit: cover;
     }
 
@@ -631,7 +632,7 @@ ion-icon:hover {
         max-width: 100%;
         width: 60%;
         height: auto;
-        top: 36%;
+        top: 35%;
         object-fit: cover;
     }
 
@@ -639,10 +640,10 @@ ion-icon:hover {
         max-width: 100%;
         width: 100%;
         height: auto;
-        top: 64%;
+        top: 62%;
         object-fit: cover;
         padding-left: 1%;
-        padding-right: 4%;
+        padding-right: 7%;
     }
 
     .arrow-up,
