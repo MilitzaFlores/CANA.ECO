@@ -37,21 +37,15 @@ function cargarProductos(productosElegidos) {
         <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-4 detalles">
-                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
                 <p>
-                    <button class="btn" type="button" data-bs-toggle="collapse"
+                <a href="${producto.imagen}" data-featherlight="${producto.imagen}"><img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}"></a>
+                <div id="${producto.imagen}"></div>
+                    <button class="btn detalles-btn" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseWidthExample-${producto.id}" aria-expanded="false"
                         aria-controls="collapseWidthExample-${producto.id}">
                         Detalles
                     </button>
                 </p>
-                <div>
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
-                        <div class="card card-body" style="width: 25.3rem; margin-top: .5rem;">
-                            ${producto.detalles}
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-md-8 producto-contenido">
                 <p class="producto-titulo variante">${producto.titulo}</p>
@@ -59,13 +53,41 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-titulo producto-precio">$${producto.precio} MXN</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
+            <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
+                <div class="card card-body" style="width: 24.7rem; margin-top: .8rem;">
+                    ${producto.detalles}
+                </div>
+            </div>
+        </div>
         </div>
     </div>
-        `;        
+        `;
         contenedorProductos.append(div);
     })
     actualizarBotonesAgregar();
 }
+
+const detallesButtons = document.querySelectorAll('.detalles-btn');
+
+detallesButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+});
+
+document.addEventListener('click', () => {
+    const collapsibleElements = document.querySelectorAll('.collapse');
+
+    collapsibleElements.forEach((element) => {
+        if (!element.classList.contains('show')) {
+            return;
+        }
+
+        const collapse = bootstrap.Collapse.getInstance(element);
+        collapse.hide();
+    });
+});
 
 function myFunction() {
     var input, filter, productos, i;

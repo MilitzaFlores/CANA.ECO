@@ -43,7 +43,7 @@
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "<br> Avena ● Olivo ● Aceite de coco",
+        "ingredientes": "Avena ● Olivo ● Aceite de coco",
         "detalles": "IDEAL PARA: CUERO CABELLUDO NORMAL Y SECO. <br><br> Hidrata, fortalece el cabello quebradizo, aporta brillo, estimula el crecimiento, antioxidante. <br><br> ¡Vas a amar el cambio inmediato que sentirás en tu pelo con nuestra fórmula buenísima para cabello normal!",
         "precio": 55
     },
@@ -55,7 +55,7 @@
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "<br> Manteca de mango ● Queratina ● Aloe vera",
+        "ingredientes": "Manteca de mango ● Queratina ● Aloe vera",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO, ESPECIALMENTE CUERO CABELLUDO SECO. <br><br> Ayuda a controlar la caspa. Fuerza, brillo, suavidad, repara, nutre, aporta flexibilidad, antifrizz, calmante. <br> Olvídate de la comezón causada por la resequedad del cuero cabelludo y del molesto polvito blanco en tu ropa, es una fórmula súper hidratante.",
         "precio": 55
     },
@@ -103,7 +103,7 @@
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "<br> Avena ● Olivo ● Aceite de coco",
+        "ingredientes": "Avena ● Olivo ● Aceite de coco",
         "detalles": "IDEAL PARA: CUERO CABELLUDO NORMAL Y SECO. <br><br> Hidrata, fortalece el cabello quebradizo, aporta brillo, estimula el crecimiento, antioxidante. <br><br> ¡Vas a amar el cambio inmediato que sentirás en tu pelo con nuestra fórmula buenísima para cabello normal!",
         "precio": 98
     },
@@ -115,7 +115,7 @@
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "<br> Manteca de mango ● Queratina ● Aloe vera",
+        "ingredientes": "Manteca de mango ● Queratina ● Aloe vera",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO, ESPECIALMENTE CUERO CABELLUDO SECO. <br><br> Ayuda a controlar la caspa. Fuerza, brillo, suavidad, repara, nutre, aporta flexibilidad, antifrizz, calmante. <br> Olvídate de la comezón causada por la resequedad del cuero cabelludo y del molesto polvito blanco en tu ropa, es una fórmula súper hidratante.",
         "precio": 98
     },
@@ -151,7 +151,7 @@
             "nombre": "Acondicionador Sólido",
             "id": "acondicionador"
         },
-        "ingredientes": "<br> Manteca de karité ● Aceite de aguacate",
+        "ingredientes": "Manteca de karité ● Aceite de aguacate",
         "detalles": "La combinación perfecta para reparar, nutrir, evitar el frizz, aportar brillo y humectar.",
         "precio": 92
     },
@@ -248,7 +248,7 @@
             "id": "cremas"
         },
         "ingredientes": "Aceite de caléndula ● Vitamina E <br> Cera de candelilla ● Manteca de karité",
-        "detalles": "PERFECTA PARA: TODO TIPO DE PIEL. <br><br> Súper humectante (retiene el agua en nuestra piel), perfecta para pieles muy secas, talones y codos agrietados. <br><br> CERO COMEDOGÉNICA <br><br> Recomendadísima para after shave. <br> A nosotras nos encanta usarla en las piernas, las deja súper suaves y con un glow precioso.",
+        "detalles": "PERFECTA PARA: TODO TIPO DE PIEL. <br><br> Súper humectante (retiene el agua en nuestra piel), perfecta para pieles muy secas, talones y codos agrietados. <br><br> CERO COMEDOGÉNICA <br><br> Recomendadísima para after shave. A nosotras nos encanta usarla en las piernas, las deja súper suaves y con un glow precioso.",
         "precio": 52
     },
     {
@@ -260,7 +260,7 @@
             "id": "cremas"
         },
         "ingredientes": "Aceite de caléndula ● Vitamina E <br> Cera de candelilla ● Manteca de karité",
-        "detalles": "PERFECTA PARA: TODO TIPO DE PIEL. <br><br> Súper humectante (retiene el agua en nuestra piel), perfecta para pieles muy secas, talones y codos agrietados. <br><br> CERO COMEDOGÉNICA <br><br> Recomendadísima para after shave. <br> A nosotras nos encanta usarla en las piernas, las deja súper suaves y con un glow precioso.",
+        "detalles": "PERFECTA PARA: TODO TIPO DE PIEL. <br><br> Súper humectante (retiene el agua en nuestra piel), perfecta para pieles muy secas, talones y codos agrietados. <br><br> CERO COMEDOGÉNICA <br><br> Recomendadísima para after shave. A nosotras nos encanta usarla en las piernas, las deja súper suaves y con un glow precioso.",
         "precio": 95
     },
     {
@@ -295,7 +295,7 @@
             "nombre": "Productos Ecológicos",
             "id": "variados"
         },
-        "ingredientes": "<br> A base de glicerina",
+        "ingredientes": "A base de glicerina",
         "detalles": "Tenemos distintas combinaciones de colores: <br> Azul ● Rosa ● Morado ● Verde ● Naranja. <br><br> Con o sin aroma.",
         "precio": 18
     },
@@ -343,7 +343,7 @@
             "nombre": "Paquetes",
             "id": "paquetes"
         },
-        "ingredientes": "<b>¡Arma tu paquete!</b> <br><br> <b>2 shampoos iguales de 130 gr.</b>",
+        "ingredientes": "<b>¡Arma tu paquete!</b> <br><br> <b> 2 shampoos iguales de 130 gr.</b>",
         "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> 100% natural, biodegradable y compostable. <br><br> Con aceites esenciales de lavanda y árbol de té",
         "precio": 215
     },

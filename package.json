@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/MiliFlrs/CANA.ECO/issues"
   },
-  "homepage": "https://github.com/MiliFlrs/CANA.ECO#readme"
+  "homepage": "https://github.com/MiliFlrs/CANA.ECO#readme",
+  "dependencies": {
+    "jsdom": "^22.1.0",
+    "lightbox2": "^2.11.4"
+  }
 }
