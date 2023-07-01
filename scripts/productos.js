@@ -66,7 +66,40 @@ function cargarProductos(productosElegidos) {
         contenedorProductos.append(div);
     })
     actualizarBotonesAgregar();
+    scrollToTop();
 }
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+const botonesFiltroPrecio = document.querySelectorAll(".filtro-precio");
+
+botonesFiltroPrecio.forEach(boton => {
+    boton.addEventListener("click", () => {
+        const precioMinimo = Number(boton.dataset.min);
+        const precioMaximo = Number(boton.dataset.max);
+
+        const productosFiltrados = productos.filter(producto => {
+            return producto.precio >= precioMinimo && producto.precio <= precioMaximo;
+        });
+
+        cargarProductos(productosFiltrados);
+    });
+});
+
+const btnMasVendidos = document.querySelector("#btn-mas-vendidos");
+const btnNuevos = document.querySelector("#btn-nuevos");
+
+btnMasVendidos.addEventListener("click", () => {
+    const productosMasVendidos = productos.filter(producto => producto.masVendido === true);
+    cargarProductos(productosMasVendidos);
+});
+
+btnNuevos.addEventListener("click", () => {
+    const productosNuevos = productos.filter(producto => producto.esNuevo === true);
+    cargarProductos(productosNuevos);
+});
 
 const detallesButtons = document.querySelectorAll('.detalles-btn');
 
@@ -164,8 +197,8 @@ function agregarAlCarrito(e) {
             fontSize: ".75rem"
         },
         offset: {
-            x: '6rem',
-            y: '6rem'
+            x: '5rem',
+            y: '5rem'
         },
         onClick: function () {}
     }).showToast();

@@ -101,8 +101,8 @@ function eliminarDelCarrito(e) {
             fontSize: ".75rem"
         },
         offset: {
-            x: '6rem',
-            y: '6rem'
+            x: '5rem',
+            y: '5rem'
         },
         onClick: function () {}
     }).showToast();

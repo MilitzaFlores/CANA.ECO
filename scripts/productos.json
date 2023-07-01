@@ -9,7 +9,9 @@
         },
         "ingredientes": "<b>¡Producto Nuevo!</b> <br> Lo Más Vendido <br><br>Aceite de avellana ● Inulina <br> Extracto de avena ● Hibiscus (jamaica)",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO, ESPECIALMENTE NORMAL Y MIXTO. <br><br>  Vas a sentir como tu cabello vuelve a la vida, el nombre le hace total justicia.",
-        "precio": 55
+        "precio": 55,
+        "masVendido": true,
+        "esNuevo": true
     },
     {
         "id": "controlcaida50",
@@ -21,47 +23,50 @@
         },
         "ingredientes": "<b>¡Producto Nuevo!</b> <br> Lo Más Vendido <br><br> Té verde ● Aceite de ricino ● Alga espirulina <br> Extracto de fenogreco ● Levadura de cerveza",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO. <br><br> Cada ingrediente es perfecto para frenar la caída y nutrir tu cabello.",
-        "precio": 55
+        "precio": 55,
+        "masVendido": true,
+        "esNuevo": true
     },
     {
         "id": "lavandaromero50",
-        "titulo": "Lavanda y Romero 50 gr.",
+        "titulo": "<br> Lavanda y Romero 50 gr.",
         "imagen": "./imagenes/catalogo/shampoo-lavanda-romero.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "Lo Más Vendido. <br><br> Extracto de lavanda ● Romero <br> Arcilla verde ● Aceite de semilla de uva",
+        "ingredientes": "<b>Lo Más Vendido</b> <br><br> Extracto de lavanda ● Romero <br> Arcilla verde ● Aceite de semilla de uva",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO. <br><br> Perfecto en cuero cabelludo graso, con caspa, barritos, comezón, psoriasis. <br> Seborregulador, controla la caída, controla la caspa, estimula el crecimiento, reparador, antifrizz, hidratante, antiséptico, antiinflamatorio. <br><br> ¡Nuestro favorito, es perfecto!",
-        "precio": 55
+        "precio": 55,
+        "masVendido": true
     },
     {
         "id": "avenacoco50",
-        "titulo": "Avena y Coco 50 gr.",
+        "titulo": "<br> Avena y Coco 50 gr. <br><br>",
         "imagen": "./imagenes/catalogo/shampoo-avena-y-coco.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "Avena ● Olivo ● Aceite de coco",
+        "ingredientes": "Avena ● Olivo ● Aceite de coco <br><br>",
         "detalles": "IDEAL PARA: CUERO CABELLUDO NORMAL Y SECO. <br><br> Hidrata, fortalece el cabello quebradizo, aporta brillo, estimula el crecimiento, antioxidante. <br><br> ¡Vas a amar el cambio inmediato que sentirás en tu pelo con nuestra fórmula buenísima para cabello normal!",
         "precio": 55
     },
     {
         "id": "mangoaloe50",
-        "titulo": "Mango y Aloe 50 gr.",
+        "titulo": "<br> Mango y Aloe 50 gr. <br><br>",
         "imagen": "./imagenes/catalogo/shampoo-mango-aloe.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "Manteca de mango ● Queratina ● Aloe vera",
+        "ingredientes": "Manteca de mango ● Queratina ● Aloe vera <br><br>",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO, ESPECIALMENTE CUERO CABELLUDO SECO. <br><br> Ayuda a controlar la caspa. Fuerza, brillo, suavidad, repara, nutre, aporta flexibilidad, antifrizz, calmante. <br> Olvídate de la comezón causada por la resequedad del cuero cabelludo y del molesto polvito blanco en tu ropa, es una fórmula súper hidratante.",
         "precio": 55
     },
     {
         "id": "revitalizante100",
-        "titulo": "Revitalizante 100 gr.",
+        "titulo": "<br> Revitalizante 100 gr.",
         "imagen": "./imagenes/catalogo/shampoo-revitalizante-1.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
@@ -69,11 +74,12 @@
         },
         "ingredientes": "<b>¡Producto Nuevo!</b> <br><br> Aceite de avellana ● Inulina <br> Extracto de avena ● Hibiscus (jamaica)",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO, ESPECIALMENTE NORMAL Y MIXTO. <br><br>  Vas a sentir como tu cabello vuelve a la vida, el nombre le hace total justicia.",
-        "precio": 98
+        "precio": 98,
+        "esNuevo": true
     },
     {
         "id": "controlcaida100",
-        "titulo": "Control Caída 100 gr.",
+        "titulo": "<br> Control Caída 100 gr.",
         "imagen": "./imagenes/catalogo/shampoo-control-caida-2.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
@@ -81,11 +87,12 @@
         },
         "ingredientes": "<b>¡Producto Nuevo!</b> <br><br> Té verde ● Aceite de ricino ● Alga espirulina <br> Extracto de fenogreco ● Levadura de cerveza",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO. <br><br> Cada ingrediente es perfecto para frenar la caída y nutrir tu cabello.",
-        "precio": 98
+        "precio": 98,
+        "esNuevo": true
     },
     {
         "id": "lavandaromero100",
-        "titulo": "Lavanda y Romero 100 gr.",
+        "titulo": "<br> Lavanda y Romero 100 gr. <br><br>",
         "imagen": "./imagenes/catalogo/shampoo-lavanda-romero.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
@@ -97,43 +104,44 @@
     },
     {
         "id": "avenacoco100",
-        "titulo": "Avena y Coco 100 gr.",
+        "titulo": "<br> Avena y Coco 100 gr. <br><br>",
         "imagen": "./imagenes/catalogo/productos-cana-1.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "Avena ● Olivo ● Aceite de coco",
+        "ingredientes": "Avena ● Olivo ● Aceite de coco <br><br>",
         "detalles": "IDEAL PARA: CUERO CABELLUDO NORMAL Y SECO. <br><br> Hidrata, fortalece el cabello quebradizo, aporta brillo, estimula el crecimiento, antioxidante. <br><br> ¡Vas a amar el cambio inmediato que sentirás en tu pelo con nuestra fórmula buenísima para cabello normal!",
         "precio": 98
     },
     {
         "id": "mangoaloe100",
-        "titulo": "Mango y Aloe 100 gr.",
+        "titulo": "<br> Mango y Aloe 100 gr. <br><br>",
         "imagen": "./imagenes/catalogo/shampoo-mango-aloe.jpg",
         "categoria": {
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "Manteca de mango ● Queratina ● Aloe vera",
+        "ingredientes": "Manteca de mango ● Queratina ● Aloe vera <br><br>",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO, ESPECIALMENTE CUERO CABELLUDO SECO. <br><br> Ayuda a controlar la caspa. Fuerza, brillo, suavidad, repara, nutre, aporta flexibilidad, antifrizz, calmante. <br> Olvídate de la comezón causada por la resequedad del cuero cabelludo y del molesto polvito blanco en tu ropa, es una fórmula súper hidratante.",
         "precio": 98
     },
     {
         "id": "karite50",
-        "titulo": "Acondicionador Karité 50 gr.",
+        "titulo": "<br> Acondicionador Karité 50 gr. <br><br>",
         "imagen": "./imagenes/catalogo/acondicionador-karite.jpg",
         "categoria": {
             "nombre": "Acondicionador Sólido",
             "id": "acondicionador"
         },
-        "ingredientes": "Lo Más Vendido. <br><br> Manteca de karité ● Aceite de aguacate",
+        "ingredientes": "<b>Lo Más Vendido</b> <br><br> Manteca de karité ● Aceite de aguacate",
         "detalles": "La combinación perfecta para reparar, nutrir, evitar el frizz, aportar brillo y humectar.",
-        "precio": 52
+        "precio": 52,
+        "masVendido": true
     },
     {
         "id": "cacao50",
-        "titulo": "Acondicionador Cacao 50 gr.",
+        "titulo": "<br> Acondicionador Cacao 50 gr. <br><br>",
         "imagen": "./imagenes/catalogo/acondicionador-cacao.jpg",
         "categoria": {
             "nombre": "Acondicionador Sólido",
@@ -145,19 +153,19 @@
     },
     {
         "id": "karite100",
-        "titulo": "Acondicionador Karité 100 gr.",
+        "titulo": "<br> Acondicionador Karité 100 gr. <br><br>",
         "imagen": "./imagenes/catalogo/acondicionador-karite.jpg",
         "categoria": {
             "nombre": "Acondicionador Sólido",
             "id": "acondicionador"
         },
-        "ingredientes": "Manteca de karité ● Aceite de aguacate",
+        "ingredientes": "Manteca de karité ● Aceite de aguacate <br><br>",
         "detalles": "La combinación perfecta para reparar, nutrir, evitar el frizz, aportar brillo y humectar.",
         "precio": 92
     },
     {
         "id": "cacao100",
-        "titulo": "Acondicionador Cacao 100 gr.",
+        "titulo": "<br> Acondicionador Cacao 100 gr. <br><br>",
         "imagen": "./imagenes/catalogo/acondicionador-cacao.jpg",
         "categoria": {
             "nombre": "Acondicionador Sólido",
@@ -169,7 +177,7 @@
     },
     {
         "id": "verde30",
-        "titulo": "Arcilla Verde <br> <b>Bolsa de papel</b>",
+        "titulo": "<br> Arcilla Verde <br> <b>Bolsa de papel</b> <br><br>",
         "imagen": "./imagenes/catalogo/arcilla-verde-1.jpg",
         "categoria": {
             "nombre": "Cuidado Facial",
@@ -181,7 +189,7 @@
     },
     {
         "id": "blanca30",
-        "titulo": "Arcilla Blanca <br> <b>Bolsa de papel</b>",
+        "titulo": "<br> Arcilla Blanca <br> <b>Bolsa de papel</b> <br><br>",
         "imagen": "./imagenes/catalogo/arcilla-blanca-1.jpg",
         "categoria": {
             "nombre": "Cuidado Facial",
@@ -193,7 +201,7 @@
     },
     {
         "id": "bentonita30",
-        "titulo": "Arcilla Bentonita <br> <b>Bolsa de papel</b>",
+        "titulo": "<br> Arcilla Bentonita <br> <b>Bolsa de papel</b> <br><br>",
         "imagen": "./imagenes/catalogo/arcilla-bentonita-1.jpg",
         "categoria": {
             "nombre": "Cuidado Facial",
@@ -205,7 +213,7 @@
     },
     {
         "id": "verde40",
-        "titulo": "Arcilla Verde <br> <b>Frasco</b>",
+        "titulo": "<br> Arcilla Verde <br> <b>Frasco</b> <br><br>",
         "imagen": "./imagenes/catalogo/arcilla-verde.jpg",
         "categoria": {
             "nombre": "Cuidado Facial",
@@ -217,7 +225,7 @@
     },
     {
         "id": "blanca40",
-        "titulo": "Arcilla Blanca <br> <b>Frasco</b>",
+        "titulo": "<br> Arcilla Blanca <br> <b>Frasco</b> <br><br>",
         "imagen": "./imagenes/catalogo/arcilla-blanca.jpg",
         "categoria": {
             "nombre": "Cuidado Facial",
@@ -229,7 +237,7 @@
     },
     {
         "id": "bentonita40",
-        "titulo": "Arcilla Bentonita <br> <b>Frasco</b>",
+        "titulo": "<br> Arcilla Bentonita <br> <b>Frasco</b> <br><br>",
         "imagen": "./imagenes/catalogo/arcilla-bentonita.jpg",
         "categoria": {
             "nombre": "Cuidado Facial",
@@ -241,7 +249,7 @@
     },
     {
         "id": "cremaHumectante50",
-        "titulo": "Crema Humectante 50 gr.",
+        "titulo": "<br> Crema Humectante 50 gr. <br><br>",
         "imagen": "./imagenes/catalogo/crema-humectante.jpg",
         "categoria": {
             "nombre": "Cuidado Corporal",
@@ -253,7 +261,7 @@
     },
     {
         "id": "cremaHumectante100",
-        "titulo": "Crema Humectante 100 gr.",
+        "titulo": "<br> Crema Humectante 100 gr. <br><br>",
         "imagen": "./imagenes/catalogo/crema-humectante.jpg",
         "categoria": {
             "nombre": "Cuidado Corporal",
@@ -265,19 +273,33 @@
     },
     {
         "id": "panditas",
-        "titulo": "Panditas <br> <b>Desde 35 gr.</b>",
+        "titulo": "Panditas 35 gr.",
+        "imagen": "./imagenes/catalogo/crema-panditas-aluminio.png",
+        "categoria": {
+            "nombre": "Cuidado Corporal",
+            "id": "cremas"
+        },
+        "ingredientes": "<b>¡Producto Nuevo!</b> <br> Lata de Aluminio <br><br> Aceite de caléndula ● Vitamina E <br> Cera de candelilla ● Manteca de karité",
+        "detalles": "Crema sólida en forma de panditas en una lata de aluminio reutilizable de 2 onzas. <br><br> Nuestra misma fórmula de crema sólida de manteca de karité y aceite de caléndula, pero con una linda forma de panditas para una aplicación más sencilla. <br><br> Vienen aromas combinados: frutos rojos, fresas, mango y vainilla.",
+        "precio": 60,
+        "esNuevo": true
+    },
+    {
+        "id": "panditasRefill",
+        "titulo": "Panditas (refill)",
         "imagen": "./imagenes/catalogo/crema-panditas-1.jpg",
         "categoria": {
             "nombre": "Cuidado Corporal",
             "id": "cremas"
         },
-        "ingredientes": "Lo Más Vendido. <br><br> Aceite de caléndula ● Vitamina E <br> Cera de candelilla ● Manteca de karité",
-        "detalles": "Nuestra misma fórmula de crema sólida de manteca de karité y aceite de caléndula, pero con una linda forma de panditas para una aplicación más sencilla. <br><br> Vienen aromas combinados: frutos rojos, fresas, mango y vainilla.",
-        "precio": 45
+        "ingredientes": "<b>Desde 35 gr. <br> Lo Más Vendido</b> <br><br> Aceite de caléndula ● Vitamina E <br> Cera de candelilla ● Manteca de karité",
+        "detalles": "Presentación en bolsa de papel encerado para que tú las pongas en el contenedor que gustes. <br><br> Nuestra misma fórmula de crema sólida de manteca de karité y aceite de caléndula, pero con una linda forma de panditas para una aplicación más sencilla. <br><br> Vienen aromas combinados: frutos rojos, fresas, mango y vainilla.",
+        "precio": 45,
+        "masVendido": true
     },
     {
         "id": "cepillos",
-        "titulo": "Cepillo de Bambú",
+        "titulo": "<br> Cepillo de Bambú <br><br>",
         "imagen": "./imagenes/catalogo/cepillos-bambu.jpg",
         "categoria": {
             "nombre": "Productos Ecológicos",
@@ -289,19 +311,19 @@
     },
     {
         "id": "jabonManos",
-        "titulo": "Jabón de Manos",
+        "titulo": "<br> Jabón de Manos <br><br>",
         "imagen": "./imagenes/catalogo/jabon-de-manos.jpg",
         "categoria": {
             "nombre": "Productos Ecológicos",
             "id": "variados"
         },
-        "ingredientes": "A base de glicerina",
+        "ingredientes": "A base de glicerina <br><br>",
         "detalles": "Tenemos distintas combinaciones de colores: <br> Azul ● Rosa ● Morado ● Verde ● Naranja. <br><br> Con o sin aroma.",
         "precio": 18
     },
     {
         "id": "luffa",
-        "titulo": "Luffa",
+        "titulo": "<br> Luffa <br><br>",
         "imagen": "./imagenes/catalogo/luffa.jpg",
         "categoria": {
             "nombre": "Productos Ecológicos",
@@ -312,8 +334,8 @@
         "precio": 7
     },
     {
-        "id": "shampooPeludos65",
-        "titulo": "Shampoo Peludos 65 gr.",
+        "id": "shampooBlanco",
+        "titulo": "<br> Shampoo Peludos 65 gr.",
         "imagen": "./imagenes/catalogo/peludos.jpg",
         "categoria": {
             "nombre": "Mascotas",
@@ -321,23 +343,36 @@
         },
         "ingredientes": "<b>Blanco DESENREDANTE</b> <br><br> Coco ● Caolín ● Cacao",
         "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Olor a coco y cacao.",
-        "precio": 58
+        "precio": 60
     },
     {
-        "id": "shampooPeludos130",
-        "titulo": "Shampoo Peludos 130 gr.",
+        "id": "shampooVerde",
+        "titulo": "<br> Shampoo Peludos 65 gr.",
         "imagen": "./imagenes/catalogo/peludos-1.jpg",
         "categoria": {
             "nombre": "Mascotas",
             "id": "mascotas"
         },
-        "ingredientes": "<b>Verde REPELENTE</b> <br><br> Romero ● Neem ● Coco",
-        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Limpia profundo, previene garrapatas y guinas. <br><br> Olor a lavanda.",
-        "precio": 120
+        "ingredientes": "<b>Verde REPELENTE</b> <br><br> Coco ● Caolín ● Cacao",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Olor a coco y cacao.",
+        "precio": 60
+    },
+    {
+        "id": "peludosDuo",
+        "titulo": "<br> Peludos DÚO 65 gr.",
+        "imagen": "./imagenes/catalogo/peludos-duo-producto.png",
+        "categoria": {
+            "nombre": "Mascotas",
+            "id": "mascotas"
+        },
+        "ingredientes": "<b>¡Producto Nuevo!</b> <br> Nuestros 2 shampoos EN UNO SÓLO <br><br> Coco ● Caolín ● Cacao ● Romero ● Neem",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Verde repelente: Limpia profundo, previene garrapatas y guinas. <br><br> Blanco desenredante: Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Ambos con aceites esenciales de lavanda y árbol de té.",
+        "precio": 65,
+        "esNuevo": true
     },
     {
         "id": "peludos1",
-        "titulo": "Paquete Peludos 1",
+        "titulo": "<br> Paquete Peludos 1",
         "imagen": "./imagenes/catalogo/peludos-1.jpg",
         "categoria": {
             "nombre": "Paquetes",
@@ -349,13 +384,13 @@
     },
     {
         "id": "peludos2",
-        "titulo": "Paquete Peludos 2",
+        "titulo": "<br> Paquete Peludos 2",
         "imagen": "./imagenes/catalogo/peludos.jpg",
         "categoria": {
             "nombre": "Paquetes",
             "id": "paquetes"
         },
-        "ingredientes": "<b>¡Arma tu paquete!</b> <br><br> <b>Combinado (repelente y desenredante) 130 gr.</b>",
+        "ingredientes": "<b>¡Arma tu paquete!</b> <br><br> <b>Combinado 130 gr. <br> (repelente y desenredante)</b>",
         "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> 100% natural, biodegradable y compostable. <br><br> Con aceites esenciales de lavanda y árbol de té",
         "precio": 215
     }

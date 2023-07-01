@@ -226,6 +226,11 @@ strong {
     height: 43rem;
 }
 
+.imagen-historia{
+    width: auto;
+    height: 38rem;
+}
+
 .text-footer {
     color: var(--clr-Fondo);
     font-weight: 500;
@@ -333,7 +338,7 @@ strong {
     .tarjeta-transparente-responsive {
         width: 90%;
         height: 3%;
-        margin-left: 5%;
+        margin-left: 5.8%;
         justify-content: center;
     }
 
@@ -350,10 +355,6 @@ strong {
 
     .imagen-mision {
         width: 100%;
-        height: 100%;
-    }
-
-    .imagen-mision {
         height: 100%;
     }
 

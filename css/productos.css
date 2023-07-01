@@ -148,19 +148,6 @@ aside {
     padding-right: 5%;
 }
 
-.buscar input {
-    width: 25rem;
-    height: 28px;
-    padding: 10px;
-    margin-left: 1%;
-    font-size: .80rem;
-    font-weight: 600;
-    color: #000;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 30px;
-}
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -223,9 +210,47 @@ aside {
 
 .titulo-principal {
     color: var(--clr-Secundario);
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.8rem;
+}
+
+.buscar input {
+    width: 25rem;
+    height: 35px;
+    padding: 10px;
+    margin-left: 1%;
+    font-size: .80rem;
+    font-weight: 600;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+
+.filtro-precio,
+#btn-mas-vendidos,
+#btn-nuevos {
+    background-color: var(--clr-Secundario);
+    color: var(--clr-Fondo);
+    border-style: none;
+    width: 8.5rem;
+    height: 2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 2rem;
+}
+
+.filtro-precio:hover,
+#btn-mas-vendidos:hover,
+#btn-nuevos:hover {
+    color: var(--clr-FondoSecundario);
+    font-weight: 600;
+    transition: color .2s;
 }
 
 .contenedor-productos {
@@ -248,7 +273,7 @@ aside {
 .featherlight .featherlight-content {
     background-color: rgba(204, 134, 97, 0.5);
     /* rgba tránslucido color secundario rgba(51, 74, 97, 0.5);*/
-    margin-top: 4%;
+    margin-top: 3%;
     border-radius: 1%;
 }
 
@@ -277,6 +302,7 @@ aside {
     border-style: none;
     width: 8.5rem;
     margin-top: .2rem;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -295,11 +321,12 @@ aside {
 .producto-contenido {
     display: flex;
     flex-direction: column;
-    text-align: center;
     color: var(--clr-Texto);
     padding-left: .75rem;
     gap: .80rem;
     line-height: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .producto-titulo {
@@ -329,7 +356,6 @@ aside {
 #shampooPeludos130,
 #peludos1 {
     margin-top: 6%;
-    margin-bottom: 4%;
 }
 
 .producto-titulo b {
@@ -357,6 +383,7 @@ aside {
     width: 13rem;
     margin-left: 12%;
     margin-right: auto;
+    font-weight: 600;
 }
 
 .producto-agregar:hover {

@@ -73,7 +73,7 @@
                 <header>
                     <h1 class="logo" id="textobienvenida">Cosmética Natural</h1>
                 </header>
-                <nav>
+                <section>
                     <ul class="menu">
                         <li>
                             <button id="todos" class="boton-menu boton-categoria active">
@@ -133,13 +133,20 @@
                             </button>
                         </li>
                     </ul>
-                </nav>
+                </section>
             </aside>
             <div id="principal">
                 <h2 class="titulo-principal" id="titulo-principal">Catálogo</h2>
-                <div class="buscar" style="padding-left: 1%;"> Busca aquí tus productos:
+                <div class="buscar" style="padding-left: 50px"> Busca aquí tus productos:
                     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="escribe algo..."
                         title="Type in a category">
+                </div>
+                <div>
+                    <button class="filtro-precio" style="margin-left: 50px;" data-min="0" data-max="50">Menos de $50</button>
+                    <button class="filtro-precio" data-min="55" data-max="80">Entre $55 y $80</button>
+                    <button class="filtro-precio" data-min="90" data-max="215">Entre $90 y $220</button>
+                    <button id="btn-mas-vendidos">Más Vendidos</button>
+                    <button id="btn-nuevos">Novedades</button>
                 </div>
                 <div id="contenedor-productos" class="contenedor-productos" style="padding-top: 2rem;"></div>
             </div>
