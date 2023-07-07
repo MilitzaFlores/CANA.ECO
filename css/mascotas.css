@@ -16,7 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+
 }
 
 html {
@@ -49,8 +49,6 @@ a {
 h1 {
     text-align: center;
     color: var(--clr-Secundario);
-    font-weight: 600;
-    font-size: 3rem;
 }
 
 h2 {
@@ -168,16 +166,18 @@ ion-icon:hover {
 
 .titulo-mascotas {
     text-align: center;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 7%;
+    font-weight: 600;
+    font-size: 2.8rem;
 }
 
 .texto-mascotas {
-    font-size: 1.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: .5rem;
-    margin-left: 11rem;
-    margin-right: 11rem;
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    margin-left: 12%;
+    margin-right: 12%;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -223,19 +223,36 @@ ion-icon:hover {
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 500;
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
     font-size: 1rem;
 }
 
-.redes-sociales {
-    margin-bottom: 1.5%;
+.redes-sociales{
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
 }
 
 /* media-queries */
@@ -255,6 +272,7 @@ ion-icon:hover {
     .banner-mascotas {
         width: 90%;
         margin-left: 5.5%;
+        padding-bottom: 0;
     }
 
     .titulo-mascotas {
@@ -279,17 +297,30 @@ ion-icon:hover {
         padding-inline-end: 5%;
     }
 
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
     .qr {
-        padding-inline-start: 3%;
+        padding-inline-start: 6%;
+        border-radius: 0;
     }
 
     .marca-mexicana {
-        padding-inline-end: 4%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 125%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 11%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
@@ -307,18 +338,23 @@ ion-icon:hover {
 
     .banner-mascotas {
         width: 90%;
+        height: 21rem;
         margin-left: 5%;
         margin-right: 4%;
+        margin-bottom: 8%;
+        padding-bottom: 0;
     }
 
     .titulo-mascotas {
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
     }
 
     .texto-mascotas {
-        width: 90%;
-        margin-left: 5%;
+        width: 88%;
+        text-align: justify;
+        margin-left: 6%;
     }
 
     .row-galeria {
@@ -336,21 +372,38 @@ ion-icon:hover {
     }
 
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 22%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 10%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 225%;
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 105px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 29%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }

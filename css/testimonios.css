@@ -268,11 +268,23 @@ ion-icon:hover {
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 500;
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
@@ -280,7 +292,12 @@ ion-icon:hover {
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
 }
 
 /* media-queries */
@@ -338,17 +355,30 @@ ion-icon:hover {
         padding-inline-end: 5%;
     }
 
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
     .qr {
-        padding-inline-start: 2%;
+        padding-inline-start: 6%;
+        border-radius: 0;
     }
 
     .marca-mexicana {
-        padding-inline-end: 4%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 125%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 11%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
@@ -364,17 +394,12 @@ ion-icon:hover {
         margin-right: 59%;
     }
 
-    .inicio {
-        padding-bottom: 0%;
-    }
-
     .titulo {
         padding-top: 16%;
-        padding-bottom: 8%;
     }
 
     .texto-inicio {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: justify;
     }
 
@@ -414,21 +439,37 @@ ion-icon:hover {
     }
 
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 5%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 7%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 225%;
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 8px;
+    }
+
+    .bi {
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 29%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }

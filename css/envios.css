@@ -16,7 +16,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
 }
 
 html {
@@ -44,6 +43,13 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--clr-Principal);
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--clr-Secundario);
+    font-weight: 600;
 }
 
 h1 {
@@ -62,8 +68,7 @@ h2 {
 
 h3 {
     color: var(--clr-Secundario);
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -95,7 +100,7 @@ body {
     }
 }
 
-.navbar{
+.navbar {
     padding-top: 1.5px;
     padding-bottom: 1.5px;
 }
@@ -159,13 +164,60 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
+.titulo-envios {
+    text-align: center;
+    text-decoration: underline overline var(--clr-Principal);
+    text-underline-offset: 12px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.texto-envios {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 8%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.texto-regla {
+    margin-left: 27.5%;
+}
+
+.imagen-envios {
+    width: 50%;
+    height: 550px;
+    border-radius: 20px;
+    margin-left: 25%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 500;
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
@@ -173,7 +225,12 @@ ion-icon:hover {
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
 }
 
 /* media-queries */
@@ -190,25 +247,22 @@ ion-icon:hover {
         margin-right: 66%;
     }
 
-    .banner-mascotas {
-        width: 90%;
-        margin-left: 5.5%;
+    .texto-envios {
+        margin-bottom: 8%;
     }
 
-    .titulo-mascotas {
-        width: 90%;
-        margin-left: 5.5%;
+    .texto-regla {
+        margin-left: 0;
+        text-align: center;
     }
 
-    .texto-mascotas {
-        width: 90%;
-        margin-left: 5.5%;
-    }
-
-    .row-galeria img {
+    .imagen-envios {
         width: 100%;
-        height: 100%;
-        justify-content: center;
+        height: 50%;
+        margin-left: 1px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     .container-fluid-footer {
@@ -217,17 +271,30 @@ ion-icon:hover {
         padding-inline-end: 5%;
     }
 
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
     .qr {
-        padding-inline-start: 3%;
+        padding-inline-start: 6%;
+        border-radius: 0;
     }
 
     .marca-mexicana {
-        padding-inline-end: 4%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 125%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
@@ -243,30 +310,32 @@ ion-icon:hover {
         margin-right: 59%;
     }
 
-    .banner-mascotas {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 4%;
+    .titulo-envios {
+        margin-top: 5%;
     }
 
-    .titulo-mascotas {
-        width: 90%;
-        margin-left: 5%;
+    .texto-envios {
+        margin-bottom: 9%;
     }
 
-    .texto-mascotas {
-        width: 90%;
-        margin-left: 5%;
+    .mapa-responsive {
+        width: 100%;
+        height: 50;
+        border: 0;
     }
 
-    .row-galeria {
-        margin-right: 1.5%;
-        justify-content: center;
+    .texto-regla {
+        margin-left: 0;
+        text-align: center;
     }
 
-    .column {
-        width: 50%;
-        grid-template-columns: 2fr;
+    .imagen-envios {
+        width: 100%;
+        height: 50%;
+        margin-left: 1px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     .container-fluid-footer {
@@ -274,21 +343,31 @@ ion-icon:hover {
     }
 
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 40px;
+        border-radius: 0;
     }
 
     .marca-mexicana {
         margin-right: 10%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 225%;
+    .text-footer-redes {
+        margin-right: 43%;
+        justify-content: center;
+    }
+
+    .redes-sociales {
+        margin-left: 31%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
         margin-left: 18%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        margin-left: 0;
     }
 }

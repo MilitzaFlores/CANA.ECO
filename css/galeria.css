@@ -50,6 +50,7 @@ h1 {
     text-align: center;
     color: var(--clr-Secundario);
     font-weight: 600;
+    font-size: 3rem;
 }
 
 h2 {
@@ -158,6 +159,18 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
+.titulo-galeria {
+    text-align: center;
+    text-decoration: underline wavy var(--clr-Principal);
+    text-underline-offset: 12px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
 #row-galeria {
     display: flex;
     flex-wrap: wrap;
@@ -231,11 +244,23 @@ ion-icon:hover {
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 500;
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
@@ -243,16 +268,18 @@ ion-icon:hover {
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
 }
 
 /* media-queries */
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
-    * {
-        font-size: 14px;
-    }
 
     h1 {
         text-align: center;
@@ -265,8 +292,8 @@ ion-icon:hover {
     }
 
     #row-galeria img {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
 
     .column {
@@ -281,25 +308,35 @@ ion-icon:hover {
         padding-inline-end: 5%;
     }
 
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
     .qr {
-        padding-inline-start: 3%;
+        padding-inline-start: 6%;
+        border-radius: 0;
     }
 
     .marca-mexicana {
-        padding-inline-end: 2%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 135%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
 /* Celular */
 @media (min-width: 350px) and (max-width: 767.98px) {
-    * {
-        font-size: 14px;
-    }
 
     h1 {
         text-align: center;
@@ -309,6 +346,11 @@ ion-icon:hover {
         top: 87%;
         position: absolute;
         margin-right: 59%;
+    }
+
+    .titulo-galeria {
+        padding-top: 9%;
+        margin-bottom: 4%;
     }
 
     #row-galeria {
@@ -330,21 +372,31 @@ ion-icon:hover {
     }
 
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 40px;
+        border-radius: 0;
     }
 
     .marca-mexicana {
         margin-right: 10%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 260%;
+    .text-footer-redes {
+        margin-right: 43%;
+        justify-content: center;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
         margin-left: 18%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        margin-left: 0;
     }
 }

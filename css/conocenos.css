@@ -195,7 +195,6 @@ ion-icon:hover {
 }
 
 .card-text {
-
     padding-bottom: 1.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -226,18 +225,30 @@ strong {
     height: 43rem;
 }
 
-.imagen-historia{
+.imagen-historia {
     width: auto;
-    height: 38rem;
+    height: 36rem;
 }
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 500;
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
@@ -245,7 +256,12 @@ strong {
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
 }
 
 /* media-queries */
@@ -299,23 +315,50 @@ strong {
         height: 55rem;
     }
 
+    .imagen-historia{
+        width: auto;
+        height: 48rem;
+    }
+
     .container-fluid-footer {
         align-items: flex-start;
         text-align: center;
         padding-inline-end: 5%;
     }
+    .text-footer {
+        font-size: 1.2rem;
+    }
+
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
+    .texto-terminos{
+        font-size: 1.1rem;
+    }
 
     .qr {
-        padding-inline-start: 3%;
+        padding-inline-start: 6%;
+        border-radius: 0;
     }
 
     .marca-mexicana {
-        padding-inline-end: 4%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 125%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 34%;
+        font-size: 1.5rem;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
+        font-size: 1.1rem;
     }
 }
 
@@ -363,21 +406,38 @@ strong {
     }
 
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 21%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 10%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 225%;
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 105px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 29%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }

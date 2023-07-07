@@ -174,17 +174,17 @@ ion-icon:hover {
 
 .center-img {
     position: absolute;
-    width: 25%;
-    top: 44%;
+    width: 24%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .banner-texto {
     position: absolute;
-    width: 69%;
-    top: 83%;
-    left: 51.7%;
+    width: 75%;
+    top: 81%;
+    left: 51.5%;
     transform: translate(-50%, -50%);
 }
 
@@ -197,10 +197,11 @@ ion-icon:hover {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     position: absolute;
-    top: 86%;
+    top: 85%;
     left: 48%;
     border-bottom-color: var(--clr-Aside-Texto);
     border-right-color: var(--clr-Principal);
+    cursor: pointer;
 }
 
 .arrow-down {
@@ -212,10 +213,11 @@ ion-icon:hover {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     position: absolute;
-    top: 92%;
+    top: 91%;
     left: 48%;
     border-bottom-color: var(--clr-Principal);
     border-right-color: var(--clr-Aside-Texto);
+    cursor: pointer;
 }
 
 #encabezado {
@@ -226,6 +228,7 @@ ion-icon:hover {
 
 /* Laptop */
 @media (min-width: 1025px) {
+
     .Texto-Principal-div {
         padding-top: 6%;
         padding-bottom: 3%;
@@ -363,11 +366,23 @@ ion-icon:hover {
 
     .text-footer {
         color: var(--clr-Fondo);
-        font-weight: 500;
+    }
+
+    .text-footer-cana {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+    }
+
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        padding-left: 16px;
     }
 
     .qr {
         border-radius: .3rem;
+        display: flex;
+        top: 30%;
     }
 
     .texto-terminos {
@@ -375,18 +390,20 @@ ion-icon:hover {
     }
 
     .redes-sociales {
-        margin-bottom: 1.5%;
+        color: var(--clr-Fondo);
+        font-weight: 600;
+    }
+
+    .redes-sociales:hover {
+        color: var(--clr-Secundario);
     }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
+
     h1 {
         text-align: center;
-    }
-
-    .navbar-toggler {
-        margin-inline-end: 1.5%;
     }
 
     #numero {
@@ -412,7 +429,7 @@ ion-icon:hover {
 
     .banner-texto {
         max-width: 100%;
-        width: 100%;
+        width: 95%;
         height: auto;
         top: 82%;
         padding-right: 5%;
@@ -421,10 +438,18 @@ ion-icon:hover {
 
     .arrow-up {
         top: 85%;
+        width: 45px;
+        height: 45px;
     }
-    
+
     .arrow-down {
         top: 91%;
+        width: 45px;
+        height: 45px;
+    }
+
+    #encabezado {
+        scroll-margin-top: 60px;
     }
 
     .Texto-Principal-div {
@@ -486,7 +511,9 @@ ion-icon:hover {
         justify-content: center;
         gap: 1%;
         padding-right: 3%;
-        padding-left: 3%;
+        padding-left: 15%;
+        width: 90%;
+        height: 65%;
     }
 
     .card-text {
@@ -518,9 +545,11 @@ ion-icon:hover {
 
     .imagen-video {
         gap: 2%;
-        padding-left: 3%;
+        padding-left: 15%;
         padding-right: 3%;
         padding-top: 18%;
+        width: 90%;
+        height: 65%;
     }
 
     .tarjeta-imagen {
@@ -530,9 +559,12 @@ ion-icon:hover {
         font-weight: 500;
     }
 
-    .card-title,
-    .Texto-Tarjetas {
+    .card-title {
         font-size: 2rem;
+    }
+
+    .Texto-Tarjetas {
+        font-size: 1.6rem;
     }
 
     .card-video {
@@ -580,38 +612,51 @@ ion-icon:hover {
 
     .text-footer {
         color: var(--clr-Fondo);
-        font-weight: 500;
+    }
+
+    .text-footer-cana {
+        padding-inline-end: 52%;
+        color: var(--clr-Fondo);
+        font-weight: 600;
     }
 
     .qr {
-        padding-inline-start: 3%;
+        padding-inline-end: -6%;
+        margin-right: 66px;
+        border-radius: 0;
+    }
+
+    .texto-terminos {
+        font-size: 1rem;
     }
 
     .marca-mexicana {
-        padding-inline-end: 4%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 125%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 30%;
+        color: var(--clr-Fondo);
+        font-weight: 600;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        padding-left: 0;
     }
 }
 
 /* Celular */
 @media (min-width: 350px) and (max-width: 767.98px) {
 
-    body {
-        padding-top: 0;
-        max-width: 100%;
-        margin-right: 0;
-    }
-
     h1 {
         text-align: center;
-    }
-
-    .navbar-toggler {
-        margin-inline-end: 1.5%;
     }
 
     #numero {
@@ -624,26 +669,23 @@ ion-icon:hover {
     .img-fluid {
         max-width: 100%;
         width: 100%;
-        height: 525px;
-        object-fit: cover;
+        height: 465px;
+        padding-right: 0;
     }
 
     .center-img {
         max-width: 100%;
         width: 60%;
         height: auto;
-        top: 37%;
-        object-fit: cover;
+        top: 39%;
     }
 
     .banner-texto {
         max-width: 100%;
-        width: 100%;
+        width: 95%;
         height: auto;
-        top: 65%;
-        object-fit: cover;
-        padding-left: 1%;
-        padding-right: 7%;
+        top: 68%;
+        padding-right: 2%;
     }
 
     .arrow-up,
@@ -656,9 +698,9 @@ ion-icon:hover {
         margin: 0 auto;
         margin-left: 8%;
         margin-right: 8%;
-        padding-top: 10%;
+        padding-top: 6%;
         padding-bottom: 4%;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .Texto-Principal {
@@ -785,7 +827,7 @@ ion-icon:hover {
         width: fit-content;
         height: fit-content;
         justify-content: center;
-        margin-right: 30%;
+        margin-right: 33%;
     }
 
     .politicas-reembolso-responsive {
@@ -803,27 +845,50 @@ ion-icon:hover {
         text-align: center;
     }
 
-    .text-footer {
+    .text-footer-cana {
         color: var(--clr-Fondo);
-        font-weight: 500;
+        font-weight: 600;
+        padding-left: 5%;
     }
 
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 5%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        color: var(--clr-Fondo);
+        margin-left: 8%;
+    }
+
+    .texto-terminos {
+        font-size: 1rem;
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 10%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 225%;
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 89px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 29%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }

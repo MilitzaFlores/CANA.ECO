@@ -55,7 +55,7 @@ function cargarProductos(productosElegidos) {
             </div>
             <div>
             <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
-                <div class="card card-body" style="width: 24.7rem; margin-top: .8rem;">
+                <div class="card card-body">
                     ${producto.detalles}
                 </div>
             </div>

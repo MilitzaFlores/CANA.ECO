@@ -193,16 +193,28 @@ ion-icon:hover {
 
 .texto-contacto-terminos {
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 12%;
 }
 
 .text-footer {
     color: var(--clr-Fondo);
-    font-weight: 500;
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
@@ -210,13 +222,19 @@ ion-icon:hover {
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
+}
+
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
 }
 
 /* media-queries */
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
+
     h1 {
         text-align: center;
     }
@@ -249,17 +267,30 @@ ion-icon:hover {
         padding-inline-end: 5%;
     }
 
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
     .qr {
-        padding-inline-start: 3%;
+        padding-inline-start: 6%;
+        border-radius: 0;
     }
 
     .marca-mexicana {
-        padding-inline-end: 4%;
+        padding-inline-end: -6%;
+        padding-right: 80px;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 125%;
-        padding-inline-start: 25px;
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
@@ -296,22 +327,51 @@ ion-icon:hover {
         text-align: center;
     }
 
+
+    .text-footer-cana {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        padding-left: 5%;
+    }
+
     .qr {
-        margin-left: 2%;
-        margin-bottom: 15px;
+        margin-left: 23%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        color: var(--clr-Fondo);
+        margin-left: 8%;
+    }
+
+    .texto-terminos {
+        font-size: 1rem;
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 10%;
     }
 
-    .redes-sociales-iconos {
-        margin-left: 225%;
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 100px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 28%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }

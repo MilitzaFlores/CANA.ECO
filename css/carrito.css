@@ -208,6 +208,11 @@ aside {
     padding: 3rem;
 }
 
+#carrito-vacio {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 .titulo-principal {
     color: var(--clr-Secundario);
     margin-bottom: 3rem;
@@ -287,7 +292,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
 }
 
 .carrito-producto {
@@ -434,6 +438,11 @@ aside {
     transition: color .2s;
 }
 
+.estilos-swal {
+    background-color: var(--clr-Principal) !important;
+    box-shadow: 0 0 10px var(--clr-Principal) !important;
+}
+
 .header-mobile {
     display: none;
 }
@@ -448,40 +457,187 @@ aside {
 
 .text-footer {
     color: var(--clr-Fondo);
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
     font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
-    font-size: .89rem;
+    font-size: 1rem;
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
 }
 
-/* media queries */
-@media screen and (max-width: 850px) {
-    .contenedor-productos {
-        grid-template-columns: 1fr 1fr 1fr;
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
+}
+
+/* media-queries */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 968px) {
+
+    #numero {
+        top: 87%;
+        position: absolute;
+        margin-right: 66%;
+    }
+
+    #wrapper {
+        margin-top: 8%;
+    }
+
+    .boton-menu.active::before,
+    .boton-menu.active::after {
+        display: none;
+    }
+
+    #principal {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .carrito-vacio {
+        text-align: center;
+    }
+
+    .carrito-productos {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: .5rem;
+    }
+
+    .carrito-producto-titulo {
+        margin-left: 2%;
+    }
+
+    .carrito-producto-cantidad,
+    .carrito-producto-precio {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .menos {
+        display: flex;
+        position: absolute;
+        margin-left: 2.5%;
+        font-size: 1.7rem;
+    }
+
+    .mas {
+        float: right;
+        margin-right: 16.5%;
+    }
+
+    .carrito-producto-subtotal,
+    .trash {
+        display: none;
+    }
+
+    .carrito-acciones {
+        flex-wrap: wrap;
+        row-gap: .8rem;
+        text-align: center;
+    }
+
+    .carrito-acciones-total-final {
+        display: flex;
+        margin-left: 16%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .boton-whatsapp {
+        position: fixed;
+        bottom: 30px;
+        left: 70px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        z-index: 9999;
+    }
+
+    .btn-lg {
+        padding-left: 12px;
+        padding-top: 7px;
+    }
+
+    .carrito-acciones-total-final {
+        display: flex;
+        margin-left: 30%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
+    .qr {
+        padding-inline-start: 6%;
+        border-radius: 0;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: -6%;
+        padding-right: 80px;
+    }
+
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
-@media screen and (max-width: 675px) {
-    .contenedor-productos {
-        grid-template-columns: 1fr 1fr;
+/* celular */
+@media (min-width: 390px) and (max-width: 767.98px) {
+
+    #numero {
+        top: 87%;
+        position: absolute;
+        margin-right: 58%;
     }
-}
 
-@media screen and (max-width: 600px) {
-
-    .wrapper {
+    #wrapper {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        margin-top: 18%;
     }
 
     aside {
@@ -494,6 +650,7 @@ aside {
         opacity: 0;
         visibility: hidden;
         transition: .2s;
+        margin-right: 30%;
     }
 
     .aside-visible {
@@ -507,14 +664,224 @@ aside {
         display: none;
     }
 
-    main {
-        margin: 1rem;
-        margin-top: 0;
-        padding: 2rem;
+    .header-mobile {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .contenedor-productos {
-        grid-template-columns: 1fr 1fr;
+    .header-mobile .logo {
+        color: var(--clr-Secundario);
+        margin-left: 29%;
+        margin-bottom: 3%;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .list {
+        color: var(--clr-Secundario);
+        font-size: 2.2rem;
+    }
+
+    .close-circle {
+        color: var(--clr-Principal);
+        font-size: 3rem;
+    }
+
+    .open-menu {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-right: 26%;
+    }
+
+    .close-menu {
+        background-color: transparent;
+        border: 0;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 8.2rem;
+        right: 1rem;
+        margin-right: -50%;
+    }
+
+    #principal {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .titulo-principal {
+        margin-bottom: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    #carrito-vacio {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .carrito-producto {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: .5rem;
+    }
+
+    .carrito-producto-imagen {
+        margin-left: 14%;
+        margin-top: 2%;
+    }
+
+    .carrito-producto-titulo {
+        margin-left: 6%;
+        margin-top: 2%;
+    }
+
+    .carrito-producto-cantidad,
+    .carrito-producto-precio {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .menos {
+        display: flex;
+        position: absolute;
+        margin-left: 8%;
+        font-size: 1.7rem;
+    }
+
+    .mas {
+        float: right;
+        margin-right: 21.5%;
+    }
+
+    .carrito-producto-subtotal,
+    .trash {
+        display: none;
+    }
+
+    .carrito-acciones {
+        flex-wrap: wrap;
+        row-gap: .8rem;
+        text-align: center;
+    }
+
+    .carrito-2 {
+        margin-top: 15%;
+    }
+
+    .boton-whatsapp {
+        position: fixed;
+        bottom: 165px;
+        left: 90px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        z-index: 9999;
+    }
+
+    .btn-lg {
+        padding-left: 12px;
+        padding-top: 7px;
+    }
+
+    .carrito-acciones-total-final {
+        display: flex;
+        margin-left: 18.5%;
+    }
+
+    .carrito-total-final {
+        display: flex;
+        margin-left: 14%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .qr {
+        margin-left: 21%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: 10%;
+    }
+
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 100px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 28%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
+    }
+}
+
+/* celular */
+@media (min-width: 350px) and (max-width: 389px) {
+
+    #numero {
+        top: 87%;
+        position: absolute;
+        margin-right: 58%;
+    }
+
+    #wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18%;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        background-color: var(--clr-FondoSecundario);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s;
+        margin-right: 30%;
+    }
+
+    .aside-visible {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .boton-menu.active::before,
+    .boton-menu.active::after {
+        display: none;
     }
 
     .header-mobile {
@@ -526,43 +893,169 @@ aside {
 
     .header-mobile .logo {
         color: var(--clr-Secundario);
+        margin-left: 23%;
+        margin-bottom: 3%;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
     }
 
-    .open-menu,
+    .list {
+        color: var(--clr-Secundario);
+        font-size: 2.2rem;
+    }
+
+    .close-circle {
+        color: var(--clr-Principal);
+        font-size: 3rem;
+    }
+
+    .open-menu {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-right: 26%;
+    }
+
     .close-menu {
         background-color: transparent;
-        color: var(--clr-Secundario);
         border: 0;
-        font-size: 2rem;
+        font-weight: 600;
         cursor: pointer;
-    }
-
-    .close-menu {
         display: block;
         position: absolute;
-        top: 1rem;
+        top: 8.2rem;
         right: 1rem;
+        margin-right: -50%;
+    }
+
+    #principal {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .titulo-principal {
+        margin-bottom: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    #carrito-vacio {
+        text-align: center;
+        font-size: 1.5rem;
     }
 
     .carrito-producto {
-        gap: 1rem;
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: .5rem;
     }
 
-    .carrito-producto-subtotal {
+    .carrito-producto-imagen {
+        margin-left: 14%;
+        margin-top: 2%;
+
+    }
+
+    .carrito-producto-titulo {
+        margin-left: 6%;
+        margin-top: 2%;
+    }
+
+    .carrito-producto-cantidad,
+    .carrito-producto-precio {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .menos {
+        display: flex;
+        position: absolute;
+        margin-left: 8%;
+        font-size: 1.7rem;
+    }
+
+    .mas {
+        float: right;
+        margin-right: 21.5%;
+    }
+
+    .carrito-producto-subtotal,
+    .trash {
         display: none;
     }
 
     .carrito-acciones {
         flex-wrap: wrap;
-        row-gap: 1rem;
+        row-gap: .8rem;
+        text-align: center;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .contenedor-productos {
-        grid-template-columns: 1fr;
+    .carrito-acciones-total-final {
+        display: flex;
+        margin-left: 16%;
+    }
+
+    .carrito-2 {
+        margin-top: 15%;
+    }
+
+    .boton-whatsapp {
+        position: fixed;
+        bottom: 165px;
+        left: 90px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        z-index: 9999;
+    }
+
+    .btn-lg {
+        padding-left: 12px;
+        padding-top: 7px;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .qr {
+        margin-left: 21%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: 10%;
+    }
+
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 100px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 28%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }

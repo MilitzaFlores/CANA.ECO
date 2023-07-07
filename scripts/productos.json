@@ -274,7 +274,7 @@
     {
         "id": "panditas",
         "titulo": "Panditas 35 gr.",
-        "imagen": "./imagenes/catalogo/crema-panditas-aluminio.png",
+        "imagen": "./imagenes/catalogo/crema-panditas-lata-1.jpg",
         "categoria": {
             "nombre": "Cuidado Corporal",
             "id": "cremas"
@@ -334,27 +334,27 @@
         "precio": 7
     },
     {
-        "id": "shampooBlanco",
-        "titulo": "<br> Shampoo Peludos 65 gr.",
+        "id": "shampooVerde",
+        "titulo": "<br> Shampoo Peludos 65 gr. <br><br>",
         "imagen": "./imagenes/catalogo/peludos.jpg",
         "categoria": {
             "nombre": "Mascotas",
             "id": "mascotas"
         },
-        "ingredientes": "<b>Blanco DESENREDANTE</b> <br><br> Coco ● Caolín ● Cacao",
-        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Olor a coco y cacao.",
+        "ingredientes": "<b>Verde REPELENTE</b> <br><br> Romero ● Neem ● Coco",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Limpia profundo, previene garrapatas y guinas. <br><br> Olor a lavanda. <br><br> Con aceites esenciales de lavanda y árbol de té.",
         "precio": 60
     },
     {
-        "id": "shampooVerde",
-        "titulo": "<br> Shampoo Peludos 65 gr.",
+        "id": "shampooBlanco",
+        "titulo": "<br> Shampoo Peludos 65 gr. <br><br>",
         "imagen": "./imagenes/catalogo/peludos-1.jpg",
         "categoria": {
             "nombre": "Mascotas",
             "id": "mascotas"
         },
-        "ingredientes": "<b>Verde REPELENTE</b> <br><br> Coco ● Caolín ● Cacao",
-        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Olor a coco y cacao.",
+        "ingredientes": "<b>Blanco DESENREDANTE</b> <br><br> Coco ● Caolín ● Cacao",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Olor a coco y cacao. <br><br> Con aceites esenciales de lavanda y árbol de té.",
         "precio": 60
     },
     {
@@ -366,9 +366,33 @@
             "id": "mascotas"
         },
         "ingredientes": "<b>¡Producto Nuevo!</b> <br> Nuestros 2 shampoos EN UNO SÓLO <br><br> Coco ● Caolín ● Cacao ● Romero ● Neem",
-        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Verde repelente: Limpia profundo, previene garrapatas y guinas. <br><br> Blanco desenredante: Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Ambos con aceites esenciales de lavanda y árbol de té.",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Verde repelente: Limpia profundo, previene garrapatas y guinas. <br><br> Blanco desenredante: Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Con aceites esenciales de lavanda y árbol de té.",
         "precio": 65,
         "esNuevo": true
+    },
+    {
+        "id": "shampooBlanco130",
+        "titulo": "<br> Shampoo Peludos 130 gr. <br><br>",
+        "imagen": "./imagenes/catalogo/peludos.jpg",
+        "categoria": {
+            "nombre": "Mascotas",
+            "id": "mascotas"
+        },
+        "ingredientes": "<b>Blanco DESENREDANTE</b> <br><br> Coco ● Caolín ● Cacao",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Tiene un poco de acondicionador que deja el pelito súper suave y fácil de cepillar, humecta su pielecita. <br><br> Olor a coco y cacao. <br><br> Con aceites esenciales de lavanda y árbol de té.",
+        "precio": 120
+    },
+    {
+        "id": "shampooVerde130",
+        "titulo": "<br> Shampoo Peludos 130 gr. <br><br>",
+        "imagen": "./imagenes/catalogo/peludos-1.jpg",
+        "categoria": {
+            "nombre": "Mascotas",
+            "id": "mascotas"
+        },
+        "ingredientes": "<b>Verde REPELENTE</b> <br><br> Romero ● Neem ● Coco",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> Limpia profundo, previene garrapatas y guinas. <br><br> Olor a lavanda. <br><br> Con aceites esenciales de lavanda y árbol de té.",
+        "precio": 120
     },
     {
         "id": "peludos1",
@@ -379,7 +403,7 @@
             "id": "paquetes"
         },
         "ingredientes": "<b>¡Arma tu paquete!</b> <br><br> <b> 2 shampoos iguales de 130 gr.</b>",
-        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> 100% natural, biodegradable y compostable. <br><br> Con aceites esenciales de lavanda y árbol de té",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> 100% natural, biodegradable y compostable. <br><br> Con aceites esenciales de lavanda y árbol de té.",
         "precio": 215
     },
     {
@@ -391,7 +415,7 @@
             "id": "paquetes"
         },
         "ingredientes": "<b>¡Arma tu paquete!</b> <br><br> <b>Combinado 130 gr. <br> (repelente y desenredante)</b>",
-        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> 100% natural, biodegradable y compostable. <br><br> Con aceites esenciales de lavanda y árbol de té",
+        "detalles": "IDEAL PARA: TODO TIPO DE MASCOTAS. <br><br> 100% natural, biodegradable y compostable. <br><br> Con aceites esenciales de lavanda y árbol de té.",
         "precio": 215
     }
 ]

@@ -128,7 +128,11 @@ function vaciarCarrito() {
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText: 'Sí',
-        cancelButtonText: 'No'
+        cancelButtonText: 'No',
+        customClass: {
+            confirmButton: 'estilos-swal'
+        }
+
     }).then((result) => {
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;

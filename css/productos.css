@@ -239,7 +239,7 @@ aside {
     height: 2rem;
     font-weight: 500;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 45px;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 2rem;
@@ -291,6 +291,8 @@ aside {
 }
 
 .card-body {
+    width: 24.7rem;
+    margin-top: .8rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: justify;
@@ -331,6 +333,7 @@ aside {
 
 .producto-titulo {
     font-size: 1rem;
+    margin-left: 4%;
 }
 
 #mangoaloe50,
@@ -405,40 +408,63 @@ aside {
 
 .text-footer {
     color: var(--clr-Fondo);
+}
+
+.text-footer-cana {
+    color: var(--clr-Fondo);
     font-weight: 600;
+}
+
+.text-footer-redes {
+    color: var(--clr-Fondo);
+    font-weight: 600;
+    padding-left: 16px;
 }
 
 .qr {
     border-radius: .3rem;
+    display: flex;
+    top: 30%;
 }
 
 .texto-terminos {
-    font-size: .89rem;
+    font-size: 1rem;
 }
 
 .redes-sociales {
-    margin-bottom: 1.5%;
+    color: var(--clr-Fondo);
+    font-weight: 600;
 }
 
-/* media queries */
-@media screen and (max-width: 850px) {
-    .contenedor-productos {
-        grid-template-columns: 1fr 1fr 1fr;
+.redes-sociales:hover {
+    color: var(--clr-Secundario);
+}
+
+/* media-queries */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 968px) {
+
+    #numero {
+        top: 87%;
+        position: absolute;
+        margin-right: 66%;
     }
-}
 
-@media screen and (max-width: 675px) {
-    .contenedor-productos {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    .wrapper {
+    #wrapper {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        margin-top: 8%;
+        padding-right: 0%;
+    }
+
+    #textobienvenida {
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 30%;
+        padding-bottom: 15%;
     }
 
     aside {
@@ -451,6 +477,7 @@ aside {
         opacity: 0;
         visibility: hidden;
         transition: .2s;
+        margin-right: 50%;
     }
 
     .aside-visible {
@@ -459,19 +486,13 @@ aside {
         visibility: visible;
     }
 
+    .menu {
+        gap: .1rem;
+    }
+
     .boton-menu.active::before,
     .boton-menu.active::after {
         display: none;
-    }
-
-    main {
-        margin: 1rem;
-        margin-top: 0;
-        padding: 2rem;
-    }
-
-    .contenedor-productos {
-        grid-template-columns: 1fr 1fr;
     }
 
     .header-mobile {
@@ -483,43 +504,594 @@ aside {
 
     .header-mobile .logo {
         color: var(--clr-Secundario);
+        margin-left: 32%;
+        margin-bottom: 3%;
+        font-size: 3.3rem;
     }
 
-    .open-menu,
+    .list {
+        color: var(--clr-Secundario);
+        font-size: 2.2rem;
+    }
+
+    .close-circle {
+        color: var(--clr-Principal);
+        font-size: 3rem;
+    }
+
+    .open-menu {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-right: 24%;
+        margin-top: -1%;
+    }
+
+    .boton-categoria {
+        font-size: 1rem;
+    }
+
     .close-menu {
         background-color: transparent;
-        color: var(--clr-Secundario);
         border: 0;
-        font-size: 2rem;
+        font-weight: 600;
         cursor: pointer;
-    }
-
-    .close-menu {
         display: block;
         position: absolute;
-        top: 1rem;
+        top: 9rem;
         right: 1rem;
+        margin-right: -50%;
     }
 
-    .carrito-producto {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding: .5rem;
+    #principal {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
     }
 
-    .carrito-producto-subtotal {
-        display: none;
+    .titulo-principal {
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
     }
 
-    .carrito-acciones {
-        flex-wrap: wrap;
-        row-gap: 1rem;
+    .buscar {
+        text-align: center;
+        margin-right: 23%;
+    }
+
+    .buscar input {
+        width: 17rem;
+        margin-bottom: 25px;
+        margin-right: 5%;
+    }
+
+    .filtro-precio,
+    #btn-mas-vendidos,
+    #btn-nuevos {
+        width: 7.5rem;
+        margin-top: 10px;
+        margin-bottom: .80rem;
+        margin-left: 6px;
+        margin-right: 1px;
+        font-size: .95rem;
+    }
+
+    .producto-imagen {
+        width: 8rem;
+        height: 8rem;
+        margin-left: 88%;
+    }
+
+    .btn {
+        margin-left: 85%;
+        margin-bottom: 20%;
+    }
+
+    .card {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: .80rem;
+        padding-right: .75rem;
+        height: 98%;
+    }
+
+    .card-body {
+        width: 17rem;
+        margin-top: .8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        gap: .8rem;
+    }
+
+    .ingredientes {
+        margin-right: 1.8%;
+    }
+
+    .producto-contenido {
+        margin-left: 15%;
+    }
+
+    .collapse-horizontal {
+        margin-left: 18px;
+    }
+
+    .producto-agregar {
+        margin-left: -2%;
+        margin-top: 3%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .text-footer-cana {
+        padding-inline-end: 50%;
+    }
+
+    .qr {
+        padding-inline-start: 6%;
+        border-radius: 0;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: -6%;
+        padding-right: 80px;
+    }
+
+    .text-footer-redes {
+        padding-right: 34%;
+    }
+
+    .redes-sociales {
+        padding-left: 12%;
+    }
+
+    .redes-sociales-responsive {
+        padding-left: 0;
     }
 }
 
-@media screen and (max-width: 400px) {
+/* Celular */
+@media (min-width: 390px) and (max-width: 767.98px) {
+
+    #numero {
+        top: 87%;
+        position: absolute;
+        margin-right: 58%;
+    }
+
+    #wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18%;
+    }
+
+    #textobienvenida {
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-right: 7%;
+        padding-top: 40%;
+        padding-bottom: 15%;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        background-color: var(--clr-FondoSecundario);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s;
+        margin-right: 30%;
+    }
+
+    .aside-visible {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu {
+        gap: .1rem;
+    }
+
+    .boton-menu.active::before,
+    .boton-menu.active::after {
+        display: none;
+    }
+
+    .header-mobile {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile .logo {
+        color: var(--clr-Secundario);
+        margin-left: 8%;
+        margin-bottom: 3%;
+    }
+
+    .list {
+        color: var(--clr-Secundario);
+        font-size: 2.2rem;
+    }
+
+    .close-circle {
+        color: var(--clr-Principal);
+        font-size: 3rem;
+    }
+
+    .open-menu {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-right: 18%;
+    }
+
+    .close-menu {
+        background-color: transparent;
+        border: 0;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 8rem;
+        right: 1rem;
+        margin-right: -38%;
+    }
+
+    #principal {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .titulo-principal {
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .buscar {
+        text-align: center;
+        margin-right: 2%;
+    }
+
+    .buscar input {
+        width: 17rem;
+        margin-bottom: 25px;
+        margin-right: 5%;
+    }
+
+    .filtro-precio,
+    #btn-mas-vendidos {
+        width: 8.5rem;
+        margin-top: 10px;
+        margin-bottom: .80rem;
+        margin-left: 8px;
+        margin-right: 4px;
+    }
+
+    #btn-nuevos {
+        background-color: var(--clr-Secundario);
+        color: var(--clr-Fondo);
+        width: 8.5rem;
+        margin-top: 10px;
+        margin-bottom: .80rem;
+        margin-left: 80px;
+    }
+
     .contenedor-productos {
         grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .producto-imagen {
+        margin-left: 5%;
+    }
+
+    .btn {
+        margin-left: 25.5%;
+        margin-bottom: 7%;
+    }
+
+    .ingredientes {
+        margin-right: 1.8%;
+    }
+
+    .card {
+        padding-right: 1.7rem;
+    }
+
+    .card-body {
+        width: 15rem;
+        margin-top: .8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+
+    .collapse-horizontal {
+        margin-left: 18px;
+    }
+
+    .producto-agregar {
+        margin-left: 10%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .qr {
+        margin-left: 21%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: 10%;
+    }
+
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 100px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 28%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
+    }
+}
+
+/* celular */
+@media (min-width: 350px) and (max-width: 389px) {
+
+    #numero {
+        top: 87%;
+        position: absolute;
+        margin-right: 57%;
+    }
+
+    #wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18%;
+    }
+
+    #textobienvenida {
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-right: 7%;
+        padding-top: 45%;
+        padding-bottom: 15%;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        background-color: var(--clr-FondoSecundario);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s;
+        margin-right: 30%;
+    }
+
+    .aside-visible {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu {
+        gap: .3rem;
+    }
+
+    .boton-menu.active::before,
+    .boton-menu.active::after {
+        display: none;
+    }
+
+    .header-mobile {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile .logo {
+        color: var(--clr-Secundario);
+        margin-left: 6%;
+        margin-bottom: 3%;
+    }
+
+    .list {
+        color: var(--clr-Secundario);
+        font-size: 2.2rem;
+    }
+
+    .close-circle {
+        color: var(--clr-Principal);
+        font-size: 3rem;
+    }
+
+    .open-menu {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-right: 16%;
+    }
+
+    .boton-categoria {
+        font-size: .79rem;
+    }
+
+    .close-menu {
+        background-color: transparent;
+        border: 0;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 8.2rem;
+        right: 1rem;
+        margin-right: -38%;
+    }
+
+    #principal {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .titulo-principal {
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .buscar {
+        text-align: center;
+        margin-right: 2%;
+    }
+
+    .buscar input {
+        width: 14rem;
+        margin-bottom: 25px;
+    }
+
+    .filtro-precio,
+    #btn-mas-vendidos {
+        width: 7.8rem;
+        margin-top: 10px;
+        margin-bottom: .80rem;
+        margin-left: 4px;
+    }
+
+    #btn-nuevos {
+        background-color: var(--clr-Secundario);
+        color: var(--clr-Fondo);
+        width: 8.5rem;
+        margin-top: 10px;
+        margin-bottom: .80rem;
+        margin-left: 65px;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .producto-imagen {
+        margin-left: 5%;
+    }
+
+    .btn {
+        margin-left: 22%;
+        margin-bottom: 7%;
+    }
+
+    .ingredientes {
+        margin-right: 2%;
+    }
+
+    .card {
+        padding-right: 1.7rem;
+    }
+
+    .card-body {
+        width: 12.8rem;
+        margin-top: .8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+
+    .collapse-horizontal {
+        margin-left: 18px;
+    }
+
+    .producto-agregar {
+        margin-left: 4%;
+    }
+
+    .container-fluid-footer {
+        align-items: flex-start;
+        text-align: center;
+        padding-inline-end: 5%;
+    }
+
+    .qr {
+        margin-left: 21%;
+        border-radius: 0;
+    }
+
+    .texto-terminos,
+    .text-footer {
+        margin-left: 8%;
+    }
+
+    .marca-mexicana {
+        padding-inline-end: 10%;
+    }
+
+    .text-footer-redes {
+        color: var(--clr-Fondo);
+        font-weight: 600;
+        margin-right: 100px;
+    }
+
+    .redes-sociales {
+        margin-left: 33%;
+        justify-content: center;
+    }
+
+    .cana-footer {
+        margin-top: 15px;
+        margin-left: 28%;
+        margin-bottom: 15px;
+    }
+
+    .redes-sociales-responsive {
+        color: var(--clr-Fondo);
+        margin-left: 0;
     }
 }
