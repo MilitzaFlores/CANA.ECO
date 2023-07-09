@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://live.staticflickr.com/65535/52944378924_532f704f75_b.jpg"/>
+    <meta property="og:title" content="CANÁ.ECO"/>
+    <meta property="og:description" content="Cosmética natural: Belleza y cuidado personal."/>
     <title>Contáctanos</title>
     <link rel="icon" href="./imagenes/cana-logo-2.png" type="image/png" sizes="32x32">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,14 +67,15 @@
             posible.</p>
         <form class="text-center" action="https://formspree.io/f/mdovrnoy" method="POST">
             <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4"
-                placeholder="Nombre completo">
+                placeholder="Nombre completo" autocomplete="name">
             <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4"
-                placeholder="Correo electrónico">
-            <input type="text" name="phone" id="defaultContactFormEmail" class="form-control mb-4"
-                placeholder="Número de teléfono" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                placeholder="Correo electrónico" autocomplete="email">
+            <input type="text" name="phone" id="defaultContactFormPhone" class="form-control mb-4"
+                placeholder="Número de teléfono" aria-describedby="defaultRegisterFormPhoneHelpBlock"
+                autocomplete="phone">
             <div>
-                <label class="label-responsive">Motivo:</label>
-                <select name="motive" class="browser-default custom-select mb-4 label-opciones-responsive"
+                <label class="label-responsive" for="motive">Motivo:</label>
+                <select name="motive" id="motive" class="browser-default custom-select mb-4 label-opciones-responsive"
                     style="text-align: center;">
                     <option value="Pedidos" selected>Pedidos</option>
                     <option value="Comentarios">Comentarios</option>
@@ -140,7 +144,8 @@
                 </div>
                 <div
                     class="d-flex flex-column flex-sm-row justify-content-between align-items-right py-3 my-3 pt-4 pb-1 border-top">
-                    <p class="col-md-4 mb-0 text-footer">Diseñado Por: <a class="redes-sociales redes-sociales-responsive"
+                    <p class="col-md-4 mb-0 text-footer">Diseñado Por: <a
+                            class="redes-sociales redes-sociales-responsive"
                             href="https://www.linkedin.com/in/militza-flores-g11/" target="_blank">Militza
                             Flores</a></p>
                     <p class="col-md-4 d-flex align-items-center justify-content-center">

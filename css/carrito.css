@@ -17,7 +17,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
 }
 
 html {
@@ -27,6 +26,7 @@ html {
 }
 
 .material-symbols-outlined {
+    font-size: 33px;
     font-variation-settings:
         'FILL'0,
         'wght'400,
@@ -286,12 +286,14 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 17px;
 }
 
 .carrito-productos-final {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 17px;
 }
 
 .carrito-producto {
@@ -706,7 +708,7 @@ aside {
         position: absolute;
         top: 8.2rem;
         right: 1rem;
-        margin-right: -50%;
+        margin-right: -45%;
     }
 
     #principal {
@@ -756,7 +758,9 @@ aside {
 
     .mas {
         float: right;
+        font-size: 1.7rem;
         margin-right: 21.5%;
+        margin-top: -30px;
     }
 
     .carrito-producto-subtotal,
@@ -791,14 +795,18 @@ aside {
         padding-top: 7px;
     }
 
+    .carrito-comprado-final{
+        padding-top: 6%;
+    }
+    
     .carrito-acciones-total-final {
         display: flex;
-        margin-left: 18.5%;
+        margin-left: 17%;
     }
 
     .carrito-total-final {
         display: flex;
-        margin-left: 14%;
+        margin-left: 14.5%;
     }
 
     .container-fluid-footer {
