@@ -4,7 +4,7 @@
 
 ¡Bienvenido a mi primer proyecto! Primero que nada, quiero agradecer a **Montserrat Camino Torres**, quien depósito su confianza en mí dándome la oportunidad de usar su marca y hacer de esta página web una realidad.
 
-CANÁ es un _e-commerce_ mexicano dedicado a la cosmética natural, belleza y cuidado personal. Sus productos son ecológicos y 100% hechos a mano, entre los cuáles podemos encontrar shampoos, acondicionadores y cremas.
+CANÁ es un _e-commerce_ mexicano dedicado a la cosmética natural sólida, belleza y cuidado personal. Sus productos son ecológicos y 100% hechos a mano, entre los cuáles podemos encontrar shampoos, acondicionadores y cremas.
 
 Puedes conocer más de este emprendimiento en sus redes sociales:
 
@@ -28,7 +28,7 @@ Este es un proyecto que se mantendra con cambios constantes, debido al compromis
 - **Featherlight jQuery:** Se implemento node_modules para hacerlo funcionar. Tiene la finalidad de dar un panorama completo de las imágenes que están en la tienda. Esto facilita que el usuario pueda visualizar los productos que esta por adquirir, todo en la misma página. La función se encuentra en el JS de la tarjeta.
 
 ## Diseño responsive
-Esta página se adaptó para Laptops de 15", tabletas de 768px a 968px y dispositivos celulares de 350px a767.98px
+Esta página se adaptó para laptops de 15", tabletas de 768px a 968px y dispositivos celulares de 350px a767.98px
 
 ## ChatBot
 Se creo un chatbot de preguntas frecuentes para facilitar la información al usuario. Esta completamente personalizado y funciona por medio del script generado en la página de ArtiBot.ai.
