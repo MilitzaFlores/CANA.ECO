@@ -278,6 +278,49 @@ ion-icon:hover {
 
 /* media-queries */
 
+/* PC */
+@media (min-width: 1680px) {
+
+    .navbar {
+        margin-inline-end: 15%;
+    }
+
+    footer {
+        margin-inline-end: 20%;
+    }
+
+    .navbar-collapse {
+        font-size: 15px;
+        margin-left: -12%;
+        margin-right: 8%;
+    }
+
+    .titulo-galeria {
+        text-align: center;
+        text-decoration: underline wavy var(--clr-Principal);
+        text-underline-offset: 12px;
+        margin-right: 20%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        font-weight: 600;
+        font-size: 2.8rem;
+    }
+
+    #row-galeria {
+        display: flex;
+        flex-wrap: wrap;
+        display: grid;
+        text-align: center;
+        grid-template-rows: repeat(1, 4fr);
+        padding-top: 1%;
+        padding-bottom: 7%;
+        padding-left: 2.8rem;
+        padding-right: 24rem;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: center;
+    }
+}
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
 

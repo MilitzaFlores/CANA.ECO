@@ -300,7 +300,48 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
+
+
 /* media-queries */
+
+/* PC */
+@media (min-width: 1680px) {
+
+    * {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .btn {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--clr-Principal) !important;
+        color: var(--clr-Fondo);
+        transition: color 0.3s;
+    }
+
+    .btn-lg {
+        font-weight: 600;
+        font-size: 2rem;
+        transition: color 0.3s;
+        transition: transform 0.3s;
+        padding-top: 2%;
+        padding-left: 0.7%;
+        margin-left: 47%;
+        color: var(--clr-Aside-Texto);
+    }
+
+    footer {
+        height: 100%;
+        width: 100%;
+        gap: 0;
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
@@ -344,6 +385,10 @@ ion-icon:hover {
         gap: 40%;
     }
 
+    footer {
+        gap: 0;
+    }
+
     .clientes-imagen {
         width: 90%;
         margin-inline-start: 120%;
@@ -355,18 +400,15 @@ ion-icon:hover {
         padding-inline-end: 5%;
     }
 
-    .text-footer-cana {
-        padding-inline-end: 50%;
-    }
-
     .qr {
         padding-inline-start: 6%;
+        margin-left: 37px;
         border-radius: 0;
     }
 
     .marca-mexicana {
         padding-inline-end: -6%;
-        padding-right: 80px;
+        padding-right: 45px;
     }
 
     .text-footer-redes {
@@ -374,7 +416,7 @@ ion-icon:hover {
     }
 
     .redes-sociales {
-        padding-left: 11%;
+        padding-left: 13%;
     }
 
     .redes-sociales-responsive {
@@ -438,8 +480,12 @@ ion-icon:hover {
         text-align: center;
     }
 
+    footer {
+        gap: 0;
+    }
+
     .qr {
-        margin-left: 5%;
+        margin-left: 21.5%;
         border-radius: 0;
     }
 
@@ -466,6 +512,14 @@ ion-icon:hover {
         margin-top: 15px;
         margin-left: 29%;
         margin-bottom: 15px;
+    }
+
+    .text-footer-redes{
+        padding-right: 36%;
+    }
+
+    .redes-sociales{
+        margin-left: 37%;
     }
 
     .redes-sociales-responsive {

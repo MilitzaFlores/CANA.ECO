@@ -16,7 +16,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
 }
 
 html {
@@ -93,7 +92,7 @@ body {
     }
 }
 
-.navbar{
+.navbar {
     padding-top: 1.5px;
     padding-bottom: 1.5px;
 }
@@ -246,7 +245,7 @@ ion-icon:hover {
     font-size: 1rem;
 }
 
-.redes-sociales{
+.redes-sociales {
     color: var(--clr-Fondo);
     font-weight: 600;
 }
@@ -256,6 +255,67 @@ ion-icon:hover {
 }
 
 /* media-queries */
+
+/* PC */
+@media (min-width: 1680px) {
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    header,
+    footer, .navbar {
+        font-size: 20px;
+        margin-left: -1%;
+        margin-right: 8%;
+    }
+
+    .banner-mascotas {
+        padding-top: 4rem;
+        width: 80%;
+        margin-left: 6rem;
+        padding-bottom: 5rem;
+    }
+
+    .titulo-mascotas {
+        text-align: center;
+        margin-left: 9%;
+        margin-right: 16%;
+        padding-top: 7%;
+        font-weight: 600;
+        font-size: 3.3rem;
+    }
+
+    .texto-mascotas {
+        font-size: 1.7rem;
+        margin-top: 2.5rem;
+        margin-left: 9%;
+        margin-right: 16%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .column {
+        flex: 50%;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 3fr);
+        grid-gap: 18px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-left: -6%;
+        margin-right: 4%;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        border-radius: 1rem;
+        width: 26rem;
+        height: 26rem;
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {

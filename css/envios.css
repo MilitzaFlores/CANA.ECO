@@ -206,6 +206,7 @@ ion-icon:hover {
 .text-footer-cana {
     color: var(--clr-Fondo);
     font-weight: 600;
+    padding-left: 4px;
 }
 
 .text-footer-redes {
@@ -234,6 +235,19 @@ ion-icon:hover {
 }
 
 /* media-queries */
+
+/* PC */
+@media (min-width: 1680px) {
+    
+    * {
+        font-size: 20px;
+    } 
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
@@ -340,6 +354,10 @@ ion-icon:hover {
 
     .container-fluid-footer {
         text-align: center;
+    }
+
+    .text-footer-cana{
+        margin-right: 10px;
     }
 
     .qr {

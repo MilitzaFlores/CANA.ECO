@@ -251,8 +251,8 @@ aside {
     position: fixed;
     bottom: 25px;
     left: 140px;
-    width: 80px;
-    height: 80px;
+    width: 77px;
+    height: 77px;
     border-radius: 50%;
     text-align: center;
     line-height: 60px;
@@ -341,7 +341,7 @@ aside {
 .mas {
     float: right;
     margin-right: 28%;
-    margin-top: -31px;
+    margin-top: -29px;
     font-size: 1.7rem;
 }
 
@@ -492,6 +492,41 @@ aside {
 }
 
 /* media-queries */
+
+
+/* PC */
+@media (min-width: 1680px) {
+
+    * {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .mas {
+        float: right;
+        margin-right: 28%;
+        margin-top: -36px;
+        font-size: 1.7rem;
+    }
+
+    .boton-whatsapp {
+        background-color: var(--clr-Whatsapp);
+        color: var(--clr-Aside-Texto);
+        position: fixed;
+        bottom: 45px;
+        left: 140px;
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        z-index: 9999;
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
@@ -760,7 +795,7 @@ aside {
         float: right;
         font-size: 1.7rem;
         margin-right: 21.5%;
-        margin-top: -30px;
+        margin-top: -28px;
     }
 
     .carrito-producto-subtotal,
@@ -979,13 +1014,15 @@ aside {
     .menos {
         display: flex;
         position: absolute;
-        margin-left: 8%;
+        margin-left: 7%;
         font-size: 1.7rem;
     }
 
     .mas {
         float: right;
-        margin-right: 21.5%;
+        margin-right: 18%;
+        margin-top: -29px;
+        font-size: 1.7rem;
     }
 
     .carrito-producto-subtotal,

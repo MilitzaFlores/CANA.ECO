@@ -266,6 +266,19 @@ strong {
 
 /* media-queries */
 
+/* PC */
+@media (min-width: 1680px) {
+    
+    * {
+        font-size: 20px;
+    } 
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+}
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
     * {

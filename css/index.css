@@ -67,6 +67,11 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
 h5 {
     font-size: 1.5rem;
 }
@@ -184,7 +189,7 @@ ion-icon:hover {
     position: absolute;
     width: 75%;
     top: 81%;
-    left: 51.5%;
+    left: 51%;
     transform: translate(-50%, -50%);
 }
 
@@ -234,6 +239,7 @@ ion-icon:hover {
         padding-bottom: 3%;
         margin-left: 7rem;
         margin-right: 7rem;
+        font-size: 3rem;
     }
 
     .Texto-Principal {
@@ -273,7 +279,6 @@ ion-icon:hover {
         justify-content: center;
         grid-template-columns: repeat(3, 3fr);
         padding-top: 5%;
-        padding-bottom: 3%;
         gap: 2%;
         padding-left: 6%;
         padding-right: 6%;
@@ -304,6 +309,22 @@ ion-icon:hover {
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #carouselExampleDark {
+        width: 90%;
+        margin-left: 5.5%;
+        margin-bottom: 6%;
+    }
+
+    .carousel-caption {
+        margin-right: 55%;
+        top: 65%;
+        cursor: pointer;
+    }
+
+    .carousel-caption:hover {
+        color: var(--clr-Principal);
     }
 
     .imagen-video {
@@ -396,6 +417,25 @@ ion-icon:hover {
 
     .redes-sociales:hover {
         color: var(--clr-Secundario);
+    }
+}
+
+/* PC */
+@media (min-width: 1680px) {
+
+    * {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .banner-img {
+        width: 33.33%;
+        height: 970px;
+        object-fit: cover;
     }
 }
 
@@ -514,6 +554,22 @@ ion-icon:hover {
         padding-left: 15%;
         width: 90%;
         height: 65%;
+        margin-bottom: 10%;
+    }
+
+    #carouselExampleDark {
+        width: 90%;
+        margin-left: 5.5%;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption {
+        margin-right: 70%;
+        top: 60%;
+        cursor: pointer;
     }
 
     .card-text {
@@ -749,6 +805,21 @@ ion-icon:hover {
         gap: 1%;
         padding-right: 3%;
         padding-left: 3%;
+        margin-bottom: 20%;
+    }
+
+    #carouselExampleDark {
+        width: 90%;
+        margin-left: 5.5%;
+        margin-bottom: 6%;
+    }
+
+    h4 {
+        font-size: .5rem;
+    }
+
+    .carousel-caption {
+        visibility: hidden;
     }
 
     .card-text {

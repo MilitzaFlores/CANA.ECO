@@ -285,7 +285,7 @@ aside {
     border-radius: 1rem;
     height: auto;
     text-justify: inter-word;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--clr-Aside-Texto);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border: none;
 }
@@ -441,6 +441,45 @@ aside {
 }
 
 /* media-queries */
+
+/* PC */
+@media (min-width: 1680px) {
+
+    * {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .logo {
+        font-weight: 600;
+        font-size: 3rem;
+        text-align: center;
+        padding-right: 5%;
+    }
+    
+    .menu {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: .50rem;
+    } 
+
+    .boton-menu {
+        font-size: 1.2rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 35px;
+    }
+
+    .producto-agregar {
+        margin-left: 11.5%;
+    }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 968px) {
