@@ -21,7 +21,7 @@ Este es un proyecto que se mantendra con cambios constantes, debido al compromis
 
 ### _Stacks Utilizados:_
 
-- **HTML5:** Se usaron etiquetas como “meta property” para dar una imagen y descripción previa de la página al momento de compartir el enlace. Hay inserción de url, texto, imágenes, mapas, video y botón de WhatsApp (funcional y sin API).
+- **HTML5:** Se usaron etiquetas como “meta property” para dar una imagen y descripción previa de la página al momento de compartir el enlace. Hay inserción de url, texto, imágenes, mapas, video y botón de WhatsApp.
 - **CSS3:** A destacar, están los elementos como un fondo dinámico tenue para no distraer al usuario al momento de navegar por las páginas. Botones y tarjetas creadas con la combinación de paleta de colores. Banner dinámico que pasa de tres imágenes a una sola en el diseño responsive. Hover, zoom, sombras, transiciones, flexbox, grid y botón flotante de WhatsApp.
 - **JavaScript:** Funciones de doom, addEventListener. Toda la lógica de construcción de la tienda con sus diferentes categorías, creación de la tarjeta y uso de JSON para poner toda la información de los productos. Operaciones para sacar el subtotal y el total, así como la función de carrito comprado. Botones de más y menos en el carrito, alertas de Toastify, función de vaciado de carrito y eliminación de producto. Cierre de los detalles de la tarjeta, al momento de hacer clic en otra parte. Lógica para hacer funcionar el localStorage en el carrito y que se muestre en todas las páginas. 
 - **Bootstrap:** Se utilizaron los elementos de tarjetas, navbar, footer, collapse, botones, carrusel y acordeón.
