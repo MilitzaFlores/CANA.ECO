@@ -305,7 +305,7 @@ ion-icon:hover {
 /* media-queries */
 
 /* PC */
-@media (min-width: 1680px) {
+@media (min-width: 1450px) and (max-width: 1680px) {
 
     * {
         font-size: 20px;

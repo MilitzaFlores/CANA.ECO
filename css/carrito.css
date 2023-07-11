@@ -251,7 +251,7 @@ aside {
     position: fixed;
     bottom: 25px;
     left: 140px;
-    width: 77px;
+    width: 5%;
     height: 77px;
     border-radius: 50%;
     text-align: center;
@@ -262,7 +262,7 @@ aside {
 .btn-lg {
     color: var(--clr-Aside-Texto);
     padding-left: 13px;
-    padding-right: 5%;
+    padding-right: 4.7%;
     padding-top: 7px;
     justify-content: center;
     align-items: center;
@@ -341,7 +341,7 @@ aside {
 .mas {
     float: right;
     margin-right: 28%;
-    margin-top: -29px;
+    margin-top: -28.8px;
     font-size: 1.7rem;
 }
 
@@ -495,7 +495,7 @@ aside {
 
 
 /* PC */
-@media (min-width: 1680px) {
+@media (min-width: 1450px) and (max-width: 1680px) {
 
     * {
         font-size: 20px;
@@ -817,8 +817,8 @@ aside {
         position: fixed;
         bottom: 165px;
         left: 90px;
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         text-align: center;
         line-height: 60px;
@@ -826,7 +826,7 @@ aside {
     }
 
     .btn-lg {
-        padding-left: 12px;
+        padding-left: 9px;
         padding-top: 7px;
     }
 
@@ -1049,8 +1049,8 @@ aside {
         position: fixed;
         bottom: 165px;
         left: 90px;
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         text-align: center;
         line-height: 60px;
@@ -1058,7 +1058,7 @@ aside {
     }
 
     .btn-lg {
-        padding-left: 12px;
+        padding-left: 9px;
         padding-top: 7px;
     }
 
