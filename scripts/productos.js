@@ -142,7 +142,6 @@ function myFunction() {
     }
 }
 
-
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
 

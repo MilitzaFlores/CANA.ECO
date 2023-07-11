@@ -156,8 +156,8 @@ function actualizarTotal() {
     total.innerText = `$${totalCalculado} MXN`;
 }
 
-const botonesMenos = document.querySelectorAll('.menos');
-const botonesMas = document.querySelectorAll('.mas');
+const botonesMenos = document.querySelectorAll(".menos");
+const botonesMas = document.querySelectorAll(".mas");
 
 botonesMenos.forEach((botonMenos) => {
     botonMenos.addEventListener('click', () => {
@@ -171,8 +171,8 @@ botonesMenos.forEach((botonMenos) => {
             const producto = productosEnCarrito.find(producto => producto.id === idProducto);
             producto.cantidad = cantidad;
             localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-            actualizarSubtotal()
-            actualizarTotal()
+            actualizarSubtotal();
+            actualizarTotal();
         }
         if (cantidad === 0) {
             const contenedorProducto = botonMenos.closest('.carrito-producto');
@@ -181,8 +181,9 @@ botonesMenos.forEach((botonMenos) => {
             const idProducto = contenedorProducto.querySelector('.carrito-producto-eliminar').id;
             productosEnCarrito = productosEnCarrito.filter(producto => producto.id !== idProducto);
             localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-            actualizarSubtotal()
-            actualizarTotal()
+            actualizarSubtotal();
+            actualizarTotal();
+            actualizarNumero();
 
             if (productosEnCarrito.length === 0) {
                 contenedorCarritoVacio.classList.remove("disabled");
@@ -205,8 +206,9 @@ botonesMas.forEach((botonMas) => {
         const producto = productosEnCarrito.find(producto => producto.id === idProducto);
         producto.cantidad = cantidad;
         localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-        actualizarSubtotal()
-        actualizarTotal()
+        actualizarSubtotal();
+        actualizarTotal();
+        actualizarNumero();
     });
 });
 
