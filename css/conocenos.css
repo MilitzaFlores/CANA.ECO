@@ -267,15 +267,22 @@ strong {
 /* media-queries */
 
 /* PC */
-@media (min-width: 1450px) and (max-width: 1680px) {
-    
+@media (min-width: 1680px) {
+
     * {
         font-size: 20px;
-    } 
+    }
 
     .navbar {
         padding-top: 2.5px;
         padding-bottom: 2.5px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    * {
+        font-size: 19px;
     }
 }
 
@@ -328,7 +335,7 @@ strong {
         height: 55rem;
     }
 
-    .imagen-historia{
+    .imagen-historia {
         width: auto;
         height: 48rem;
     }
@@ -338,6 +345,7 @@ strong {
         text-align: center;
         padding-inline-end: 5%;
     }
+
     .text-footer {
         font-size: 1.2rem;
     }
@@ -346,7 +354,7 @@ strong {
         padding-inline-end: 50%;
     }
 
-    .texto-terminos{
+    .texto-terminos {
         font-size: 1.1rem;
     }
 
@@ -429,7 +437,7 @@ strong {
     }
 
     .marca-mexicana {
-        padding-inline-end: 10%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {

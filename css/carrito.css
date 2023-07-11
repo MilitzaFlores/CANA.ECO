@@ -495,7 +495,7 @@ aside {
 
 
 /* PC */
-@media (min-width: 1450px) and (max-width: 1680px) {
+@media (min-width: 1680px) {
 
     * {
         font-size: 20px;
@@ -521,6 +521,27 @@ aside {
         left: 140px;
         width: 95px;
         height: 95px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        z-index: 9999;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    * {
+        font-size: 19px;
+    }
+
+    .boton-whatsapp {
+        background-color: var(--clr-Whatsapp);
+        color: var(--clr-Aside-Texto);
+        position: fixed;
+        bottom: 45px;
+        left: 140px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         text-align: center;
         line-height: 60px;
@@ -830,10 +851,10 @@ aside {
         padding-top: 7px;
     }
 
-    .carrito-comprado-final{
+    .carrito-comprado-final {
         padding-top: 6%;
     }
-    
+
     .carrito-acciones-total-final {
         display: flex;
         margin-left: 17%;
@@ -861,7 +882,7 @@ aside {
     }
 
     .marca-mexicana {
-        padding-inline-end: 10%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {
@@ -877,7 +898,7 @@ aside {
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 28%;
+        margin-left: 29%;
         margin-bottom: 15px;
     }
 
@@ -1079,7 +1100,7 @@ aside {
     }
 
     .marca-mexicana {
-        padding-inline-end: 10%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {
@@ -1095,7 +1116,7 @@ aside {
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 28%;
+        margin-left: 29%;
         margin-bottom: 15px;
     }
 

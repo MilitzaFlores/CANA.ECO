@@ -237,15 +237,71 @@ ion-icon:hover {
 /* media-queries */
 
 /* PC */
-@media (min-width: 1450px) and (max-width: 1680px) {
+@media (min-width: 1680px) {
     
-    * {
+    body {
         font-size: 20px;
-    } 
+    }
+
+    header,
+    footer {
+        font-size: 20px;
+    }
 
     .navbar {
         padding-top: 2.5px;
         padding-bottom: 2.5px;
+    }
+
+    .titulo-envios {
+        font-weight: 600;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .texto-envios {
+        font-size: 2.5rem;
+    }
+
+    .texto-regla {
+        padding-left: 2.5%;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    header,
+    footer {
+        font-size: 19px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .titulo-envios {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .texto-envios {
+        font-size: 2rem;
+    }
+
+    .texto-regla {
+        margin-left: 18.5%;
+        margin-bottom: 4%;
+        margin-top: 4%;
     }
 }
 
@@ -356,7 +412,7 @@ ion-icon:hover {
         text-align: center;
     }
 
-    .text-footer-cana{
+    .text-footer-cana {
         margin-right: 10px;
     }
 
@@ -366,7 +422,7 @@ ion-icon:hover {
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 14%;
     }
 
     .text-footer-redes {
@@ -375,13 +431,13 @@ ion-icon:hover {
     }
 
     .redes-sociales {
-        margin-left: 31%;
+        margin-left: 33%;
         justify-content: center;
     }
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 29%;
         margin-bottom: 15px;
     }
 

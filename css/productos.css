@@ -443,10 +443,10 @@ aside {
 /* media-queries */
 
 /* PC */
-@media (min-width: 1450px) and (max-width: 1680px) {
+@media (min-width: 1680px) {
 
     * {
-        font-size: 20px;
+        font-size: 19.9px;
     }
 
     .navbar {
@@ -478,6 +478,17 @@ aside {
 
     .producto-agregar {
         margin-left: 11.5%;
+    }
+}
+
+@media (min-width: 1600px){
+
+    * {
+        font-size: 18.9px;
+    }
+
+    #wrapper{
+        padding-bottom: 8%;
     }
 }
 
@@ -890,7 +901,7 @@ aside {
     }
 
     .marca-mexicana {
-        padding-inline-end: 10%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {
@@ -906,7 +917,7 @@ aside {
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 28%;
+        margin-left: 29%;
         margin-bottom: 15px;
     }
 
@@ -1109,7 +1120,7 @@ aside {
     }
 
     .marca-mexicana {
-        padding-inline-end: 10%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {
@@ -1125,7 +1136,7 @@ aside {
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 28%;
+        margin-left: 29%;
         margin-bottom: 15px;
     }
 

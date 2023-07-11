@@ -279,45 +279,56 @@ ion-icon:hover {
 /* media-queries */
 
 /* PC */
-@media (min-width: 1450px) and (max-width: 1680px) {
+@media (min-width: 1680px) {
+
+    header,
+    footer {
+        font-size: 20px;
+    }
 
     .navbar {
-        margin-inline-end: 15%;
-    }
-
-    footer {
-        margin-inline-end: 20%;
-    }
-
-    .navbar-collapse {
-        font-size: 15px;
-        margin-left: -12%;
-        margin-right: 8%;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
     }
 
     .titulo-galeria {
-        text-align: center;
-        text-decoration: underline wavy var(--clr-Principal);
-        text-underline-offset: 12px;
-        margin-right: 20%;
-        padding-top: 4%;
-        padding-bottom: 2%;
         font-weight: 600;
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
 
-    #row-galeria {
-        display: flex;
-        flex-wrap: wrap;
-        display: grid;
-        text-align: center;
-        grid-template-rows: repeat(1, 4fr);
-        padding-top: 1%;
-        padding-bottom: 7%;
-        padding-left: 2.8rem;
-        padding-right: 24rem;
-        scroll-snap-type: x mandatory;
-        scroll-snap-align: center;
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        border-radius: 1rem;
+        width: 20rem;
+        height: 20rem;
+        margin-left: 1%;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    header,
+    footer {
+        font-size: 19px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .titulo-galeria {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        border-radius: 1rem;
+        width: 19rem;
+        height: 19rem;
     }
 }
 
@@ -420,7 +431,7 @@ ion-icon:hover {
     }
 
     .marca-mexicana {
-        margin-right: 10%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {
@@ -435,7 +446,7 @@ ion-icon:hover {
 
     .cana-footer {
         margin-top: 15px;
-        margin-left: 18%;
+        margin-left: 29%;
         margin-bottom: 15px;
     }
 

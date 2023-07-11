@@ -300,12 +300,10 @@ ion-icon:hover {
     color: var(--clr-Secundario);
 }
 
-
-
 /* media-queries */
 
 /* PC */
-@media (min-width: 1450px) and (max-width: 1680px) {
+@media (min-width: 1680px) {
 
     * {
         font-size: 20px;
@@ -316,9 +314,85 @@ ion-icon:hover {
         padding-bottom: 2.5px;
     }
 
+    .titulo {
+        font-size: 3.5rem;
+        padding-top: 8%;
+    }
+
+    .texto-inicio {
+        padding: 5% 15%;
+        text-align: justify;
+        font-size: 2.1rem;
+        padding-top: 3%;
+        padding-bottom: 6.5%;
+    }
+
+    .arrow-up {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border: solid;
+        border-width: 0 10px 10px 0;
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        position: absolute;
+        top: 16%;
+        left: 82%;
+        border-bottom-color: var(--clr-Secundario);
+        border-right-color: var(--clr-Principal);
+    }
+
+    .arrow-down {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border: solid;
+        border-width: 0 10px 10px 0;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        position: absolute;
+        top: 72%;
+        left: 11%;
+        border-bottom-color: var(--clr-Principal);
+        border-right-color: var(--clr-Secundario);
+        text-align: center;
+    }
+
     .btn {
-        width: 140px;
-        height: 140px;
+        width: 145px !important;
+        height: 145px !important;
+        border-radius: 50%;
+        margin-top: -2% !important;
+        background-color: var(--clr-Principal) !important;
+        color: var(--clr-Fondo);
+        transition: color 0.3s;
+    }
+
+    .btn-lg {
+        font-weight: 600;
+        font-size: 2rem;
+        transition: color 0.3s;
+        transition: transform 0.3s;
+        padding-left: 0.7%;
+        margin-left: 47%;
+        color: var(--clr-Aside-Texto);
+    }
+}
+
+@media (min-width: 1600px) {
+
+    * {
+        font-size: 19px;
+    }
+
+    .navbar {
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 130px;
         border-radius: 50%;
         background-color: var(--clr-Principal) !important;
         color: var(--clr-Fondo);
@@ -330,16 +404,10 @@ ion-icon:hover {
         font-size: 2rem;
         transition: color 0.3s;
         transition: transform 0.3s;
-        padding-top: 2%;
+        margin-top: -1%;
         padding-left: 0.7%;
         margin-left: 47%;
         color: var(--clr-Aside-Texto);
-    }
-
-    footer {
-        height: 100%;
-        width: 100%;
-        gap: 0;
     }
 }
 
@@ -436,7 +504,6 @@ ion-icon:hover {
         margin-right: 59%;
     }
 
- 
     .titulo {
         padding-top: 13%;
         padding-bottom: 7%;
@@ -445,6 +512,7 @@ ion-icon:hover {
     .texto-inicio {
         font-size: 1.3rem;
         text-align: justify;
+        text-justify: inter-word;
         padding-bottom: 0;
     }
 
@@ -502,7 +570,7 @@ ion-icon:hover {
     }
 
     .marca-mexicana {
-        padding-inline-end: 7%;
+        padding-inline-end: 12.5%;
     }
 
     .text-footer-redes {
@@ -521,12 +589,13 @@ ion-icon:hover {
         margin-bottom: 15px;
     }
 
-    .text-footer-redes{
+    .text-footer-redes {
         padding-right: 36%;
     }
 
-    .redes-sociales{
-        margin-left: 37%;
+    .redes-sociales {
+        margin-left: 33%;
+        justify-content: center;
     }
 
     .redes-sociales-responsive {
