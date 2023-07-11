@@ -183,7 +183,6 @@ botonesMenos.forEach((botonMenos) => {
             localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
             actualizarSubtotal();
             actualizarTotal();
-            actualizarNumero();
 
             if (productosEnCarrito.length === 0) {
                 contenedorCarritoVacio.classList.remove("disabled");
