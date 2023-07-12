@@ -188,6 +188,15 @@
         }(window, document);
     </script>
     <!-- Chatbot -->
+    <!-- E-mail API -->
+        <script>
+            window.onbeforeunload = () => {
+                for (const form of document.getElementsByTagName('form')) {
+                    form.reset();
+                }
+            }
+        </script>
+    <!-- E-mail API -->
     <script src="./scripts/localstorage.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
