@@ -76,7 +76,7 @@ body {
     height: auto;
     padding-top: 88px;
     scroll-behavior: smooth;
-    background-image: linear-gradient(135deg, #F9F8EC, #FFF1DE);
+    background-image: linear-gradient(135deg, #FCEFE5, #FFF1DE);
     background-size: 500%;
     animation: fanimado 10s infinite;
 }
@@ -251,17 +251,20 @@ ion-icon:hover {
 }
 
 .carousel-item {
-    padding: 7% 15%;
+    padding: 6%;
+    padding-right: 12%;
+    padding-left: 8.5%;
 }
 
 .clientes-imagen {
-    width: 11rem;
-    height: 11rem;
+    width: 12.5rem;
+    height: 12.5rem;
     margin: 25px;
+    margin-top: 1.5%;
 }
 
 .clientes-texto {
-    padding-top: 4.5%;
+    padding-top: 5%;
     font-weight: 600;
     text-align: justify;
 }
@@ -531,20 +534,6 @@ ion-icon:hover {
         width: 100%;
         padding-right: 25%;
         padding-left: 10%;
-    }
-
-    .imagen-angel {
-        width: 100%;
-        padding-right: 1%;
-        padding-left: 4%;
-        margin-inline-start: 19%;
-    }
-
-    .imagen-estrella {
-        width: 100%;
-        padding-right: 1%;
-        padding-left: 4%;
-        margin-inline-start: 19%;
     }
 
     .clientes-texto {

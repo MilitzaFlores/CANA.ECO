@@ -76,7 +76,7 @@ body {
     height: auto;
     padding-top: 88px;
     scroll-behavior: smooth;
-    background-image: linear-gradient(135deg, #F9F8EC, #FFF1DE);
+    background-image: linear-gradient(135deg, #FCEFE5, #FFF1DE);
     background-size: 500%;
     animation: fanimado 10s infinite;
 }

@@ -69,6 +69,27 @@ h6 {
     font-size: 1rem;
 }
 
+body {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(135deg, #FCEFE5, #FFF1DE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 .navbar {
     padding-top: 1.5px;
     padding-bottom: 1.5px;
@@ -130,7 +151,6 @@ ion-icon:hover {
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-color: var(--clr-FondoSecundario);
     padding-top: 9%;
     padding-bottom: 2%;
     padding-right: 1%;
