@@ -214,13 +214,37 @@ botonesMas.forEach((botonMas) => {
 botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
+    if (!productosEnCarrito || productosEnCarrito.length === 0) return;
+
+    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+    const detallePedido = productosEnCarrito.map(producto => {
+        const titulo = producto.titulo
+            .replace(/<br\s*\/?\s*>/gi, " ")
+            .replace(/<[^>]*>/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+        const subtotal = producto.precio * producto.cantidad;
+        return `• ${producto.cantidad} x ${titulo} - $${producto.precio} c/u = $${subtotal} MXN`;
+    });
+    const mensaje = [
+        "Buen día, quiero realizar este pedido de CANÁ:",
+        "",
+        ...detallePedido,
+        "",
+        `Total: $${totalCalculado} MXN`,
+        "",
+        "Mi nombre:",
+        "Método de envío:"
+    ].join("\n");
+    const urlWhatsapp = `https://wa.me/522227530262?text=${encodeURIComponent(mensaje)}`;
+    window.open(urlWhatsapp, "_blank", "noopener,noreferrer");
+
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
     contenedorCarritoProductosFinal.classList.remove("disabled");
 
-    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     contenedorTotalFinal.innerText = `$${totalCalculado} MXN`;
 
     contenedorCarritoProductosFinal.innerHTML = "";
