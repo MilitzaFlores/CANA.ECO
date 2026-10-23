@@ -385,11 +385,6 @@ aside {
     color: var(--clr-Secundario);
 }
 
-.producto-stock {
-    margin: 0;
-    font-size: .85rem;
-}
-
 .ingredientes {
     color: var(--clr-Secundario);
     font-size: 0.73rem;
@@ -1169,12 +1164,6 @@ aside {
         margin-left: 29%;
         margin-bottom: 15px;
     }
-
-    .redes-sociales-responsive {
-        color: var(--clr-Fondo);
-        margin-left: 0;
-    }
-}
 
     .redes-sociales-responsive {
         color: var(--clr-Fondo);
