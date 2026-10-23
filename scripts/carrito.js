@@ -215,12 +215,24 @@ botonesMenos.forEach((botonMenos) => {
 });
 
 botonesMas.forEach((botonMas) => {
-    botonMas.addEventListener('click', () => {
+    botonMas.addEventListener('click', async () => {
+        botonMas.disabled = true;
         const contenedorCantidad = botonMas.parentNode.querySelector('p');
         let cantidad = parseInt(contenedorCantidad.textContent);
         const idProducto = botonMas.closest('.carrito-producto').querySelector('.carrito-producto-eliminar').id;
         const producto = productosEnCarrito.find(producto => producto.id === idProducto);
 
+        try {
+            const inventario = await window.cargarInventario();
+            producto.stock = inventario.get(window.normalizarIdInventario(idProducto)) ?? 0;
+        } catch (error) {
+            console.error("No se pudo actualizar el inventario:", error);
+            botonMas.disabled = false;
+            mostrarAvisoInventario("No se pudo verificar el inventario. Intenta de nuevo.");
+            return;
+        }
+
+        botonMas.disabled = false;
         if (!Number.isInteger(producto.stock) || cantidad >= producto.stock) {
             mostrarAvisoInventario("Ya alcanzaste las existencias disponibles");
             return;
@@ -238,8 +250,22 @@ botonesMas.forEach((botonMas) => {
 
 botonComprar.addEventListener("click", comprarCarrito);
 
-function comprarCarrito() {
+async function comprarCarrito() {
     if (!productosEnCarrito || productosEnCarrito.length === 0) return;
+
+    let inventario;
+    try {
+        inventario = await window.cargarInventario();
+    } catch (error) {
+        console.error("No se pudo actualizar el inventario:", error);
+        mostrarAvisoInventario("No se pudo verificar el inventario. Intenta de nuevo.");
+        return;
+    }
+
+    productosEnCarrito.forEach(producto => {
+        producto.stock = inventario.get(window.normalizarIdInventario(producto.id)) ?? 0;
+    });
+
     if (productosEnCarrito.some(producto => !Number.isInteger(producto.stock) || producto.cantidad > producto.stock)) {
         mostrarAvisoInventario("Verifica las existencias antes de confirmar el pedido");
         return;
