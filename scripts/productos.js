@@ -206,16 +206,22 @@ if (productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-function agregarAlCarrito(e) {
-
+async function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
+    const botonAgregar = e.currentTarget;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
-    const productoEnCarrito = productosEnCarrito.find(producto => producto.id === idBoton);
-    const cantidadActual = productoEnCarrito ? productoEnCarrito.cantidad : 0;
 
-    if (!inventarioDisponible || !productoAgregado || cantidadActual >= productoAgregado.stock) {
+    if (!productoAgregado) return;
+
+    botonAgregar.disabled = true;
+    let inventarioActual;
+
+    try {
+        inventarioActual = await window.cargarInventario();
+    } catch (error) {
+        console.error("No se pudo actualizar el inventario:", error);
         Toastify({
-            text: inventarioDisponible ? "Ya alcanzaste las existencias disponibles" : "No se pudo verificar el inventario",
+            text: "No se pudo verificar el inventario. Intenta de nuevo.",
             duration: 3000,
             close: true,
             gravity: "top",
@@ -223,6 +229,29 @@ function agregarAlCarrito(e) {
         }).showToast();
         return;
     }
+
+    productoAgregado.stock = inventarioActual.get(window.normalizarIdInventario(idBoton)) ?? 0;
+    const productoEnCarrito = productosEnCarrito.find(producto => producto.id === idBoton);
+    const cantidadActual = productoEnCarrito ? productoEnCarrito.cantidad : 0;
+
+    if (productoAgregado.stock <= cantidadActual) {
+        const tarjetaProducto = botonAgregar.closest(".producto");
+        tarjetaProducto.querySelector(".producto-stock").textContent = productoAgregado.stock === 0
+            ? "Agotado"
+            : `Disponibles: ${productoAgregado.stock - cantidadActual}`;
+        botonAgregar.textContent = productoAgregado.stock === 0 ? "Agotado" : "Máximo en carrito";
+        botonAgregar.disabled = productoAgregado.stock === 0;
+        Toastify({
+            text: "No hay más existencias disponibles para agregar",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right"
+        }).showToast();
+        return;
+    }
+
+    botonAgregar.disabled = false;
 
     Toastify({
         text: "Producto agregado",
@@ -251,6 +280,9 @@ function agregarAlCarrito(e) {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }
+
+    document.querySelector(`#${CSS.escape(idBoton)}`).closest(".producto")
+        .querySelector(".producto-stock").textContent = `Disponibles: ${productoAgregado.stock - cantidadActual - 1}`;
 
     actualizarNumero();
 
