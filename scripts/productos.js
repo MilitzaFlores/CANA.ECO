@@ -52,9 +52,7 @@ function cargarProductos(productosElegidos) {
     productosElegidos.forEach(producto => {
         const stockConocido = inventarioDisponible && Number.isInteger(producto.stock);
         const hayStock = stockConocido && producto.stock > 0;
-        const textoStock = !inventarioDisponible
-            ? "Inventario no disponible"
-            : hayStock ? `Disponibles: ${producto.stock}` : "Agotado";
+        const textoBoton = !inventarioDisponible ? "Inventario no disponible" : "Agotado";
 
         const div = document.createElement("div");
         div.classList.add("producto");
@@ -76,8 +74,7 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-titulo variante">${producto.titulo}</p>
                 <span class="ingredientes">${producto.ingredientes}</span>
                 <p class="producto-titulo producto-precio">$${producto.precio} MXN</p>
-                <p class="producto-stock">${textoStock}</p>
-                <button class="producto-agregar" id="${producto.id}" ${hayStock ? "" : "disabled"}>${hayStock ? "Agregar" : textoStock}</button>
+                <button class="producto-agregar" id="${producto.id}" ${hayStock ? "" : "disabled"}>${hayStock ? "Agregar" : textoBoton}</button>
             </div>
             <div>
             <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
@@ -235,10 +232,6 @@ async function agregarAlCarrito(e) {
     const cantidadActual = productoEnCarrito ? productoEnCarrito.cantidad : 0;
 
     if (productoAgregado.stock <= cantidadActual) {
-        const tarjetaProducto = botonAgregar.closest(".producto");
-        tarjetaProducto.querySelector(".producto-stock").textContent = productoAgregado.stock === 0
-            ? "Agotado"
-            : `Disponibles: ${productoAgregado.stock - cantidadActual}`;
         botonAgregar.textContent = productoAgregado.stock === 0 ? "Agotado" : "Máximo en carrito";
         botonAgregar.disabled = productoAgregado.stock === 0;
         Toastify({
@@ -280,9 +273,6 @@ async function agregarAlCarrito(e) {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }
-
-    document.querySelector(`#${CSS.escape(idBoton)}`).closest(".producto")
-        .querySelector(".producto-stock").textContent = `Disponibles: ${productoAgregado.stock - cantidadActual - 1}`;
 
     actualizarNumero();
 
