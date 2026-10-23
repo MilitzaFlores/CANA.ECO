@@ -5,13 +5,33 @@ setTimeout(function () {
 let productos = [];
 
 fetch("./scripts/productos.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data;
+    .then(response => {
+        if (!response.ok) throw new Error("No se pudo cargar el catálogo.");
+        return response.json();
+    })
+    .then(async data => {
+        try {
+            const inventario = await window.cargarInventario();
+            productos = data.map(producto => ({
+                ...producto,
+                stock: inventario.get(window.normalizarIdInventario(producto.id)) ?? 0
+            }));
+            inventarioDisponible = true;
+        } catch (error) {
+            console.error("No se pudo cargar el inventario:", error);
+            productos = data.map(producto => ({ ...producto, stock: null }));
+            contenedorEstadoInventario.textContent = "No se pudo consultar el inventario. Intenta recargar la página.";
+        }
         cargarProductos(productos);
     })
+    .catch(error => {
+        console.error("No se pudo cargar la tienda:", error);
+        contenedorEstadoInventario.textContent = "No se pudo cargar el catálogo.";
+    });
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
+const contenedorEstadoInventario = document.querySelector("#estado-inventario");
+let inventarioDisponible = false;
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
@@ -30,6 +50,11 @@ function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
+        const stockConocido = inventarioDisponible && Number.isInteger(producto.stock);
+        const hayStock = stockConocido && producto.stock > 0;
+        const textoStock = !inventarioDisponible
+            ? "Inventario no disponible"
+            : hayStock ? `Disponibles: ${producto.stock}` : "Agotado";
 
         const div = document.createElement("div");
         div.classList.add("producto");
@@ -51,7 +76,8 @@ function cargarProductos(productosElegidos) {
                 <p class="producto-titulo variante">${producto.titulo}</p>
                 <span class="ingredientes">${producto.ingredientes}</span>
                 <p class="producto-titulo producto-precio">$${producto.precio} MXN</p>
-                <button class="producto-agregar" id="${producto.id}">Agregar</button>
+                <p class="producto-stock">${textoStock}</p>
+                <button class="producto-agregar" id="${producto.id}" ${hayStock ? "" : "disabled"}>${hayStock ? "Agregar" : textoStock}</button>
             </div>
             <div>
             <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
@@ -182,6 +208,22 @@ if (productosEnCarritoLS) {
 
 function agregarAlCarrito(e) {
 
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    const productoEnCarrito = productosEnCarrito.find(producto => producto.id === idBoton);
+    const cantidadActual = productoEnCarrito ? productoEnCarrito.cantidad : 0;
+
+    if (!inventarioDisponible || !productoAgregado || cantidadActual >= productoAgregado.stock) {
+        Toastify({
+            text: inventarioDisponible ? "Ya alcanzaste las existencias disponibles" : "No se pudo verificar el inventario",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right"
+        }).showToast();
+        return;
+    }
+
     Toastify({
         text: "Producto agregado",
         duration: 3000,
@@ -201,9 +243,6 @@ function agregarAlCarrito(e) {
         },
         onClick: function () {}
     }).showToast();
-
-    const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
 
     if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
