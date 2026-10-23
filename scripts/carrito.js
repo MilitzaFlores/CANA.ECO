@@ -237,7 +237,14 @@ function comprarCarrito() {
         "Método de envío:"
     ].join("\n");
     const urlWhatsapp = `https://wa.me/522227530262?text=${encodeURIComponent(mensaje)}`;
-    window.open(urlWhatsapp, "_blank", "noopener,noreferrer");
+    const ventanaWhatsapp = window.open(urlWhatsapp, "_blank");
+    if (ventanaWhatsapp) {
+        ventanaWhatsapp.opener = null;
+    } else {
+        const enlaceWhatsapp = document.querySelector("#enlace-whatsapp-pedido");
+        enlaceWhatsapp.href = urlWhatsapp;
+        enlaceWhatsapp.classList.remove("d-none");
+    }
 
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.add("disabled");
