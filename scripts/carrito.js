@@ -234,7 +234,8 @@ function comprarCarrito() {
         `Total: $${totalCalculado} MXN`,
         "",
         "Mi nombre:",
-        "Método de envío:"
+        "Método de envío:",
+        "Método de pago:"
     ].join("\n");
     const urlWhatsapp = `https://wa.me/522227530262?text=${encodeURIComponent(mensaje)}`;
     const ventanaWhatsapp = window.open(urlWhatsapp, "_blank");
