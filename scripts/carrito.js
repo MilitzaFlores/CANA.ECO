@@ -13,6 +13,15 @@ let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const contenedorTotalFinal = document.querySelector("#carrito-comprado #totalfinal");
 const contenedorCarritoProductosFinal = document.querySelector("#carrito-productos-final");
 
+function mostrarAvisoInventario(texto) {
+    Toastify({
+        text: texto,
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right"
+    }).showToast();
+}
 
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
@@ -77,6 +86,17 @@ function actualizarBotonesAgregar() {
 }
 
 cargarProductosCarrito();
+
+if (Array.isArray(productosEnCarrito) && productosEnCarrito.length > 0) {
+    window.cargarInventario().then(inventario => {
+        productosEnCarrito.forEach(producto => {
+            producto.stock = inventario.get(window.normalizarIdInventario(producto.id)) ?? 0;
+        });
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    }).catch(error => {
+        console.error("No se pudo verificar el inventario:", error);
+    });
+}
 
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
@@ -198,16 +218,21 @@ botonesMas.forEach((botonMas) => {
     botonMas.addEventListener('click', () => {
         const contenedorCantidad = botonMas.parentNode.querySelector('p');
         let cantidad = parseInt(contenedorCantidad.textContent);
+        const idProducto = botonMas.closest('.carrito-producto').querySelector('.carrito-producto-eliminar').id;
+        const producto = productosEnCarrito.find(producto => producto.id === idProducto);
+
+        if (!Number.isInteger(producto.stock) || cantidad >= producto.stock) {
+            mostrarAvisoInventario("Ya alcanzaste las existencias disponibles");
+            return;
+        }
+
         cantidad++;
         contenedorCantidad.textContent = cantidad;
         actualizarTotal();
-        const idProducto = botonMas.closest('.carrito-producto').querySelector('.carrito-producto-eliminar').id;
-        const producto = productosEnCarrito.find(producto => producto.id === idProducto);
         producto.cantidad = cantidad;
         localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
         actualizarSubtotal();
         actualizarTotal();
-        actualizarNumero();
     });
 });
 
@@ -215,6 +240,10 @@ botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
     if (!productosEnCarrito || productosEnCarrito.length === 0) return;
+    if (productosEnCarrito.some(producto => !Number.isInteger(producto.stock) || producto.cantidad > producto.stock)) {
+        mostrarAvisoInventario("Verifica las existencias antes de confirmar el pedido");
+        return;
+    }
 
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     const detallePedido = productosEnCarrito.map(producto => {
