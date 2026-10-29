@@ -9,7 +9,6 @@
     --clr-LogoFondo: #E5DAD3;
     --clr-Aside-Texto: #fff;
     --clr-Texto: #000;
-    --clr-Whatsapp: #54B036;
 }
 
 * {
@@ -263,20 +262,6 @@ aside {
 .boton-carrito.active {
     background-color: var(--clr-Principal);
     color: var(--clr-Fondo);
-}
-
-.boton-whatsapp {
-    background-color: var(--clr-Whatsapp);
-    color: var(--clr-Aside-Texto);
-    position: fixed;
-    bottom: 25px;
-    left: 140px;
-    width: 5%;
-    height: 77px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    z-index: 9999;
 }
 
 .btn-lg {
@@ -533,19 +518,6 @@ aside {
         font-size: 1.7rem;
     }
 
-    .boton-whatsapp {
-        background-color: var(--clr-Whatsapp);
-        color: var(--clr-Aside-Texto);
-        position: fixed;
-        bottom: 45px;
-        left: 140px;
-        width: 95px;
-        height: 95px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 60px;
-        z-index: 9999;
-    }
 }
 
 @media (min-width: 1600px) {
@@ -554,19 +526,6 @@ aside {
         font-size: 19px;
     }
 
-    .boton-whatsapp {
-        background-color: var(--clr-Whatsapp);
-        color: var(--clr-Aside-Texto);
-        position: fixed;
-        bottom: 45px;
-        left: 140px;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 60px;
-        z-index: 9999;
-    }
 }
 
 /* Tablet */
@@ -645,18 +604,6 @@ aside {
         align-items: flex-start;
         text-align: center;
         padding-inline-end: 5%;
-    }
-
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 30px;
-        left: 70px;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 60px;
-        z-index: 9999;
     }
 
     .btn-lg {
@@ -854,18 +801,6 @@ aside {
         margin-top: 15%;
     }
 
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 165px;
-        left: 90px;
-        width: 75px;
-        height: 75px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 60px;
-        z-index: 9999;
-    }
-
     .btn-lg {
         padding-left: 9px;
         padding-top: 7px;
@@ -926,6 +861,89 @@ aside {
         color: var(--clr-Fondo);
         margin-left: 0;
     }
+}
+
+@media (min-width: 969px) {
+    * {
+        font-size: 17px;
+    }
+
+    #wrapper {
+        grid-template-columns: minmax(14rem, 20rem) minmax(0, 1fr);
+        gap: clamp(1rem, 2vw, 2rem);
+        padding: 7rem clamp(1rem, 2vw, 2rem) 2rem;
+    }
+
+    aside {
+        min-width: 0;
+    }
+
+    #principal {
+        min-width: 0;
+        margin: 0;
+        padding: clamp(1rem, 2vw, 2rem);
+    }
+
+    .titulo-principal {
+        font-size: clamp(2rem, 3vw, 3rem);
+    }
+
+    .carrito-producto {
+        gap: clamp(.35rem, 1vw, 1rem);
+        padding: .75rem;
+    }
+
+    .carrito-producto-imagen {
+        flex: 0 0 4rem;
+        width: 4rem;
+    }
+
+    .carrito-producto-titulo,
+    .carrito-producto-cantidad,
+    .carrito-producto-precio,
+    .carrito-producto-subtotal {
+        width: auto;
+        min-width: 0;
+        flex: 1 1 0;
+        overflow-wrap: anywhere;
+    }
+
+    .carrito-producto-titulo {
+        flex-grow: 2;
+    }
+
+    .carrito-producto-cantidad {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        align-items: center;
+        column-gap: .35rem;
+    }
+
+    .carrito-producto-cantidad small {
+        grid-column: 1 / -1;
+    }
+
+    .carrito-producto-cantidad .menos,
+    .carrito-producto-cantidad .mas {
+        position: static;
+        float: none;
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+    .carrito-producto-cantidad .cantidad-numero {
+        grid-column: 2;
+    }
+
+    .carrito-producto-eliminar {
+        flex: 0 0 2rem;
+    }
+
+    .carrito-acciones-total-final {
+        margin-left: auto;
+    }
+
 }
 
 /* celular */
@@ -1084,18 +1102,6 @@ aside {
 
     .carrito-2 {
         margin-top: 15%;
-    }
-
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 165px;
-        left: 90px;
-        width: 75px;
-        height: 75px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 60px;
-        z-index: 9999;
     }
 
     .btn-lg {
