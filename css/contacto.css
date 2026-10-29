@@ -395,3 +395,34 @@ ion-icon:hover {
         margin-left: 0;
     }
 }
+
+@media (min-width: 969px) {
+    * {
+        font-size: 17px;
+    }
+
+    .texto-titulo-contacto {
+        padding-inline: 1.5rem;
+        font-size: clamp(2rem, 3vw, 3rem);
+    }
+
+    .text,
+    .text-center {
+        width: min(50rem, calc(100% - 3rem));
+        max-width: 50rem;
+    }
+
+    form.text-center {
+        margin-inline: auto;
+    }
+
+    .btn-formulario {
+        width: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .boton-responsive {
+        width: min(15rem, 100%) !important;
+    }
+}
