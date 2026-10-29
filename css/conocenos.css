@@ -462,3 +462,38 @@ strong {
         margin-left: 0;
     }
 }
+
+@media (min-width: 969px) {
+    * {
+        font-size: 17px;
+    }
+
+    .tarjeta-transparente {
+        width: min(70rem, 100%);
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: clamp(18rem, 35vw, 33rem);
+    }
+
+    .imagen-mision,
+    .imagen-personas,
+    .imagen-historia {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 43rem;
+        object-fit: contain;
+    }
+
+    main div[style*="max-width: 540px"] {
+        max-width: min(70rem, calc(100% - 3rem)) !important;
+        margin-inline: auto;
+    }
+
+    .tarjeta-transparente-responsive2 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
