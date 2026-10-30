@@ -21,7 +21,7 @@
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "<b>¡Producto Nuevo!</b> <br> Lo Más Vendido <br><br> Té verde ● Aceite de ricino ● Alga espirulina <br> Extracto de fenogreco ● Levadura de cerveza",
+        "ingredientes": "<b>¡Producto Nuevo!</b> <br> Lo Más Vendido <br><br> Té verde ● Aceite de ricino ● Alga espirulina <br> ● Levadura de cerveza",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO. <br><br> Cada ingrediente es perfecto para frenar la caída y nutrir tu cabello.",
         "precio": 55,
         "masVendido": true,
@@ -85,7 +85,7 @@
             "nombre": "Shampoo Sólido",
             "id": "shampoo"
         },
-        "ingredientes": "<b>¡Producto Nuevo!</b> <br><br> Té verde ● Aceite de ricino ● Alga espirulina <br> Extracto de fenogreco ● Levadura de cerveza",
+        "ingredientes": "<b>¡Producto Nuevo!</b> <br><br> Té verde ● Aceite de ricino ● Alga espirulina <br> ● Levadura de cerveza",
         "detalles": "IDEAL PARA: TODO TIPO DE PELO. <br><br> Cada ingrediente es perfecto para frenar la caída y nutrir tu cabello.",
         "precio": 98,
         "esNuevo": true
