@@ -748,8 +748,15 @@ aside {
 
     aside {
         min-width: 0;
+        align-self: start;
         top: 6rem;
-        height: calc(100vh - 6rem);
+        height: fit-content;
+        max-height: calc(100vh - 7rem);
+        overflow-y: auto;
+    }
+
+    .boton-menu {
+        padding: .65rem 1rem;
     }
 
     #principal {
