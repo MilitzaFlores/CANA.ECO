@@ -158,7 +158,15 @@ aside {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.menu-titulo {
+    color: var(--clr-Secundario);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1.75rem;
+    text-align: center;
 }
 
 .logo {
@@ -277,6 +285,7 @@ aside {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .row {
@@ -487,7 +496,6 @@ aside {
     }
 
     .menu {
-        margin-top: 20%;
         display: flex;
         flex-direction: column;
         gap: .50rem;
@@ -532,14 +540,6 @@ aside {
         flex-direction: column;
         margin-top: 8%;
         padding-right: 0%;
-    }
-
-    #textobienvenida {
-        font-weight: 600;
-        font-size: 2.5rem;
-        text-align: center;
-        padding-top: 30%;
-        padding-bottom: 15%;
     }
 
     aside {
@@ -748,6 +748,8 @@ aside {
 
     aside {
         min-width: 0;
+        top: 6rem;
+        height: calc(100vh - 6rem);
     }
 
     #principal {
@@ -779,7 +781,8 @@ aside {
     }
 
     .contenedor-productos {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
         gap: clamp(.75rem, 1.5vw, 1.5rem);
     }
 
@@ -790,7 +793,14 @@ aside {
     }
 
     .producto .card {
-        height: 100%;
+        height: auto;
+        min-height: 15rem;
+        padding-bottom: 1rem;
+    }
+
+    .producto .row {
+        flex: 1;
+        align-content: space-between;
     }
 
     .producto-imagen {
@@ -818,6 +828,40 @@ aside {
     }
 }
 
+.producto-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding: 0 1rem;
+}
+
+.producto-botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+}
+
+.producto-acciones .detalles-btn,
+.producto-acciones .producto-agregar {
+    flex: 1 1 13rem;
+    width: auto;
+    max-width: 13rem;
+    min-width: 0;
+    min-height: 2.8rem;
+    margin: 0;
+}
+
+@media (min-width: 969px) {
+    .producto-botones {
+        width: 100%;
+    }
+
+    #principal .producto-acciones .producto-agregar {
+        margin: 0;
+    }
+}
+
 /* Celular */
 @media (min-width: 390px) and (max-width: 767.98px) {
 
@@ -832,15 +876,6 @@ aside {
         display: flex;
         flex-direction: column;
         margin-top: 18%;
-    }
-
-    #textobienvenida {
-        font-weight: 600;
-        font-size: 1.8rem;
-        text-align: center;
-        padding-right: 7%;
-        padding-top: 35%;
-        padding-bottom: 11%;
     }
 
     aside {
@@ -1051,15 +1086,6 @@ aside {
         margin-top: 18%;
     }
 
-    #textobienvenida {
-        font-weight: 600;
-        font-size: 1.5rem;
-        text-align: center;
-        padding-right: 7%;
-        padding-top: 45%;
-        padding-bottom: 15%;
-    }
-
     aside {
         position: fixed;
         z-index: 9;
@@ -1253,4 +1279,3 @@ aside {
         margin-left: 0;
     }
 }
-
