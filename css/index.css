@@ -227,7 +227,7 @@ ion-icon:hover {
 /* media-queries */
 
 /* Laptop */
-@media (min-width: 1025px) {
+@media (min-width: 969px) {
 
     .Texto-Principal-div {
         padding-top: 6%;
@@ -463,7 +463,7 @@ ion-icon:hover {
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 968px) {
 
     h1 {
         text-align: center;
@@ -994,5 +994,85 @@ ion-icon:hover {
     .redes-sociales-responsive {
         color: var(--clr-Fondo);
         margin-left: 0;
+    }
+}
+
+@media (min-width: 969px) {
+    * {
+        font-size: 17px;
+    }
+
+    .banner-container {
+        height: clamp(32rem, calc(100vh - 88px), 61rem);
+    }
+
+    .banner-img {
+        height: 100%;
+    }
+
+    .Texto-Principal-div {
+        max-width: 76rem;
+        margin: 0 auto;
+        padding-inline: clamp(1.5rem, 6vw, 6rem);
+        font-size: clamp(2rem, 3vw, 3rem);
+    }
+
+    .Texto-Principal {
+        max-width: 76rem;
+        margin-inline: auto;
+        padding: 0 clamp(1.5rem, 6vw, 6rem) 4%;
+        font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+        gap: clamp(.75rem, 1.5vw, 1.5rem);
+        padding-inline: clamp(1.5rem, 5vw, 5rem);
+        overflow: visible;
+    }
+
+    .grid-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container-tarjetas {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+        width: min(100% - 3rem, 90rem);
+        height: auto;
+        gap: clamp(1rem, 2vw, 2rem);
+        margin-inline: auto;
+        padding-inline: 0;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: clamp(14rem, 22vw, 22rem);
+        object-fit: cover;
+    }
+
+    #carouselExampleDark {
+        width: min(80%, 75rem);
+        height: auto;
+        margin-inline: auto;
+    }
+
+    .imagen-video {
+        width: min(100% - 3rem, 80rem);
+        margin-inline: auto;
+        padding-inline: clamp(1.5rem, 5vw, 5rem);
+    }
+
+    .card-video {
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    .container-barras {
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    .item-barras {
+        width: min(50% - 1rem, 36rem);
     }
 }
