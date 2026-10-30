@@ -1,7 +1,3 @@
-setTimeout(function () {
-    document.getElementById("textobienvenida").innerHTML = "¡Bienvenid@ A Nuestra Tienda!";
-}, 3000);
-
 let productos = [];
 
 fetch("./scripts/productos.json")
@@ -57,29 +53,29 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-        <div class="card mb-3">
+        <div class="card">
         <div class="row g-0">
             <div class="col-md-4 detalles">
-                <p>
                 <a href="${producto.imagen}" data-featherlight="${producto.imagen}"><img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}"></a>
-                <div id="${producto.imagen}"></div>
-                    <button class="btn detalles-btn" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWidthExample-${producto.id}" aria-expanded="false"
-                        aria-controls="collapseWidthExample-${producto.id}">
-                        Detalles
-                    </button>
-                </p>
             </div>
             <div class="col-md-8 producto-contenido">
                 <p class="producto-titulo variante">${producto.titulo}</p>
                 <span class="ingredientes">${producto.ingredientes}</span>
                 <p class="producto-titulo producto-precio">$${producto.precio} MXN</p>
-                <button class="producto-agregar" id="${producto.id}" ${hayStock ? "" : "disabled"}>${hayStock ? "Agregar" : textoBoton}</button>
             </div>
-            <div>
-            <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
-                <div class="card card-body">
-                    ${producto.detalles}
+            <div class="col-12 producto-acciones">
+                <div class="producto-botones">
+                    <button class="btn detalles-btn" type="button"
+                        aria-expanded="false"
+                        aria-controls="collapseWidthExample-${producto.id}">
+                        Detalles
+                    </button>
+                    <button class="producto-agregar" id="${producto.id}" ${hayStock ? "" : "disabled"}>${hayStock ? "Agregar" : textoBoton}</button>
+                </div>
+                <div class="collapse collapse-horizontal" id="collapseWidthExample-${producto.id}">
+                    <div class="card card-body">
+                        ${producto.detalles}
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,8 +84,37 @@ function cargarProductos(productosElegidos) {
         `;
         contenedorProductos.append(div);
     })
+    igualarAlturaTarjetas();
     actualizarBotonesAgregar();
     scrollToTop();
+}
+
+function igualarAlturaTarjetas() {
+    const tarjetas = Array.from(contenedorProductos.querySelectorAll(".producto > .card"));
+
+    if (window.innerWidth < 768) {
+        tarjetas.forEach(tarjeta => {
+            tarjeta.style.height = "";
+        });
+        return;
+    }
+
+    if (contenedorProductos.querySelector(".collapse.show, .collapsing")) {
+        return;
+    }
+
+    tarjetas.forEach(tarjeta => {
+        tarjeta.style.height = "";
+    });
+
+    for (let index = 0; index < tarjetas.length; index += 2) {
+        const fila = tarjetas.slice(index, index + 2);
+        const altura = Math.ceil(Math.max(...fila.map(tarjeta => tarjeta.getBoundingClientRect().height)));
+
+        fila.forEach(tarjeta => {
+            tarjeta.style.height = `${altura}px`;
+        });
+    }
 }
 
 function scrollToTop() {
@@ -124,12 +149,65 @@ btnNuevos.addEventListener("click", () => {
     cargarProductos(productosNuevos);
 });
 
-const detallesButtons = document.querySelectorAll('.detalles-btn');
+contenedorProductos.addEventListener("click", event => {
+    const button = event.target.closest(".detalles-btn");
+    if (!button) {
+        return;
+    }
 
-detallesButtons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-        event.stopPropagation();
-    });
+    event.preventDefault();
+    event.stopPropagation();
+
+    const panel = document.getElementById(button.getAttribute("aria-controls"));
+    if (!panel || panel.classList.contains("collapsing")) {
+        return;
+    }
+
+    const instance = bootstrap.Collapse.getInstance(panel) ||
+        new bootstrap.Collapse(panel, { toggle: false });
+
+    if (panel.classList.contains("show")) {
+        instance.hide();
+        return;
+    }
+
+    const openPanel = contenedorProductos.querySelector(".collapse.show, .collapsing");
+    if (!openPanel) {
+        instance.show();
+        return;
+    }
+
+    const openInstance = bootstrap.Collapse.getInstance(openPanel) ||
+        new bootstrap.Collapse(openPanel, { toggle: false });
+    const showSelectedPanel = () => {
+        openPanel.addEventListener("hidden.bs.collapse", () => instance.show(), { once: true });
+        openInstance.hide();
+    };
+
+    if (openPanel.classList.contains("collapsing")) {
+        openPanel.addEventListener("shown.bs.collapse", showSelectedPanel, { once: true });
+    } else {
+        showSelectedPanel();
+    }
+});
+
+contenedorProductos.addEventListener("show.bs.collapse", event => {
+    const tarjeta = event.target.closest(".producto > .card");
+    if (tarjeta) {
+        tarjeta.style.height = "auto";
+    }
+    event.target.closest(".producto-acciones").querySelector(".detalles-btn").setAttribute("aria-expanded", "true");
+});
+
+contenedorProductos.addEventListener("hide.bs.collapse", event => {
+    event.target.closest(".producto-acciones").querySelector(".detalles-btn").setAttribute("aria-expanded", "false");
+});
+
+contenedorProductos.addEventListener("hidden.bs.collapse", igualarAlturaTarjetas);
+window.addEventListener("resize", () => {
+    if (!contenedorProductos.querySelector(".collapse.show, .collapsing")) {
+        igualarAlturaTarjetas();
+    }
 });
 
 document.addEventListener('click', () => {
