@@ -49,7 +49,6 @@ function cargarProductosCarrito() {
                 <p class="cantidad-numero">${producto.cantidad}</p>
                 <ion-icon name="add-circle" class="mas"></ion-icon>
             </div>
-            </div>
             <div class="carrito-producto-precio">
                 <small>Precio</small>
                 <p>$${producto.precio} MXN</p>
@@ -61,6 +60,7 @@ function cargarProductosCarrito() {
             <button class="carrito-producto-eliminar" id="${producto.id}">
                 <ion-icon class="trash" name="trash"></ion-icon>
             </button>
+            </div>
                 `;
             contenedorCarritoProductos.append(div);
         })
