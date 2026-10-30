@@ -735,6 +735,89 @@ aside {
     }
 }
 
+@media (min-width: 969px) {
+    * {
+        font-size: 17px;
+    }
+
+    #wrapper {
+        grid-template-columns: minmax(15rem, 21rem) minmax(0, 1fr);
+        gap: clamp(1rem, 2vw, 2rem);
+        padding: 7rem clamp(1rem, 2vw, 2rem) 2rem;
+    }
+
+    aside {
+        min-width: 0;
+    }
+
+    #principal {
+        min-width: 0;
+        margin: 0;
+        padding: clamp(1rem, 2vw, 2rem);
+    }
+
+    .titulo-principal {
+        font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+    }
+
+    .buscar input {
+        width: min(25rem, 100%);
+        max-width: 100%;
+    }
+
+    #principal > div:nth-of-type(2) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .filtro-precio,
+    #btn-mas-vendidos,
+    #btn-nuevos {
+        margin: .5rem 0;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+        gap: clamp(.75rem, 1.5vw, 1.5rem);
+    }
+
+    .producto,
+    .producto .card,
+    .producto .row {
+        min-width: 0;
+    }
+
+    .producto .card {
+        height: 100%;
+    }
+
+    .producto-imagen {
+        display: block;
+        width: min(8.5rem, 100%);
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        margin-inline: auto;
+    }
+
+    .producto-contenido {
+        min-width: 0;
+        padding-inline: .5rem;
+        overflow-wrap: anywhere;
+    }
+
+    .producto-agregar {
+        width: min(13rem, 100%);
+        margin: .5rem auto 0;
+    }
+
+    .collapse-horizontal .card-body {
+        width: min(24.7rem, 100%);
+    }
+}
+
 /* Celular */
 @media (min-width: 390px) and (max-width: 767.98px) {
 
@@ -1170,3 +1253,4 @@ aside {
         margin-left: 0;
     }
 }
+
