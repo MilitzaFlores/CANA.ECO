@@ -1038,7 +1038,7 @@ ion-icon:hover {
 
     .grid-container-tarjetas {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: min(100% - 3rem, 90rem);
+        width: min(100% - 3rem, 76rem);
         height: auto;
         gap: clamp(1rem, 2vw, 2rem);
         margin-inline: auto;
@@ -1063,9 +1063,21 @@ ion-icon:hover {
         padding-inline: clamp(1.5rem, 5vw, 5rem);
     }
 
+    .imagen-video .row > div {
+        align-items: stretch !important;
+    }
+
+    .imagen-video .row > div > div {
+        display: flex;
+        width: 100%;
+    }
+
     .card-video {
         width: 100%;
+        height: 100%;
         padding-inline: 0;
+        object-fit: contain;
+        background-color: #000;
     }
 
     .container-barras {
