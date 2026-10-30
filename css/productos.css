@@ -414,11 +414,6 @@ aside {
     transition: color .2s;
 }
 
-.producto-agregar:disabled {
-    cursor: not-allowed;
-    opacity: .6;
-}
-
 .header-mobile {
     display: none;
 }
@@ -485,7 +480,7 @@ aside {
         text-align: center;
         padding-right: 5%;
     }
-
+    
     .menu {
         margin-top: 20%;
         display: flex;
@@ -734,6 +729,7 @@ aside {
         padding-left: 0;
     }
 }
+
 /* Celular */
 @media (min-width: 390px) and (max-width: 767.98px) {
 
