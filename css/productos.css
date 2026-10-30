@@ -752,6 +752,12 @@ aside {
         top: 6rem;
         height: fit-content;
         max-height: calc(100vh - 7rem);
+        overflow: hidden;
+    }
+
+    aside > section {
+        flex: 1 1 auto;
+        min-height: 0;
         overflow-y: auto;
     }
 
